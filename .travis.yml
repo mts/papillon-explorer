@@ -1,0 +1,14 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '10'
+before_script:
+  - npm install
+  - npm run install-packages
+  - npm run build
+script:
+  - npm run ci
