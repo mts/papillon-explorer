@@ -14,7 +14,7 @@ const StartPage = () => {
   return (
     <div>
       <div className="bg-gray-dark" style={style}>
-        <div className="main-nav d-flex flex-justify-between px-3 pl-md-4 pr-md-4 py-3 box-shadow bg-gray-dark Details js-details-container" data-pjax="#js-pjax-container">
+        <div className="main-nav d-flex flex-justify-between px-3 pl-md-4 pr-md-4 py-3 box-shadow bg-gray-dark Details js-details-container">
           <div className="d-flex flex-self-center flex-lg-auto mr-lg-2">
             <a href="/" className="pt-2 border-gray-dark no-underline text-white" aria-label="Papillon">🦋</a>
             <div className="flex-self-center Details-content--shown">
@@ -35,147 +35,143 @@ const StartPage = () => {
         <nav className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pr-6 pb-4">
           <ul className="list-style-none">
             <li className="pr-6 my-4 mx-4">
-              <a href="/primer/components/" className="position-relative f4 d-block text-gray-dark">
+              <a href="/" className="position-relative f4 d-block text-gray-dark">
                 Components
               </a>
               <ul className="pt-2 list-style-none">
-                <li className="">
-                  <a href="/primer/components/alerts/" className="position-relative f5 py-1 d-block">
-                    Alerts
-                  </a>
+                <li className="position-relative f5 py-1 d-block">
+                  <Link to="/alerts">Alerts</Link>
+                </li>
+                <li className="position-relative f5 py-1 d-block">
+                  <Link to="/avatars">Avatars</Link>
                 </li>
                 <li className="">
-                  <a href="/primer/components/avatars/" className="position-relative f5 py-1 d-block">
-                    Avatars
-                  </a>
-                </li>
-                <li className="">
-                  <a href="/primer/components/blankslate/" className="position-relative f5 py-1 d-block">
+                  <a href="/blankslate/" className="position-relative f5 py-1 d-block">
                     Blankslate
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/box/" className="position-relative f5 py-1 d-block">
+                  <a href="/box/" className="position-relative f5 py-1 d-block">
                     Box
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/box-overlay/" className="position-relative f5 py-1 d-block">
+                  <a href="/box-overlay/" className="position-relative f5 py-1 d-block">
                     Box overlay
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/boxed-groups/" className="position-relative f5 py-1 d-block">
+                  <a href="/boxed-groups/" className="position-relative f5 py-1 d-block">
                     Boxed groups
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/branch-name/" className="position-relative f5 py-1 d-block">
+                  <a href="/branch-name/" className="position-relative f5 py-1 d-block">
                     Branch name
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/breadcrumb/" className="position-relative f5 py-1 d-block">
+                  <a href="/breadcrumb/" className="position-relative f5 py-1 d-block">
                     Breadcrumbs
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/buttons/" className="position-relative f5 py-1 d-block">
+                  <a href="/buttons/" className="position-relative f5 py-1 d-block">
                     Buttons
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/dropdown/" className="position-relative f5 py-1 d-block">
+                  <a href="/dropdown/" className="position-relative f5 py-1 d-block">
                     Dropdown
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/flash-banner/" className="position-relative f5 py-1 d-block">
+                  <a href="/flash-banner/" className="position-relative f5 py-1 d-block">
                     Flash banner
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/forms/" className="position-relative f5 py-1 d-block">
+                  <a href="/forms/" className="position-relative f5 py-1 d-block">
                     Forms
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/labels/" className="position-relative f5 py-1 d-block">
+                  <a href="/labels/" className="position-relative f5 py-1 d-block">
                     Labels
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/markdown/" className="position-relative f5 py-1 d-block">
+                  <a href="/markdown/" className="position-relative f5 py-1 d-block">
                     Markdown
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/marketing-buttons/" className="position-relative f5 py-1 d-block">
+                  <a href="/marketing-buttons/" className="position-relative f5 py-1 d-block">
                     Marketing Buttons
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/navigation/" className="position-relative f5 py-1 d-block">
+                  <a href="/navigation/" className="position-relative f5 py-1 d-block">
                     Navigation
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/octicons/" className="position-relative f5 py-1 d-block">
+                  <a href="/octicons/" className="position-relative f5 py-1 d-block">
                     Octicons
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/page-headers/" className="position-relative f5 py-1 d-block">
+                  <a href="/page-headers/" className="position-relative f5 py-1 d-block">
                     Page headers
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/page-sections/" className="position-relative f5 py-1 d-block">
+                  <a href="/page-sections/" className="position-relative f5 py-1 d-block">
                     Page sections
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/pagehead/" className="position-relative f5 py-1 d-block">
+                  <a href="/pagehead/" className="position-relative f5 py-1 d-block">
                     Pagehead
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/pagination/" className="position-relative f5 py-1 d-block">
+                  <a href="/pagination/" className="position-relative f5 py-1 d-block">
                     Pagination
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/popover/" className="position-relative f5 py-1 d-block">
+                  <a href="/popover/" className="position-relative f5 py-1 d-block">
                     Popover
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/progress/" className="position-relative f5 py-1 d-block">
+                  <a href="/progress/" className="position-relative f5 py-1 d-block">
                     Progress Bar
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/select-menu/" className="position-relative f5 py-1 d-block">
+                  <a href="/select-menu/" className="position-relative f5 py-1 d-block">
                     Select menu
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/subhead/" className="position-relative f5 py-1 d-block">
+                  <a href="/subhead/" className="position-relative f5 py-1 d-block">
                     Subhead
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/tables/" className="position-relative f5 py-1 d-block">
+                  <a href="/tables/" className="position-relative f5 py-1 d-block">
                     Tables
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/tooltips/" className="position-relative f5 py-1 d-block">
+                  <a href="/tooltips/" className="position-relative f5 py-1 d-block">
                     Tooltips
                   </a>
                 </li>
                 <li className="">
-                  <a href="/primer/components/truncate/" className="position-relative f5 py-1 d-block">
+                  <a href="/truncate/" className="position-relative f5 py-1 d-block">
                     Truncate
                   </a>
                 </li>
