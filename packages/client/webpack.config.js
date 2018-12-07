@@ -11,6 +11,7 @@ const commonConfig = merge([
   parts.output(),
   parts.plugins(),
   parts.loadJavaScript({ include: PATHS.app }),
+  parts.loadCSS(),
 ]);
 
 const productionConfig = merge([
@@ -24,7 +25,6 @@ const developmentConfig = merge([
     host: process.env.HOST,
     port: process.env.PORT,
   }),
-
 ]);
 
 module.exports = mode => {

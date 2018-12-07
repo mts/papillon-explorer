@@ -10,6 +10,7 @@ import ButtonsPage from './components/pages/ButtonsPage';
 import LabelsPage from './components/pages/LabelsPage';
 import LayoutPage from './components/pages/LayoutPage';
 import NavigationPage from './components/pages/NavigationPage';
+import './index.scss'
 
 function addDivWithIdToBody() {
   const appElement = document.createElement("div");
@@ -23,15 +24,15 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Route path="/" component={StartPage} />
-        <Route path="/alerts" component={AlertsPage} />
-        <Route path="/avatars" component={AvatarsPage} />
-        <Route path="/blankslate" component={BlankslatePage} />
-        <Route path="/breadcrumb" component={BreadcrumbPage} />
-        <Route path="/buttons" component={ButtonsPage} />
-        <Route path="/labels" component={LabelsPage} />
-        <Route path="/layout" component={LayoutPage} />
-        <Route path="/navigation" component={NavigationPage} />
+        <Route exact path="/" component={StartPage} />
+        <Route exact path="/papillon/components/alerts/" component={AlertsPage} />
+        <Route exact path="/papillon/components/avatars/" component={AvatarsPage} />
+        <Route exact path="/papillon/components/blankslate/" component={BlankslatePage} />
+        <Route exact path="/papillon/components/breadcrumb/" component={BreadcrumbPage} />
+        <Route exact path="/papillon/components/buttons/" component={ButtonsPage} />
+        <Route exact path="/papillon/components/labels/" component={LabelsPage} />
+        <Route exact path="/papillon/components/layout/" component={LayoutPage} />
+        <Route exact path="/papillon/components/navigation/" component={NavigationPage} />
       </div>
     </Router>
   );
