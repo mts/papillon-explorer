@@ -1,6 +1,6 @@
 <p align="center">
-  <img width="300px" src="/logo-explorer.png">
   <img width="300px" src="/logo-papillon.png">
+  <img width="300px" src="/logo-explorer.png">
 </p>
 
 <h1 align="center">Papillon Explorer</h1>
