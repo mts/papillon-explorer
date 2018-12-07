@@ -10,6 +10,7 @@ import ButtonsPage from './components/pages/ButtonsPage';
 import LabelsPage from './components/pages/LabelsPage';
 import LayoutPage from './components/pages/LayoutPage';
 import NavigationPage from './components/pages/NavigationPage';
+import './index.scss'
 
 function addDivWithIdToBody() {
   const appElement = document.createElement("div");
