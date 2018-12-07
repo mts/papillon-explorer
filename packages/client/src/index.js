@@ -23,15 +23,15 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Route path="/" component={StartPage} />
-        <Route path="/alerts" component={AlertsPage} />
-        <Route path="/avatars" component={AvatarsPage} />
-        <Route path="/blankslate" component={BlankslatePage} />
-        <Route path="/breadcrumb" component={BreadcrumbPage} />
-        <Route path="/buttons" component={ButtonsPage} />
-        <Route path="/labels" component={LabelsPage} />
-        <Route path="/layout" component={LayoutPage} />
-        <Route path="/navigation" component={NavigationPage} />
+        <Route exact path="/" component={StartPage} />
+        <Route exact path="/alerts" component={AlertsPage} />
+        <Route exact path="/avatars" component={AvatarsPage} />
+        <Route exact path="/blankslate" component={BlankslatePage} />
+        <Route exact path="/breadcrumb" component={BreadcrumbPage} />
+        <Route exact path="/buttons" component={ButtonsPage} />
+        <Route exact path="/labels" component={LabelsPage} />
+        <Route exact path="/layout" component={LayoutPage} />
+        <Route exact path="/navigation" component={NavigationPage} />
       </div>
     </Router>
   );
