@@ -42,17 +42,17 @@ const StartPage = () => {
           <nav id="navigation" className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pb-4" data-pjax="">
              <ul className="list-style-none">
                 <li className="px-4 my-4">
-                   <a href="/primer/support/" className="position-relative f4 d-block text-gray-dark">
+                   <a href="/papillon/support/" className="position-relative f4 d-block text-gray-dark">
                    Support
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <a href="/primer/support/breakpoints/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/support/breakpoints/" className="position-relative f5 py-1 d-block">
                          Breakpoints
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/support/color-system/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/support/color-system/" className="position-relative f5 py-1 d-block">
                             Color system
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -64,12 +64,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/support/spacing/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/support/spacing/" className="position-relative f5 py-1 d-block">
                          Spacing
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/support/typography/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/support/typography/" className="position-relative f5 py-1 d-block">
                             Typography
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -81,7 +81,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/support/marketing-variables/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/support/marketing-variables/" className="position-relative f5 py-1 d-block">
                             Marketing variables
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="new release">
@@ -96,17 +96,17 @@ const StartPage = () => {
                 </li>
                 <li className="mt-4 border-bottom"></li>
                 <li className="px-4 my-4">
-                   <a href="/primer/utilities/" className="position-relative f4 d-block text-gray-dark">
+                   <a href="/papillon/utilities/" className="position-relative f4 d-block text-gray-dark">
                    Utilities
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <a href="/primer/utilities/animations/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/animations/" className="position-relative f5 py-1 d-block">
                          Animations
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/borders/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/borders/" className="position-relative f5 py-1 d-block">
                             Borders
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -118,7 +118,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/marketing-borders/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/marketing-borders/" className="position-relative f5 py-1 d-block">
                             Marketing borders
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -130,7 +130,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/box-shadow/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/box-shadow/" className="position-relative f5 py-1 d-block">
                             Box shadow
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -142,7 +142,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/colors/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/colors/" className="position-relative f5 py-1 d-block">
                             Colors
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -154,7 +154,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/details/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/details/" className="position-relative f5 py-1 d-block">
                             Details
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -166,7 +166,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/marketing-filters/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/marketing-filters/" className="position-relative f5 py-1 d-block">
                             Filters
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -178,7 +178,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/flexbox/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/flexbox/" className="position-relative f5 py-1 d-block">
                             Flexbox
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -190,12 +190,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/layout/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/layout/" className="position-relative f5 py-1 d-block">
                          Layout
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/marketing-layout/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/marketing-layout/" className="position-relative f5 py-1 d-block">
                             Marketing layout
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -207,12 +207,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/margin/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/margin/" className="position-relative f5 py-1 d-block">
                          Margin
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/marketing-margin/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/marketing-margin/" className="position-relative f5 py-1 d-block">
                             Marketing margin
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -224,12 +224,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/padding/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/padding/" className="position-relative f5 py-1 d-block">
                          Padding
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/marketing-padding/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/marketing-padding/" className="position-relative f5 py-1 d-block">
                             Marketing padding
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -241,12 +241,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/typography/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/typography/" className="position-relative f5 py-1 d-block">
                          Typography
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/utilities/marketing-type/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/utilities/marketing-type/" className="position-relative f5 py-1 d-block">
                             Marketing typography
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New Release">
@@ -261,12 +261,12 @@ const StartPage = () => {
                 </li>
                 <li className="mt-4 border-bottom"></li>
                 <li className="px-4 my-4">
-                   <a href="/primer/objects/" className="position-relative f4 d-block text-gray-dark">
+                   <a href="/papillon/objects/" className="position-relative f4 d-block text-gray-dark">
                    Objects
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <a href="/primer/objects/grid/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/objects/grid/" className="position-relative f5 py-1 d-block">
                             Grid
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -278,7 +278,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/objects/layout/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/objects/layout/" className="position-relative f5 py-1 d-block">
                             Layout
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -290,7 +290,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/objects/table-object/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/objects/table-object/" className="position-relative f5 py-1 d-block">
                          Table object
                          </a>
                       </li>
@@ -298,27 +298,27 @@ const StartPage = () => {
                 </li>
                 <li className="mt-4 border-bottom"></li>
                 <li className="px-4 my-4">
-                   <a href="/primer/components/" className="position-relative f4 d-block text-gray-dark">
+                   <a href="/papillon/components/" className="position-relative f4 d-block text-gray-dark">
                    Components
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <a href="/primer/components/alerts/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/alerts/" className="position-relative f5 py-1 d-block">
                          Alerts
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/avatars/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/avatars/" className="position-relative f5 py-1 d-block">
                          Avatars
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/blankslate/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/blankslate/" className="position-relative f5 py-1 d-block">
                          Blankslate
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/box/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/box/" className="position-relative f5 py-1 d-block">
                             Box
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -330,7 +330,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/box-overlay/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/box-overlay/" className="position-relative f5 py-1 d-block">
                             Box overlay
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="Experimental">
@@ -342,7 +342,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/boxed-groups/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/boxed-groups/" className="position-relative f5 py-1 d-block">
                             Boxed groups
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -354,27 +354,27 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/branch-name/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/branch-name/" className="position-relative f5 py-1 d-block">
                          Branch name
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/breadcrumb/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/breadcrumb/" className="position-relative f5 py-1 d-block">
                          Breadcrumbs
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/buttons/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/buttons/" className="position-relative f5 py-1 d-block">
                          Buttons
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/dropdown/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/dropdown/" className="position-relative f5 py-1 d-block">
                          Dropdown
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/flash-banner/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/flash-banner/" className="position-relative f5 py-1 d-block">
                             Flash banner
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="In review">
@@ -386,12 +386,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/forms/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/forms/" className="position-relative f5 py-1 d-block">
                          Forms
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/labels/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/labels/" className="position-relative f5 py-1 d-block">
                             Labels
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -403,12 +403,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/markdown/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/markdown/" className="position-relative f5 py-1 d-block">
                          Markdown
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/marketing-buttons/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/marketing-buttons/" className="position-relative f5 py-1 d-block">
                             Marketing Buttons
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New Release">
@@ -420,17 +420,17 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/navigation/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/navigation/" className="position-relative f5 py-1 d-block">
                          Navigation
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/octicons/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/octicons/" className="position-relative f5 py-1 d-block">
                          Octicons
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/page-headers/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/page-headers/" className="position-relative f5 py-1 d-block">
                             Page headers
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -442,7 +442,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/page-sections/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/page-sections/" className="position-relative f5 py-1 d-block">
                             Page sections
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -454,12 +454,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/pagehead/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/pagehead/" className="position-relative f5 py-1 d-block">
                          Pagehead
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/pagination/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/pagination/" className="position-relative f5 py-1 d-block">
                             Pagination
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New Release">
@@ -471,7 +471,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/popover/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/popover/" className="position-relative f5 py-1 d-block">
                             Popover
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="Experimental">
@@ -483,7 +483,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/progress/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/progress/" className="position-relative f5 py-1 d-block">
                             Progress Bar
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="Experimental">
@@ -495,12 +495,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/select-menu/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/select-menu/" className="position-relative f5 py-1 d-block">
                          Select menu
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/subhead/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/subhead/" className="position-relative f5 py-1 d-block">
                             Subhead
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -512,7 +512,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/tables/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/tables/" className="position-relative f5 py-1 d-block">
                             Tables
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -524,12 +524,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/tooltips/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/tooltips/" className="position-relative f5 py-1 d-block">
                          Tooltips
                          </a>
                       </li>
                       <li className="">
-                         <a href="/primer/components/truncate/" className="position-relative f5 py-1 d-block">
+                         <a href="/papillon/components/truncate/" className="position-relative f5 py-1 d-block">
                          Truncate
                          </a>
                       </li>
