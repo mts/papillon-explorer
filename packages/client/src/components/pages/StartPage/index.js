@@ -15,14 +15,10 @@ const StartPage = () => {
     <div>
        <div className="bg-gray-dark" style={style}>
           <div className="main-nav d-flex flex-justify-between px-3 pl-md-4 pr-md-4 py-3 box-shadow bg-gray-dark Details js-details-container">
-
              <div className="d-flex flex-self-center flex-lg-auto mr-lg-2">
-
-
                 <a href="https://github.com/mts/papillon-explorer" className="border-gray-dark no-underline text-white" aria-label="Papillon Explorer">
                   <svg height="28" aria-label="github-logo" className="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="28" role="img"><path fillRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
                 </a>
-
                 <div className="flex-self-center Details-content--shown">
                    <div className="dropdown js-menu-container js-select-menu">
                       <h1 className="h4 text-normal pl-3 mt-1">
@@ -33,9 +29,6 @@ const StartPage = () => {
                    </div>
                 </div>
              </div>
-
-
-
           </div>
        </div>
        <div className="d-flex flex-wrap flex-lg-nowrap">
@@ -190,9 +183,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/utilities/layout/" className="position-relative f5 py-1 d-block">
-                         Layout
-                         </a>
+                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/layout/">Layout</Link>
                       </li>
                       <li className="">
                          <a href="/papillon/utilities/marketing-layout/" className="position-relative f5 py-1 d-block">
@@ -303,19 +294,13 @@ const StartPage = () => {
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <a href="/papillon/components/alerts/" className="position-relative f5 py-1 d-block">
-                         Alerts
-                         </a>
+                         <Link className="position-relative f5 py-1 d-block" to="/papillon/components/alerts/">Alerts</Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/avatars/" className="position-relative f5 py-1 d-block">
-                         Avatars
-                         </a>
+                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/avatars/">Avatars</Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/blankslate/" className="position-relative f5 py-1 d-block">
-                         Blankslate
-                         </a>
+                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/blankslate/">Blankslate</Link>
                       </li>
                       <li className="">
                          <a href="/papillon/components/box/" className="position-relative f5 py-1 d-block">
@@ -359,14 +344,10 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/breadcrumb/" className="position-relative f5 py-1 d-block">
-                         Breadcrumbs
-                         </a>
+                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/breadcrumb/">Breadcrumb</Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/buttons/" className="position-relative f5 py-1 d-block">
-                         Buttons
-                         </a>
+                         <Link className="position-relative f5 py-1 d-block" to="/papillon/components/buttons/">Buttons</Link>
                       </li>
                       <li className="">
                          <a href="/papillon/components/dropdown/" className="position-relative f5 py-1 d-block">
@@ -391,16 +372,16 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/labels/" className="position-relative f5 py-1 d-block">
-                            Labels
-                            <span className="position-absolute right-0">
-                               <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
-                                  <svg height="18" className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top" viewBox="0 0 8 16" version="1.1" width="9" aria-hidden="true">
-                                     <path fillRule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"></path>
-                                  </svg>
-                               </span>
-                            </span>
-                         </a>
+                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/labels/">
+                          Labels
+                          <span className="position-absolute right-0">
+                             <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
+                                <svg height="18" className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top" viewBox="0 0 8 16" version="1.1" width="9" aria-hidden="true">
+                                   <path fillRule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"></path>
+                                </svg>
+                             </span>
+                          </span>
+                        </Link>
                       </li>
                       <li className="">
                          <a href="/papillon/components/markdown/" className="position-relative f5 py-1 d-block">
@@ -420,9 +401,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/navigation/" className="position-relative f5 py-1 d-block">
-                         Navigation
-                         </a>
+                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/navigation/">Navigation</Link>
                       </li>
                       <li className="">
                          <a href="/papillon/components/octicons/" className="position-relative f5 py-1 d-block">
@@ -543,7 +522,7 @@ const StartPage = () => {
                    <div className="">
                       <h1 className="f000-light mb-4">Papillon Explorer</h1>
                       <div className="f2-light pb-4">
-                         Resources, tooling, and design guidelines for building websites with Papillon, React components for the GitHub's Primer Design System
+                         Resources, tooling, and design guidelines for building websites with Papillon, React components for GitHub's Primer Design System
                       </div>
                    </div>
                 </div>

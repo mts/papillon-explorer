@@ -25,14 +25,14 @@ const App = () => {
     <Router>
       <div>
         <Route exact path="/" component={StartPage} />
-        <Route exact path="/alerts" component={AlertsPage} />
-        <Route exact path="/avatars" component={AvatarsPage} />
-        <Route exact path="/blankslate" component={BlankslatePage} />
-        <Route exact path="/breadcrumb" component={BreadcrumbPage} />
-        <Route exact path="/buttons" component={ButtonsPage} />
-        <Route exact path="/labels" component={LabelsPage} />
-        <Route exact path="/layout" component={LayoutPage} />
-        <Route exact path="/navigation" component={NavigationPage} />
+        <Route exact path="/papillon/components/alerts/" component={AlertsPage} />
+        <Route exact path="/papillon/components/avatars/" component={AvatarsPage} />
+        <Route exact path="/papillon/components/blankslate/" component={BlankslatePage} />
+        <Route exact path="/papillon/components/breadcrumb/" component={BreadcrumbPage} />
+        <Route exact path="/papillon/components/buttons/" component={ButtonsPage} />
+        <Route exact path="/papillon/components/labels/" component={LabelsPage} />
+        <Route exact path="/papillon/components/layout/" component={LayoutPage} />
+        <Route exact path="/papillon/components/navigation/" component={NavigationPage} />
       </div>
     </Router>
   );
