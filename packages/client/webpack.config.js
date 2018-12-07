@@ -24,7 +24,7 @@ const developmentConfig = merge([
     host: process.env.HOST,
     port: process.env.PORT,
   }),
-
+  parts.loadCSS(),
 ]);
 
 module.exports = mode => {
