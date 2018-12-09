@@ -42,7 +42,7 @@
     "papillon-blankslate": "^1.0.41",
     "papillon-breadcrumb": "^1.0.41",
     "papillon-buttons": "^1.0.41",
-    "papillon-labels": "^1.0.41",
+    "papillon-labels": "^1.0.43",
     "papillon-layout": "^1.0.41",
     "papillon-navigation": "^1.0.41",
     "react": "^16.6.3",
