@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const GitRevisionPlugin = require("git-revision-webpack-plugin");
 const UglifyWebpackPlugin = require("uglifyjs-webpack-plugin");
+const DotEnvPlugin = require("dotenv-webpack");
 const path = require("path");
 
 exports.devServer = ({ host, port } = {}) => ({
@@ -33,10 +34,22 @@ exports.output = () => ({
   },
 });
 
-exports.plugins = () => ({
+exports.pluginsDevelop = () => ({
   plugins: [
     new HtmlWebpackPlugin({
-      title: "02",
+      title: "Papillon Explorer Client",
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+});
+
+exports.pluginsRelease = () => ({
+  plugins: [
+    new DotEnvPlugin({
+      path: path.resolve(__dirname, './.env')
+    }),
+    new HtmlWebpackPlugin({
+      title: "Papillon Explorer Client",
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -71,5 +84,16 @@ exports.attachRevision = () => ({
 exports.minifyJavaScript = () => ({
   optimization: {
     minimizer: [new UglifyWebpackPlugin({ sourceMap: true })],
+  },
+});
+
+exports.loadCSS = ({ include, exclude } = {}) => ({
+  module: {
+    rules: [
+        {
+          test: /\.scss$/,
+          use: ["style-loader", "css-loader", "sass-loader"],
+        },
+    ],
   },
 });
