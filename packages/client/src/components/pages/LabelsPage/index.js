@@ -1,16 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import RegularLabels from './RegularLabels'
+import ThemeLabels from './ThemeLabels'
+import StateLabels from './StateLabels'
+import CounterLabels from './CounterLabels'
+import { startPageRoute } from '../../../routes'
 
-const LabelsPage = () => {
+const LayoutPage = () => {
   return (
     <div>
-      <h2>Labels Page</h2>
-      <div>
-        Under construction 🙂
-        <Link to="/">Back to Home Page</Link>
+      <h1 align="center" className="p-4">🎨 Papillon Labels Component Explorer</h1>
+      <div className="d-flex flex-justify-around">
+        <div className="col-3">
+          <RegularLabels />
+        </div>
+        <div className="col-3">
+          <ThemeLabels />
+        </div>
+        <div className="col-3">
+          <StateLabels />
+        </div>
+        <div className="col-3">
+          <CounterLabels />
+        </div>
+      </div>
+      <div className="p-4">
+        <Link to={startPageRoute}> Back to Home Page</Link>
       </div>
     </div>
   )
 }
 
-export default LabelsPage;
+export default LayoutPage;
