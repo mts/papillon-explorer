@@ -1,5 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  alertsPageRoute,
+  avatarsPageRoute,
+  blankslatePageRoute,
+  breadcrumbPageRoute,
+  buttonsPageRoute,
+  labelsPageRoute,
+  layoutPageRoute,
+  navigationPageRoute,
+} from '../../../routes'
 
 const style = {
   'position': '-webkit-sticky',
@@ -11,6 +21,12 @@ const style = {
 }
 
 const StartPage = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+
   return (
     <div>
        <div className="bg-gray-dark" style={style}>
@@ -183,7 +199,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/layout">Layout</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={layoutPageRoute}>Layout</Link>
                       </li>
                       <li className="">
                          <a href="/papillon/utilities/marketing-layout/" className="position-relative f5 py-1 d-block">
@@ -294,13 +310,13 @@ const StartPage = () => {
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <Link className="position-relative f5 py-1 d-block" to="/alerts">Alerts</Link>
+                         <Link className="position-relative f5 py-1 d-block" to={alertsPageRoute}>Alerts</Link>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/avatars">Avatars</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={avatarsPageRoute}>Avatars</Link>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/blankslate">Blankslate</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={blankslatePageRoute}>Blankslate</Link>
                       </li>
                       <li className="">
                          <a href="/box/" className="position-relative f5 py-1 d-block">
@@ -344,10 +360,10 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/breadcrumb">Breadcrumb</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={breadcrumbPageRoute}>Breadcrumb</Link>
                       </li>
                       <li className="">
-                         <Link className="position-relative f5 py-1 d-block" to="/buttons">Buttons</Link>
+                         <Link className="position-relative f5 py-1 d-block" to={buttonsPageRoute}>Buttons</Link>
                       </li>
                       <li className="">
                          <a href="/dropdown/" className="position-relative f5 py-1 d-block">
@@ -372,7 +388,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/labels">
+                        <Link className="position-relative f5 py-1 d-block" to={labelsPageRoute}>
                           Labels
                           <span className="position-absolute right-0">
                              <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -401,7 +417,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/navigation">Navigation</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={navigationPageRoute}>Navigation</Link>
                       </li>
                       <li className="">
                          <a href="/octicons/" className="position-relative f5 py-1 d-block">
