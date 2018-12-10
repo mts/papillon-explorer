@@ -9,22 +9,23 @@ const PATHS = {
 
 const commonConfig = merge([
   parts.output(),
-  parts.plugins(),
   parts.loadJavaScript({ include: PATHS.app }),
   parts.loadCSS(),
 ]);
 
-const productionConfig = merge([
-  parts.clean(PATHS.build),
-  parts.attachRevision(),
-  parts.minifyJavaScript(),
-]);
-
 const developmentConfig = merge([
+  parts.pluginsDevelop(),
   parts.devServer({
     host: process.env.HOST,
     port: process.env.PORT,
   }),
+]);
+
+const productionConfig = merge([
+  parts.pluginsRelease(),
+  parts.clean(PATHS.build),
+  parts.attachRevision(),
+  parts.minifyJavaScript(),
 ]);
 
 module.exports = mode => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { startPageRoute } from '../../../routes'
 
 const BlankslatePage = () => {
   return (
@@ -7,7 +8,7 @@ const BlankslatePage = () => {
       <h2>Blankslate Page</h2>
       <div>
         Under construction 🙂
-        <Link to="/">Back to Home Page</Link>
+        <Link to={startPageRoute}> Back to Home Page</Link>
       </div>
     </div>
   )

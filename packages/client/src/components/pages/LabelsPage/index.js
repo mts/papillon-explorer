@@ -4,11 +4,12 @@ import RegularLabels from './RegularLabels'
 import ThemeLabels from './ThemeLabels'
 import StateLabels from './StateLabels'
 import CounterLabels from './CounterLabels'
+import { startPageRoute } from '../../../routes'
 
 const LayoutPage = () => {
   return (
     <div>
-      <h1 align="center" class="p-4">🎨 Papillon Labels Component Explorer</h1>
+      <h1 align="center" className="p-4">🎨 Papillon Labels Component Explorer</h1>
       <div className="d-flex flex-justify-around">
         <div className="col-3">
           <RegularLabels />
@@ -24,7 +25,7 @@ const LayoutPage = () => {
         </div>
       </div>
       <div className="p-4">
-        <Link to="/">Back to Home Page</Link>
+        <Link to={startPageRoute}> Back to Home Page</Link>
       </div>
     </div>
   )
