@@ -1,5 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  alertsPageRoute,
+  avatarsPageRoute,
+  blankslatePageRoute,
+  breadcrumbPageRoute,
+  buttonsPageRoute,
+  labelsPageRoute,
+  layoutPageRoute,
+  navigationPageRoute,
+} from '../../../routes'
 
 const style = {
   'position': '-webkit-sticky',
@@ -11,6 +21,12 @@ const style = {
 }
 
 const StartPage = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+
   return (
     <div>
        <div className="bg-gray-dark" style={style}>
@@ -183,7 +199,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/layout/">Layout</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={layoutPageRoute}>Layout</Link>
                       </li>
                       <li className="">
                          <a href="/papillon/utilities/marketing-layout/" className="position-relative f5 py-1 d-block">
@@ -289,21 +305,21 @@ const StartPage = () => {
                 </li>
                 <li className="mt-4 border-bottom"></li>
                 <li className="px-4 my-4">
-                   <a href="/papillon/components/" className="position-relative f4 d-block text-gray-dark">
+                   <a href="/" className="position-relative f4 d-block text-gray-dark">
                    Components
                    </a>
                    <ul className="pt-2 list-style-none">
                       <li className="">
-                         <Link className="position-relative f5 py-1 d-block" to="/papillon/components/alerts/">Alerts</Link>
+                         <Link className="position-relative f5 py-1 d-block" to={alertsPageRoute}>Alerts</Link>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/avatars/">Avatars</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={avatarsPageRoute}>Avatars</Link>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/blankslate/">Blankslate</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={blankslatePageRoute}>Blankslate</Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/box/" className="position-relative f5 py-1 d-block">
+                         <a href="/box/" className="position-relative f5 py-1 d-block">
                             Box
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -315,7 +331,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/box-overlay/" className="position-relative f5 py-1 d-block">
+                         <a href="/box-overlay/" className="position-relative f5 py-1 d-block">
                             Box overlay
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="Experimental">
@@ -327,7 +343,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/boxed-groups/" className="position-relative f5 py-1 d-block">
+                         <a href="/boxed-groups/" className="position-relative f5 py-1 d-block">
                             Boxed groups
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -339,23 +355,23 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/branch-name/" className="position-relative f5 py-1 d-block">
+                         <a href="/branch-name/" className="position-relative f5 py-1 d-block">
                          Branch name
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/breadcrumb/">Breadcrumb</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={breadcrumbPageRoute}>Breadcrumb</Link>
                       </li>
                       <li className="">
-                         <Link className="position-relative f5 py-1 d-block" to="/papillon/components/buttons/">Buttons</Link>
+                         <Link className="position-relative f5 py-1 d-block" to={buttonsPageRoute}>Buttons</Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/dropdown/" className="position-relative f5 py-1 d-block">
+                         <a href="/dropdown/" className="position-relative f5 py-1 d-block">
                          Dropdown
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/flash-banner/" className="position-relative f5 py-1 d-block">
+                         <a href="/flash-banner/" className="position-relative f5 py-1 d-block">
                             Flash banner
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="In review">
@@ -367,12 +383,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/forms/" className="position-relative f5 py-1 d-block">
+                         <a href="/forms/" className="position-relative f5 py-1 d-block">
                          Forms
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/labels/">
+                        <Link className="position-relative f5 py-1 d-block" to={labelsPageRoute}>
                           Labels
                           <span className="position-absolute right-0">
                              <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -384,12 +400,12 @@ const StartPage = () => {
                         </Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/markdown/" className="position-relative f5 py-1 d-block">
+                         <a href="/markdown/" className="position-relative f5 py-1 d-block">
                          Markdown
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/marketing-buttons/" className="position-relative f5 py-1 d-block">
+                         <a href="/marketing-buttons/" className="position-relative f5 py-1 d-block">
                             Marketing Buttons
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New Release">
@@ -401,15 +417,15 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                        <Link className="position-relative f5 py-1 d-block" to="/papillon/components/navigation/">Navigation</Link>
+                        <Link className="position-relative f5 py-1 d-block" to={navigationPageRoute}>Navigation</Link>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/octicons/" className="position-relative f5 py-1 d-block">
+                         <a href="/octicons/" className="position-relative f5 py-1 d-block">
                          Octicons
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/page-headers/" className="position-relative f5 py-1 d-block">
+                         <a href="/page-headers/" className="position-relative f5 py-1 d-block">
                             Page headers
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -421,7 +437,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/page-sections/" className="position-relative f5 py-1 d-block">
+                         <a href="/page-sections/" className="position-relative f5 py-1 d-block">
                             Page sections
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -433,12 +449,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/pagehead/" className="position-relative f5 py-1 d-block">
+                         <a href="/pagehead/" className="position-relative f5 py-1 d-block">
                          Pagehead
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/pagination/" className="position-relative f5 py-1 d-block">
+                         <a href="/pagination/" className="position-relative f5 py-1 d-block">
                             Pagination
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New Release">
@@ -450,7 +466,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/popover/" className="position-relative f5 py-1 d-block">
+                         <a href="/popover/" className="position-relative f5 py-1 d-block">
                             Popover
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="Experimental">
@@ -462,7 +478,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/progress/" className="position-relative f5 py-1 d-block">
+                         <a href="/progress/" className="position-relative f5 py-1 d-block">
                             Progress Bar
                             <span className="position-absolute right-0">
                                <span className="text-yellow  tooltipped tooltipped-nw" aria-label="Experimental">
@@ -474,12 +490,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/select-menu/" className="position-relative f5 py-1 d-block">
+                         <a href="/select-menu/" className="position-relative f5 py-1 d-block">
                          Select menu
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/subhead/" className="position-relative f5 py-1 d-block">
+                         <a href="/subhead/" className="position-relative f5 py-1 d-block">
                             Subhead
                             <span className="position-absolute right-0">
                                <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -491,7 +507,7 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/tables/" className="position-relative f5 py-1 d-block">
+                         <a href="/tables/" className="position-relative f5 py-1 d-block">
                             Tables
                             <span className="position-absolute right-0">
                                <span className="text-red  tooltipped tooltipped-nw" aria-label="Deprecated">
@@ -503,12 +519,12 @@ const StartPage = () => {
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/tooltips/" className="position-relative f5 py-1 d-block">
+                         <a href="/tooltips/" className="position-relative f5 py-1 d-block">
                          Tooltips
                          </a>
                       </li>
                       <li className="">
-                         <a href="/papillon/components/truncate/" className="position-relative f5 py-1 d-block">
+                         <a href="/truncate/" className="position-relative f5 py-1 d-block">
                          Truncate
                          </a>
                       </li>

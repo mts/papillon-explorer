@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const GitRevisionPlugin = require("git-revision-webpack-plugin");
 const UglifyWebpackPlugin = require("uglifyjs-webpack-plugin");
+const DotEnvPlugin = require("dotenv-webpack");
 const path = require("path");
 
 exports.devServer = ({ host, port } = {}) => ({
@@ -33,10 +34,22 @@ exports.output = () => ({
   },
 });
 
-exports.plugins = () => ({
+exports.pluginsDevelop = () => ({
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Papillon Explorer Client New",
+      title: "Papillon Explorer Client",
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+});
+
+exports.pluginsRelease = () => ({
+  plugins: [
+    new DotEnvPlugin({
+      path: path.resolve(__dirname, './.env')
+    }),
+    new HtmlWebpackPlugin({
+      title: "Papillon Explorer Client",
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -77,53 +90,9 @@ exports.minifyJavaScript = () => ({
 exports.loadCSS = ({ include, exclude } = {}) => ({
   module: {
     rules: [
-        // ### Loading CSS
-        {
-          test: /\.css$/,
-          include,
-          exclude,
-
-          use: [
-            "style-loader",
-            "css-loader",
-            // ### PostCSS
-            {
-              loader: "postcss-loader",
-              options: {
-                // ### PostCSS
-                // plugins: () => ([
-                //   require("autoprefixer"),
-                //   require("precss"),
-                // ]),
-                // ### cssnext
-                plugins: () => [require("postcss-cssnext")()],
-              },
-            },
-          ],
-        },
-        // ### Loading Less
-        {
-          test: /\.less$/,
-          use: ["style-loader", "css-loader", "less-loader"],
-        },
-        // ### Loading Sass
         {
           test: /\.scss$/,
           use: ["style-loader", "css-loader", "sass-loader"],
-        },
-        // ### Loading Stylus and Yeticss
-        {
-          test: /\.styl$/,
-          use: [
-            "style-loader",
-            "css-loader",
-            {
-              loader: "stylus-loader",
-              options: {
-                use: [require("yeticss")],
-              },
-            },
-          ],
         },
     ],
   },
