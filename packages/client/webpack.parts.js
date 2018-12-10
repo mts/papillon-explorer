@@ -36,7 +36,7 @@ exports.output = () => ({
 exports.plugins = () => ({
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Papillon Explorer Client",
+      title: "02",
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
