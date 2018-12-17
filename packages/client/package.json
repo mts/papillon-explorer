@@ -16,7 +16,7 @@
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "test": "echo \"No test specified\" && exit 0",
     "remove-packages": "rm -rf node_modules package-lock.json",
-    "ci": "npm-run-all test"
+    "ci": "npm-run-all build test"
   },
   "browserslist": {
     "production": [
