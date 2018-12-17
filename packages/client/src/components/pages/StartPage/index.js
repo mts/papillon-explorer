@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   alertsPageRoute,
   avatarsPageRoute,
@@ -25,7 +25,7 @@ const StartPage = () => {
     top: 0,
     left: 0,
     behavior: 'smooth'
-  });
+  })
 
   return (
     <div>
@@ -550,4 +550,4 @@ const StartPage = () => {
   )
 }
 
-export default StartPage;
+export default StartPage
