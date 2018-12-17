@@ -17,6 +17,7 @@ const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const DotEnvPlugin = require("dotenv-webpack");
 
 // config files
 const common = require('./webpack.common.js');
@@ -208,7 +209,7 @@ module.exports = [
     //     common.legacyConfig,
     //     {
     //         output: {
-    //             filename: '[name]-legacy.[chunkhash].js',
+    //             filename: '[name]-legacy.[hash:4].js',
     //         },
     //         mode: 'production',
     //         devtool: 'source-map',
@@ -222,7 +223,7 @@ module.exports = [
     //         plugins: [
     //             new MiniCssExtractPlugin({
     //                 path: path.resolve(__dirname, settings.paths.build.base),
-    //                 filename: '[name].[chunkhash].css',
+    //                 filename: '[name].[hash:4].css',
     //             }),
     //             new webpack.BannerPlugin(
     //                 configureBanner()
@@ -230,6 +231,9 @@ module.exports = [
     //             new BundleAnalyzerPlugin(
     //                 configureBundleAnalyzer(LEGACY_CONFIG),
     //             ),
+    //             new DotEnvPlugin({
+    //               path: path.resolve(__dirname, './.env')
+    //             }),
     //         ]
     //     }
     // ),
@@ -237,7 +241,7 @@ module.exports = [
         common.modernConfig,
         {
             output: {
-                filename: '[name]-modern.[chunkhash].js',
+                filename: '[name]-modern.[hash:4].js',
             },
             mode: 'production',
             devtool: 'source-map',
@@ -252,7 +256,7 @@ module.exports = [
                 new webpack.optimize.ModuleConcatenationPlugin(),
                 new MiniCssExtractPlugin({
                     path: path.resolve(__dirname, settings.paths.build.base),
-                    filename: '[name].[chunkhash].css',
+                    filename: '[name].[hash:4].css',
                 }),
                 new webpack.BannerPlugin(
                     configureBanner()
@@ -261,6 +265,9 @@ module.exports = [
                 new BundleAnalyzerPlugin(
                     configureBundleAnalyzer(MODERN_CONFIG),
                 ),
+                new DotEnvPlugin({
+                  path: path.resolve(__dirname, './.env')
+                }),
             ]
         }
     ),
