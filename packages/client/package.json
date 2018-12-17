@@ -4,8 +4,8 @@
   "description": "Papillon Explorer Client",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch webpack.config.js --watch webpack.parts.js --exec \"webpack-dev-server --env development\"",
-    "build": "webpack --env production",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js --progress --hide-modules",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
