@@ -6,7 +6,6 @@ const MODERN_CONFIG = 'modern';
 // node modules
 const merge = require('webpack-merge');
 const path = require('path');
-const sane = require('sane');
 const webpack = require('webpack');
 
 // config files

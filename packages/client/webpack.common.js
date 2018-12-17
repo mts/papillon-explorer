@@ -38,11 +38,12 @@ const configureBabelLoader = (browserList) => {
                     '@babel/preset-react'
                 ],
                 plugins: [
+                    '@babel/plugin-proposal-class-properties',
                     '@babel/plugin-syntax-dynamic-import',
                     [
                         "@babel/plugin-transform-runtime", {
-                        "regenerator": true
-                    }
+                            "regenerator": true
+                        }
                     ]
                 ],
             },

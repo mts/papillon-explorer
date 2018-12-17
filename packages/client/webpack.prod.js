@@ -13,12 +13,10 @@ const webpack = require('webpack');
 
 // webpack plugins
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const CriticalCssPlugin = require('critical-css-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const WhitelisterPlugin = require('purgecss-whitelister');
 
 // config files
 const common = require('./webpack.common.js');
