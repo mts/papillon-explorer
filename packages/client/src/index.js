@@ -22,6 +22,7 @@ import {
   layoutPageRoute,
   navigationPageRoute,
 } from './routes'
+import '@babel/polyfill'
 
 function addDivWithIdToBody() {
   const appElement = document.createElement("div")

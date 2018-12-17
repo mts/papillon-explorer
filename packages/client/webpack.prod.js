@@ -241,7 +241,35 @@ module.exports = [
     //             new DotEnvPlugin({
     //               path: path.resolve(__dirname, './.env')
     //             }),
-    //         ]
+    //             new HtmlWebpackExternalsPlugin({
+    //               externals: [
+    //                 {
+    //                   module: 'react',
+    //                   entry: {
+    //                     path: 'https://unpkg.com/react@16/umd/react.production.min.js',
+    //                     attributes: {
+    //                       crossorigin: 'anonymous',
+    //                     },
+    //                   },
+    //                   global: 'React',
+    //                 },
+    //                 {
+    //                   module: 'react-dom',
+    //                   entry: {
+    //                     path: 'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
+    //                     attributes: {
+    //                       crossorigin: 'anonymous',
+    //                     },
+    //                   },
+    //                   global: 'ReactDOM',
+    //                 },
+    //               ],
+    //             })
+    //         ],
+    //         externals: {
+    //             react: 'React',
+    //             'react-dom': 'ReactDOM'
+    //         }
     //     }
     // ),
     merge(
