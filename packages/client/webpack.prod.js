@@ -12,7 +12,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 // webpack plugins
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -47,13 +47,15 @@ const configureBanner = () => {
 const configureBundleAnalyzer = (buildType) => {
     if (buildType === LEGACY_CONFIG) {
         return {
-            analyzerMode: 'disabled',
+            analyzerMode: 'static',
+            openAnalyzer: false,
             reportFilename: 'report-legacy.html',
         };
     }
     if (buildType === MODERN_CONFIG) {
         return {
-            analyzerMode: 'disabled',
+            analyzerMode: 'static',
+            openAnalyzer: false,
             reportFilename: 'report-modern.html',
         };
     }
