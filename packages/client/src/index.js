@@ -1,15 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import StartPage from './components/pages/StartPage';
-import AlertsPage from './components/pages/AlertsPage';
-import AvatarsPage from './components/pages/AvatarsPage';
-import BlankslatePage from './components/pages/BlankslatePage';
-import BreadcrumbPage from './components/pages/BreadcrumbPage';
-import ButtonsPage from './components/pages/ButtonsPage';
-import LabelsPage from './components/pages/LabelsPage';
-import LayoutPage from './components/pages/LayoutPage';
-import NavigationPage from './components/pages/NavigationPage';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import StartPage from './components/pages/StartPage'
+import AlertsPage from './components/pages/AlertsPage'
+import AvatarsPage from './components/pages/AvatarsPage'
+import BlankslatePage from './components/pages/BlankslatePage'
+import BreadcrumbPage from './components/pages/BreadcrumbPage'
+import ButtonsPage from './components/pages/ButtonsPage'
+import LabelsPage from './components/pages/LabelsPage'
+import LayoutPage from './components/pages/LayoutPage'
+import NavigationPage from './components/pages/NavigationPage'
 import './index.scss'
 import {
   startPageRoute,
@@ -24,9 +24,9 @@ import {
 } from './routes'
 
 function addDivWithIdToBody() {
-  const appElement = document.createElement("div");
-  appElement.id = 'app';
-  document.body.appendChild(appElement);
+  const appElement = document.createElement("div")
+  appElement.id = 'app'
+  document.body.appendChild(appElement)
 }
 
 addDivWithIdToBody()
@@ -46,11 +46,11 @@ const App = () => {
         <Route exact path={navigationPageRoute} component={NavigationPage} />
       </Switch>
     </Router>
-  );
+  )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'))
 
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept()
 }
