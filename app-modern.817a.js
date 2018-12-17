@@ -2,7 +2,7 @@
  * @project        Papillon Explorer
  * @name           app-modern.817a.js
  * @author         MTS
- * @build          Mon, Dec 17, 2018 7:50 PM ET
+ * @build          Mon, Dec 17, 2018 7:51 PM ET
  * @release        f7370dcb88cda405894b031c2d3540c8d7415a64 [externalize-dependencies]
  * @copyright      Copyright (c) 2018 MTS
  *
