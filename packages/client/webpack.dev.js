@@ -107,27 +107,27 @@ const configurePostcssLoader = (buildType) => {
 
 // Development module exports
 module.exports = [
-    merge(
-        common.legacyConfig,
-        {
-            output: {
-                filename: path.join('./js', '[name]-legacy.[hash].js'),
-                publicPath: settings.devServerConfig.public() + '/',
-            },
-            mode: 'development',
-            devtool: 'inline-source-map',
-            devServer: configureDevServer(LEGACY_CONFIG),
-            module: {
-                rules: [
-                    configurePostcssLoader(LEGACY_CONFIG),
-                    configureImageLoader(LEGACY_CONFIG),
-                ],
-            },
-            plugins: [
-                new webpack.HotModuleReplacementPlugin(),
-            ],
-        }
-    ),
+    // merge(
+    //     common.legacyConfig,
+    //     {
+    //         output: {
+    //             filename: path.join('./js', '[name]-legacy.[hash].js'),
+    //             publicPath: settings.devServerConfig.public() + '/',
+    //         },
+    //         mode: 'development',
+    //         devtool: 'inline-source-map',
+    //         devServer: configureDevServer(LEGACY_CONFIG),
+    //         module: {
+    //             rules: [
+    //                 configurePostcssLoader(LEGACY_CONFIG),
+    //                 configureImageLoader(LEGACY_CONFIG),
+    //             ],
+    //         },
+    //         plugins: [
+    //             new webpack.HotModuleReplacementPlugin(),
+    //         ],
+    //     }
+    // ),
     merge(
         common.modernConfig,
         {

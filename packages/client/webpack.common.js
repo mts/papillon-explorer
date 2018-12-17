@@ -91,7 +91,7 @@ const configureManifest = (fileName) => {
 // Configure Clean webpack
 const configureCleanWebpack = () => {
     return {
-        root: path.resolve(__dirname, settings.paths.dist.base),
+        root: path.resolve(__dirname, settings.paths.build.base),
         verbose: true,
         dry: false
     };
@@ -109,7 +109,7 @@ const baseConfig = {
     name: pkg.name,
     entry: configureEntries(),
     output: {
-        path: path.resolve(__dirname, settings.paths.dist.base),
+        path: path.resolve(__dirname, settings.paths.build.base),
         publicPath: settings.urls.publicPath
     },
     module: {
@@ -118,7 +118,7 @@ const baseConfig = {
         ],
     },
     plugins: [
-        new CleanWebpackPlugin(settings.paths.dist.clean,
+        new CleanWebpackPlugin(settings.paths.build.clean,
             configureCleanWebpack()
         ),
         new HtmlWebpackPlugin(

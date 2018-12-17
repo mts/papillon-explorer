@@ -3,24 +3,20 @@
   "version": "0.0.0",
   "description": "Papillon Explorer Server",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
-    "uninstall-mts-scripts": "npm un -D mts-scripts",
-    "install-mts-scripts": "npm i -D mts-scripts",
-    "reinstall-mts-scripts": "npm-run-all uninstall-mts-scripts install-mts-scripts",
     "test": "echo \"No test specified\" && exit 0",
     "remove-packages": "rm -rf node_modules package-lock.json",
     "ci": "npm-run-all test"
   },
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
-    "mts-scripts": "0.0.15",
     "nodemon": "^1.18.9"
   },
   "dependencies": {

@@ -9,14 +9,11 @@
     "url": "https://github.com/mts"
   },
   "scripts": {
-    "dev": "nodemon --watch webpack.settings.js --watch webpack.common.js --watch webpack.dev.js --exec \"webpack-dev-server --config webpack.dev.js\"",
+    "start": "nodemon --watch webpack.settings.js --watch webpack.common.js --watch webpack.dev.js --exec \"webpack-dev-server --config webpack.dev.js\"",
     "build": "webpack --config webpack.prod.js --progress --hide-modules",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
-    "uninstall-mts-scripts": "npm un -D mts-scripts",
-    "install-mts-scripts": "npm i -D mts-scripts",
-    "reinstall-mts-scripts": "npm-run-all uninstall-mts-scripts install-mts-scripts",
     "test": "echo \"No test specified\" && exit 0",
     "remove-packages": "rm -rf node_modules package-lock.json",
     "ci": "npm-run-all test"
@@ -68,7 +65,6 @@
     "imagemin-webp-webpack-plugin": "^2.0.1",
     "mini-css-extract-plugin": "^0.5.0",
     "moment": "^2.23.0",
-    "mts-scripts": "0.0.15",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
     "npm-run-all": "^4.1.5",

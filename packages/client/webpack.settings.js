@@ -11,8 +11,8 @@ module.exports = {
         src: {
             base: "./src/"
         },
-        dist: {
-            base: "./dist/",
+        build: {
+            base: "./build/",
             clean: [
                 "./**",
             ]
@@ -26,21 +26,6 @@ module.exports = {
     },
     entries: {
         "app": "index.js"
-    },
-    criticalCssConfig: {
-        base: "./dist/criticalcss/",
-        suffix: "_critical.min.css",
-        criticalHeight: 1200,
-        criticalWidth: 1200,
-        ampPrefix: "amp_",
-        ampCriticalHeight: 19200,
-        ampCriticalWidth: 600,
-        pages: [
-            {
-                url: "",
-                template: "index"
-            }
-        ]
     },
     devServerConfig: {
         public: () => process.env.DEVSERVER_PUBLIC || "http://localhost:8080",

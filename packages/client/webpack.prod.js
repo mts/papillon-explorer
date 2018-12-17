@@ -156,7 +156,7 @@ const configureOptimization = (buildType) => {
 
 // Configure Postcss loader
 const configurePostcssLoader = (buildType) => {
-    if (buildType === LEGACY_CONFIG) {
+    if (buildType === LEGACY_CONFIG || buildType === MODERN_CONFIG) {
         return {
             test: /\.(scss|css)$/,
             use: [
@@ -184,13 +184,13 @@ const configurePostcssLoader = (buildType) => {
             ]
         };
     }
-    // Don't generate CSS for the modern config in production
-    if (buildType === MODERN_CONFIG) {
-        return {
-            test: /\.(scss|css)$/,
-            loader: 'ignore-loader'
-        };
-    }
+    // // Don't generate CSS for the modern config in production
+    // if (buildType === MODERN_CONFIG) {
+    //     return {
+    //         test: /\.(scss|css)$/,
+    //         loader: 'ignore-loader'
+    //     };
+    // }
 };
 
 // Configure terser
@@ -204,35 +204,35 @@ const configureTerser = () => {
 
 // Production module exports
 module.exports = [
-    merge(
-        common.legacyConfig,
-        {
-            output: {
-                filename: '[name]-legacy.[chunkhash].js',
-            },
-            mode: 'production',
-            devtool: 'source-map',
-            optimization: configureOptimization(LEGACY_CONFIG),
-            module: {
-                rules: [
-                    configurePostcssLoader(LEGACY_CONFIG),
-                    configureImageLoader(LEGACY_CONFIG),
-                ],
-            },
-            plugins: [
-                new MiniCssExtractPlugin({
-                    path: path.resolve(__dirname, settings.paths.dist.base),
-                    filename: '[name].[chunkhash].css',
-                }),
-                new webpack.BannerPlugin(
-                    configureBanner()
-                ),
-                new BundleAnalyzerPlugin(
-                    configureBundleAnalyzer(LEGACY_CONFIG),
-                ),
-            ]
-        }
-    ),
+    // merge(
+    //     common.legacyConfig,
+    //     {
+    //         output: {
+    //             filename: '[name]-legacy.[chunkhash].js',
+    //         },
+    //         mode: 'production',
+    //         devtool: 'source-map',
+    //         optimization: configureOptimization(LEGACY_CONFIG),
+    //         module: {
+    //             rules: [
+    //                 configurePostcssLoader(LEGACY_CONFIG),
+    //                 configureImageLoader(LEGACY_CONFIG),
+    //             ],
+    //         },
+    //         plugins: [
+    //             new MiniCssExtractPlugin({
+    //                 path: path.resolve(__dirname, settings.paths.build.base),
+    //                 filename: '[name].[chunkhash].css',
+    //             }),
+    //             new webpack.BannerPlugin(
+    //                 configureBanner()
+    //             ),
+    //             new BundleAnalyzerPlugin(
+    //                 configureBundleAnalyzer(LEGACY_CONFIG),
+    //             ),
+    //         ]
+    //     }
+    // ),
     merge(
         common.modernConfig,
         {
@@ -250,6 +250,10 @@ module.exports = [
             },
             plugins: [
                 new webpack.optimize.ModuleConcatenationPlugin(),
+                new MiniCssExtractPlugin({
+                    path: path.resolve(__dirname, settings.paths.build.base),
+                    filename: '[name].[chunkhash].css',
+                }),
                 new webpack.BannerPlugin(
                     configureBanner()
                 ),

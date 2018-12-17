@@ -1,1 +1,5 @@
-{"extends": "mts-scripts/babelServerExpress"}
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+}
