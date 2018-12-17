@@ -12,34 +12,17 @@ const webpack = require('webpack');
 
 // webpack plugins
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
-// const CreateSymlinkPlugin = require('create-symlink-webpack-plugin');
 const CriticalCssPlugin = require('critical-css-webpack-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const PurgecssPlugin = require('purgecss-webpack-plugin');
-// const SaveRemoteFilePlugin = require('save-remote-file-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-// const WebappWebpackPlugin = require('webapp-webpack-plugin');
 const WhitelisterPlugin = require('purgecss-whitelister');
-// const WorkboxPlugin = require('workbox-webpack-plugin');
 
 // config files
 const common = require('./webpack.common.js');
 const pkg = require('./package.json');
 const settings = require('./webpack.settings.js');
-
-// Custom PurgeCSS extractor for Tailwind that allows special characters in
-// class names.
-//
-// https://github.com/FullHuman/purgecss#extractor
-// class TailwindExtractor {
-//     static extract(content) {
-//         return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-//     }
-// }
 
 // Configure file banner
 const configureBanner = () => {
@@ -75,51 +58,6 @@ const configureBundleAnalyzer = (buildType) => {
         };
     }
 };
-
-// Configure Critical CSS
-const configureCriticalCss = () => {
-    return (settings.criticalCssConfig.pages.map((row) => {
-            const criticalSrc = settings.urls.critical + row.url;
-            const criticalDest = settings.criticalCssConfig.base + row.template + settings.criticalCssConfig.suffix;
-            let criticalWidth = settings.criticalCssConfig.criticalWidth;
-            let criticalHeight = settings.criticalCssConfig.criticalHeight;
-            // Handle Google AMP templates
-            if (row.template.indexOf(settings.criticalCssConfig.ampPrefix) !== -1) {
-                criticalWidth = settings.criticalCssConfig.ampCriticalWidth;
-                criticalHeight = settings.criticalCssConfig.ampCriticalHeight;
-            }
-            console.log("source: " + criticalSrc + " dest: " + criticalDest);
-            return new CriticalCssPlugin({
-                base: './',
-                src: criticalSrc,
-                dest: criticalDest,
-                extract: false,
-                inline: false,
-                minify: true,
-                width: criticalWidth,
-                height: criticalHeight,
-            })
-        })
-    );
-};
-
-// // Configure Clean webpack
-// const configureCleanWebpack = () => {
-//     return {
-//         root: path.resolve(__dirname, settings.paths.dist.base),
-//         verbose: true,
-//         dry: false
-//     };
-// };
-
-// // Configure Html webpack
-// const configureHtml = () => {
-//     return {
-//         templateContent: '',
-//         filename: 'webapp.html',
-//         inject: false,
-//     };
-// };
 
 // Configure Image loader
 const configureImageLoader = (buildType) => {
@@ -256,27 +194,6 @@ const configurePostcssLoader = (buildType) => {
     }
 };
 
-// // Configure PurgeCSS
-// const configurePurgeCss = () => {
-//     let paths = [];
-//     // Configure whitelist paths
-//     for (const [key, value] of Object.entries(settings.purgeCssConfig.paths)) {
-//         paths.push(path.join(__dirname, value));
-//     }
-
-//     return {
-//         paths: glob.sync(paths),
-//         whitelist: WhitelisterPlugin(settings.purgeCssConfig.whitelist),
-//         whitelistPatterns: settings.purgeCssConfig.whitelistPatterns,
-//         extractors: [
-//             {
-//                 extractor: TailwindExtractor,
-//                 extensions: settings.purgeCssConfig.extensions
-//             }
-//         ]
-//     };
-// };
-
 // Configure terser
 const configureTerser = () => {
     return {
@@ -285,30 +202,6 @@ const configureTerser = () => {
         sourceMap: true
     };
 };
-
-// Configure Webapp webpack
-const configureWebapp = () => {
-    return {
-        logo: settings.webappConfig.logo,
-        prefix: settings.webappConfig.prefix,
-        cache: false,
-        inject: 'force',
-        favicons: {
-            appName: pkg.name,
-            appDescription: pkg.description,
-            developerName: pkg.author.name,
-            developerURL: pkg.author.url,
-            path: settings.paths.dist.base,
-        }
-    };
-};
-
-// Configure Workbox service worker
-// const configureWorkbox = () => {
-//     let config = settings.workboxConfig;
-
-//     return config;
-// };
 
 // Production module exports
 module.exports = [
@@ -328,39 +221,17 @@ module.exports = [
                 ],
             },
             plugins: [
-                // new CleanWebpackPlugin(settings.paths.dist.clean,
-                //     configureCleanWebpack()
-                // ),
                 new MiniCssExtractPlugin({
                     path: path.resolve(__dirname, settings.paths.dist.base),
-                    // filename: path.join('./css', '[name].[chunkhash].css'),
                     filename: '[name].[chunkhash].css',
                 }),
-                // new PurgecssPlugin(
-                //     configurePurgeCss()
-                // ),
                 new webpack.BannerPlugin(
                     configureBanner()
                 ),
-                // new HtmlWebpackPlugin(
-                //     configureHtml()
-                // ),
-                // new WebappWebpackPlugin(
-                //     configureWebapp()
-                // ),
-                // new CreateSymlinkPlugin(
-                //     settings.createSymlinkConfig,
-                //     true
-                // ),
-                // new SaveRemoteFilePlugin(
-                //     settings.saveRemoteFileConfig
-                // ),
                 new BundleAnalyzerPlugin(
                     configureBundleAnalyzer(LEGACY_CONFIG),
                 ),
-            ].concat(
-                configureCriticalCss()
-            )
+            ]
         }
     ),
     merge(
@@ -384,9 +255,6 @@ module.exports = [
                     configureBanner()
                 ),
                 new ImageminWebpWebpackPlugin(),
-                // new WorkboxPlugin.GenerateSW(
-                //     configureWorkbox()
-                // ),
                 new BundleAnalyzerPlugin(
                     configureBundleAnalyzer(MODERN_CONFIG),
                 ),

@@ -29,9 +29,6 @@ module.exports = {
         // templates: "./templates/"
     },
     urls: {
-        // live: "https://example.com/",
-        // local: "http://example.test/",
-        critical: "http://example.test/",
         // publicPath: "/dist/"
         publicPath: "/"
     },
