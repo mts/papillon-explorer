@@ -2,8 +2,8 @@
  * @project        Papillon Explorer
  * @name           app-modern.0a91.js
  * @author         MTS
- * @build          Mon, Dec 17, 2018 6:42 PM ET
- * @release        e2803a41120ce53b29e2b25f2a27c6fcdc8fe4b0 [improve-client-webpack-config]
+ * @build          Mon, Dec 17, 2018 6:58 PM ET
+ * @release        80f21e11f74a9cd8491d8f47f0fef9d38dc43530 [master]
  * @copyright      Copyright (c) 2018 MTS
  *
  */!function(t){var n={};function e(o){if(n[o])return n[o].exports;var i=n[o]={i:o,l:!1,exports:{}};return t[o].call(i.exports,i,i.exports,e),i.l=!0,i.exports}e.m=t,e.c=n,e.d=function(t,n,o){e.o(t,n)||Object.defineProperty(t,n,{enumerable:!0,get:o})},e.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},e.t=function(t,n){if(1&n&&(t=e(t)),8&n)return t;if(4&n&&"object"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(e.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:t}),2&n&&"string"!=typeof t)for(var i in t)e.d(o,i,function(n){return t[n]}.bind(null,i));return o},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},e.p="",e(e.s=19)}([function(t,n,e){"use strict";t.exports=e(10)},function(t,n,e){t.exports=e(15)()},function(t,n,e){
