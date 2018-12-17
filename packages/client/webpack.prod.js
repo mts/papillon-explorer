@@ -1,3 +1,7 @@
+// !!!
+// Remove .env file to check production build locally in the build folder
+// !!!
+
 // webpack.prod.js - production builds
 
 const LEGACY_CONFIG = 'legacy';
@@ -18,6 +22,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const DotEnvPlugin = require("dotenv-webpack");
+const HtmlWebpackExternalsPlugin = require("html-webpack-externals-plugin");
 
 // config files
 const common = require('./webpack.common.js');
@@ -270,7 +275,35 @@ module.exports = [
                 new DotEnvPlugin({
                   path: path.resolve(__dirname, './.env')
                 }),
-            ]
+                new HtmlWebpackExternalsPlugin({
+                  externals: [
+                    {
+                      module: 'react',
+                      entry: {
+                        path: 'https://unpkg.com/react@16/umd/react.production.min.js',
+                        attributes: {
+                          crossorigin: 'anonymous',
+                        },
+                      },
+                      global: 'React',
+                    },
+                    {
+                      module: 'react-dom',
+                      entry: {
+                        path: 'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
+                        attributes: {
+                          crossorigin: 'anonymous',
+                        },
+                      },
+                      global: 'ReactDOM',
+                    },
+                  ],
+                })
+            ],
+            externals: {
+                react: 'React',
+                'react-dom': 'ReactDOM'
+            }
         }
     ),
 ];
