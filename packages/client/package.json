@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "Papillon Explorer Client",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js",
+    "dev": "nodemon --watch webpack.settings.js --watch webpack.common.js --watch webpack.dev.js --exec \"webpack-dev-server --config webpack.dev.js\"",
     "build": "webpack --config webpack.prod.js --progress --hide-modules",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
@@ -16,11 +17,64 @@
     "remove-packages": "rm -rf node_modules package-lock.json",
     "ci": "npm-run-all test"
   },
-  "license": "MIT",
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "legacyBrowsers": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "modernBrowsers": [
+      "last 2 Chrome versions",
+      "not Chrome < 60",
+      "last 2 Safari versions",
+      "not Safari < 10.1",
+      "last 2 iOS versions",
+      "not iOS < 10.3",
+      "last 2 Firefox versions",
+      "not Firefox < 54",
+      "last 2 Edge versions",
+      "not Edge < 15"
+    ]
+  },
   "devDependencies": {
-    "mts-scripts": "0.0.15"
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.0.1",
+    "dotenv": "^6.2.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ignore-loader": "^0.1.2",
+    "mts-scripts": "0.0.15",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "npm-run-all": "^4.1.5",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "resolve-url-loader": "^3.0.0",
+    "sane": "^4.0.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dashboard": "^2.0.0",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-merge": "^4.1.5",
+    "webpack-notifier": "^1.7.0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.2.0",
     "papillon-alerts": "^1.0.41",
     "papillon-avatars": "^1.0.41",
     "papillon-blankslate": "^1.0.41",
