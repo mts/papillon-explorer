@@ -17,25 +17,27 @@ module.exports = {
             // js: "./src/js/"
         },
         dist: {
-            base: "./dist/"
-            // clean: [
-            //     "./img",
-            //     "./criticalcss",
-            //     "./css",
-            //     "./js"
-            // ]
+            base: "./dist/",
+            clean: [
+                "./**",
+                // "./img",
+                // "./criticalcss",
+                // "./css",
+                // "./js"
+            ]
         }
         // templates: "./templates/"
     },
     urls: {
         // live: "https://example.com/",
         // local: "http://example.test/",
-        // critical: "http://example.test/",
-        publicPath: "/dist/"
+        critical: "http://example.test/",
+        // publicPath: "/dist/"
+        publicPath: "/"
     },
-    // vars: {
-    //     cssName: "styles"
-    // },
+    vars: {
+        cssName: "styles"
+    },
     entries: {
         "app": "index.js"
     },
@@ -98,10 +100,10 @@ module.exports = {
     //         symlink: "../favicon.ico"
     //     }
     // ],
-    // webappConfig: {
-    //     logo: "./src/img/favicon-src.png",
-    //     prefix: "img/favicons/"
-    // },
+    webappConfig: {
+        logo: "./src/img/favicon-src.png",
+        prefix: "img/favicons/"
+    },
     // workboxConfig: {
     //     swDest: "../sw.js",
     //     precacheManifestFilename: "js/precache-manifest.[manifestHash].js",
