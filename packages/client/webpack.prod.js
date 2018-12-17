@@ -237,7 +237,7 @@ module.exports = [
         common.modernConfig,
         {
             output: {
-                filename: '[name]-legacy.[chunkhash].js',
+                filename: '[name]-modern.[chunkhash].js',
             },
             mode: 'production',
             devtool: 'source-map',
