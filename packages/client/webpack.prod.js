@@ -1,4 +1,5 @@
 // webpack.prod.js - production builds
+
 const LEGACY_CONFIG = 'legacy';
 const MODERN_CONFIG = 'modern';
 

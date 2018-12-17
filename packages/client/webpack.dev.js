@@ -1,4 +1,5 @@
-// webpack.dev.js - developmental builds
+// webpack.dev.js - development builds
+
 const LEGACY_CONFIG = 'legacy';
 const MODERN_CONFIG = 'modern';
 
@@ -17,11 +18,9 @@ const settings = require('./webpack.settings.js');
 const configureDevServer = (buildType) => {
     return {
         public: settings.devServerConfig.public(),
-        // contentBase: path.resolve(__dirname, settings.paths.templates),
         host: settings.devServerConfig.host(),
         port: settings.devServerConfig.port(),
         https: !!parseInt(settings.devServerConfig.https()),
-        // quiet: true,
         hot: true,
         hotOnly: true,
         overlay: true,

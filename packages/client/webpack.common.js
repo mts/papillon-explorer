@@ -1,4 +1,5 @@
 // webpack.common.js - common webpack config
+
 const LEGACY_CONFIG = 'legacy';
 const MODERN_CONFIG = 'modern';
 
@@ -7,10 +8,7 @@ const path = require('path');
 const merge = require('webpack-merge');
 
 // webpack plugins
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-// const VueLoaderPlugin = require('vue-loader/lib/plugin');
-// const WebpackNotifierPlugin = require('webpack-notifier');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -89,14 +87,6 @@ const configureManifest = (fileName) => {
     };
 };
 
-// // Configure Vue loader
-// const configureVueLoader = () => {
-//     return {
-//         test: /\.vue$/,
-//         loader: 'vue-loader'
-//     };
-// };
-
 // Configure Clean webpack
 const configureCleanWebpack = () => {
     return {
@@ -110,9 +100,6 @@ const configureCleanWebpack = () => {
 const configureHtml = () => {
     return {
         title: "Papillon Explorer Client",
-        // templateContent: '',
-        // filename: 'index.html',
-        // inject: false,
     };
 };
 
@@ -124,20 +111,12 @@ const baseConfig = {
         path: path.resolve(__dirname, settings.paths.dist.base),
         publicPath: settings.urls.publicPath
     },
-    // resolve: {
-    //     alias: {
-    //         'vue$': 'vue/dist/vue.esm.js'
-    //     }
-    // },
     module: {
         rules: [
             configureFontLoader()
-            // configureVueLoader(),
         ],
     },
     plugins: [
-        // new WebpackNotifierPlugin({title: 'Webpack', excludeWarnings: true, alwaysNotify: true}),
-        // new VueLoaderPlugin(),
         new CleanWebpackPlugin(settings.paths.dist.clean,
             configureCleanWebpack()
         ),
@@ -155,9 +134,6 @@ const legacyConfig = {
         ],
     },
     plugins: [
-        // new CopyWebpackPlugin(
-        //     settings.copyWebpackConfig
-        // ),
         new ManifestPlugin(
             configureManifest('manifest-legacy.json')
         ),
@@ -179,7 +155,6 @@ const modernConfig = {
 };
 
 // Common module exports
-// noinspection WebpackConfigHighlighting
 module.exports = {
     'legacyConfig': merge(
         legacyConfig,
