@@ -7,9 +7,6 @@
     "uninstall-packages": "lerna run uninstall-packages --stream",
     "install-packages": "lerna run install-packages --stream",
     "reinstall-packages": "lerna run reinstall-packages --stream",
-    "uninstall-mts-scripts": "lerna run uninstall-mts-scripts --stream",
-    "install-mts-scripts": "lerna run install-mts-scripts --stream",
-    "reinstall-mts-scripts": "lerna run reinstall-mts-scripts --stream",
     "deploy-client": "gh-pages -d packages/client/build",
     "deploy": "npm-run-all build deploy-client",
     "test": "lerna run test --stream",
@@ -20,8 +17,5 @@
     "gh-pages": "^2.0.1",
     "lerna": "^3.5.1",
     "npm-run-all": "^4.1.5"
-  },
-  "dependencies": {
-    "primer": "^10.10.2"
   }
 }
