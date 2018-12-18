@@ -4,6 +4,7 @@
   "description": "Papillon Explorer",
   "scripts": {
     "build": "lerna run build --stream",
+    "release": "lerna publish",
     "uninstall-packages": "lerna run uninstall-packages --stream",
     "install-packages": "lerna run install-packages --stream",
     "reinstall-packages": "lerna run reinstall-packages --stream",
