@@ -4,9 +4,18 @@
   "description": "Papillon Explorer Server",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "papillon explorer server"
+  ],
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
-    "build": "echo \"No build specified\" && exit 0",
+    "start": "nodemon build/index.js",
+    "serve": "npm start",
+    "prebuild": "rimraf build",
+    "build": "babel src --out-dir build --copy-files",
+    "release": "npm publish",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
@@ -14,17 +23,13 @@
     "remove-packages": "rm -rf node_modules package-lock.json",
     "ci": "npm-run-all build test"
   },
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
-    "nodemon": "^1.18.9"
-  },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4",
-    "uuid": "^3.3.2"
+    "@babel/cli": "^7.2.0",
+    "apollo-datasource-rest": "^0.2.1",
+    "apollo-server": "^2.3.1",
+    "graphql": "^14.0.2",
+    "nodemon": "^1.18.9",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.2"
   }
 }
