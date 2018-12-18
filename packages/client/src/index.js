@@ -3,31 +3,31 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 const StartPage = React.lazy(() => import('./components/pages/StartPage'))
-const asyncStartPage = () => <React.Suspense fallback={null}><StartPage/></React.Suspense>
+const asyncStartPage = () => <React.Suspense fallback={null}><StartPage /></React.Suspense>
 
 const AlertsPage = React.lazy(() => import('./components/pages/AlertsPage'))
-const asyncAlertsPage = () => <React.Suspense fallback={null}><AlertsPage/></React.Suspense>
+const asyncAlertsPage = () => <React.Suspense fallback={null}><AlertsPage /></React.Suspense>
 
 const AvatarsPage = React.lazy(() => import('./components/pages/AvatarsPage'))
-const asyncAvatarsPage = () => <React.Suspense fallback={null}><AvatarsPage/></React.Suspense>
+const asyncAvatarsPage = () => <React.Suspense fallback={null}><AvatarsPage /></React.Suspense>
 
 const BlankslatePage = React.lazy(() => import('./components/pages/BlankslatePage'))
-const asyncBlankslatePage = () => <React.Suspense fallback={null}><BlankslatePage/></React.Suspense>
+const asyncBlankslatePage = () => <React.Suspense fallback={null}><BlankslatePage /></React.Suspense>
 
 const BreadcrumbPage = React.lazy(() => import('./components/pages/BreadcrumbPage'))
-const asyncBreadcrumbPage = () => <React.Suspense fallback={null}><BreadcrumbPage/></React.Suspense>
+const asyncBreadcrumbPage = () => <React.Suspense fallback={null}><BreadcrumbPage /></React.Suspense>
 
 const ButtonsPage = React.lazy(() => import('./components/pages/ButtonsPage'))
-const asyncButtonsPage = () => <React.Suspense fallback={null}><ButtonsPage/></React.Suspense>
+const asyncButtonsPage = () => <React.Suspense fallback={null}><ButtonsPage /></React.Suspense>
 
 const LabelsPage = React.lazy(() => import('./components/pages/LabelsPage'))
-const asyncLabelsPage = () => <React.Suspense fallback={null}><LabelsPage/></React.Suspense>
+const asyncLabelsPage = () => <React.Suspense fallback={null}><LabelsPage /></React.Suspense>
 
 const LayoutPage = React.lazy(() => import('./components/pages/LayoutPage'))
-const asyncLayoutPage = () => <React.Suspense fallback={null}><LayoutPage/></React.Suspense>
+const asyncLayoutPage = () => <React.Suspense fallback={null}><LayoutPage /></React.Suspense>
 
 const NavigationPage = React.lazy(() => import('./components/pages/NavigationPage'))
-const asyncNavigationPage = () => <React.Suspense fallback={null}><NavigationPage/></React.Suspense>
+const asyncNavigationPage = () => <React.Suspense fallback={null}><NavigationPage /></React.Suspense>
 
 
 import './index.scss'
