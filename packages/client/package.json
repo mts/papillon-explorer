@@ -1,6 +1,6 @@
 {
   "name": "papillon-explorer-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Papillon Explorer Client",
   "main": "index.js",
   "license": "MIT",
