@@ -1,0 +1,13 @@
+{
+  "pages": [
+    { "id": "start", "name": "Start Page" },
+    { "id": "alerts", "name": "Alerts Page" },
+    { "id": "avatars", "name": "Avatars Page" },
+    { "id": "blankslate", "name": "Blankslate" },
+    { "id": "breadcrumb", "name": "Breadcrumb" },
+    { "id": "buttons", "name": "Buttons" },
+    { "id": "labels", "name": "Labels" },
+    { "id": "layout", "name": "Layout" },
+    { "id": "navigation", "name": "Navigation" }
+  ]
+}
