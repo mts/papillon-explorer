@@ -2,6 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
+import './index.scss'
+import {
+  startPageRoute,
+  alertsPageRoute,
+  avatarsPageRoute,
+  blankslatePageRoute,
+  breadcrumbPageRoute,
+  buttonsPageRoute,
+  labelsPageRoute,
+  layoutPageRoute,
+  navigationPageRoute,
+} from './routes'
+import '@babel/polyfill'
+
 const StartPage = React.lazy(() => import('./components/pages/StartPage'))
 const asyncStartPage = () => <React.Suspense fallback={null}><StartPage /></React.Suspense>
 
@@ -29,20 +43,6 @@ const asyncLayoutPage = () => <React.Suspense fallback={null}><LayoutPage /></Re
 const NavigationPage = React.lazy(() => import('./components/pages/NavigationPage'))
 const asyncNavigationPage = () => <React.Suspense fallback={null}><NavigationPage /></React.Suspense>
 
-
-import './index.scss'
-import {
-  startPageRoute,
-  alertsPageRoute,
-  avatarsPageRoute,
-  blankslatePageRoute,
-  breadcrumbPageRoute,
-  buttonsPageRoute,
-  labelsPageRoute,
-  layoutPageRoute,
-  navigationPageRoute,
-} from './routes'
-import '@babel/polyfill'
 
 function addDivWithIdToBody() {
   const appElement = document.createElement("div")
