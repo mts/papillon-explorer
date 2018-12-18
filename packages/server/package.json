@@ -11,7 +11,7 @@
     "papillon explorer server"
   ],
   "scripts": {
-    "start": "nodemon build/index.js",
+    "start": "nodemon src/index.js",
     "serve": "npm start",
     "prebuild": "rimraf build",
     "build": "babel src --out-dir build --copy-files",
