@@ -7,6 +7,12 @@ jest.mock('react-router-dom', () => {
   }
 });
 
+jest.mock('react-apollo', () => {
+  return {
+    Query: () => <div />
+  }
+});
+
 describe('<AlertsPage />', () => {
   describe('Snaphot', () => {
     test('must match alertsPageDefault', () => {

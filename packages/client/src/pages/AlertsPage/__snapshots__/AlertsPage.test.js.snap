@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AlertsPage /> Snaphot must match alertsPageDefault 1`] = `<div />`;

@@ -8,6 +8,9 @@ const merge = require('webpack-merge');
 const path = require('path');
 const webpack = require('webpack');
 
+// webpack plugins
+const DotEnvPlugin = require("dotenv-webpack");
+
 // config files
 const common = require('./webpack.common.js');
 const pkg = require('./package.json');
@@ -125,6 +128,9 @@ module.exports = [
     //         },
     //         plugins: [
     //             new webpack.HotModuleReplacementPlugin(),
+    //             new DotEnvPlugin({
+    //               path: path.resolve(__dirname, './.env.develop')
+    //             }),
     //         ],
     //     }
     // ),
@@ -146,6 +152,9 @@ module.exports = [
             },
             plugins: [
                 new webpack.HotModuleReplacementPlugin(),
+                new DotEnvPlugin({
+                  path: path.resolve(__dirname, './.env.develop')
+                }),
             ],
         }
     ),
