@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AlertsPage /> Snaphot must match alertsPageDefault 1`] = `
+<div>
+  <h2>
+    Alerts Page
+  </h2>
+  <div>
+    Under construction 🙂
+    <div />
+  </div>
+</div>
+`;
