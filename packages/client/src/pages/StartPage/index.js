@@ -9,7 +9,7 @@ import {
   labelsPageRoute,
   layoutPageRoute,
   navigationPageRoute,
-} from '../../../routes'
+} from '../../routes'
 
 const style = {
   'position': '-webkit-sticky',
