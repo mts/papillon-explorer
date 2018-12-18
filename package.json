@@ -7,6 +7,9 @@
     "uninstall-packages": "lerna run uninstall-packages --stream",
     "install-packages": "lerna run install-packages --stream",
     "reinstall-packages": "lerna run reinstall-packages --stream",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies",
+    "start": "lerna run serve --stream",
+    "heroku-postbuild": "npm run install-packages",
     "deploy-client": "gh-pages -d packages/client/build",
     "deploy": "npm-run-all build deploy-client",
     "test": "lerna exec --concurrency 1 -- npm run test",
@@ -36,7 +39,6 @@
     "gh-pages": "^2.0.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.1",
-    "lerna": "^3.5.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0",
@@ -44,5 +46,9 @@
     "react-dom": "^16.6.3",
     "react-test-renderer": "^16.6.3",
     "regenerator-runtime": "^0.13.1"
+  },
+  "dependencies": {
+    "husky": "^1.3.0",
+    "lerna": "^3.6.0"
   }
 }
