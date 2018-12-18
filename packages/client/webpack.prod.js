@@ -239,7 +239,7 @@ module.exports = [
     //                 configureBundleAnalyzer(LEGACY_CONFIG),
     //             ),
     //             new DotEnvPlugin({
-    //               path: path.resolve(__dirname, './.env')
+    //               path: path.resolve(__dirname, './.env.release')
     //             }),
     //             new HtmlWebpackExternalsPlugin({
     //               externals: [
@@ -301,7 +301,7 @@ module.exports = [
                     configureBundleAnalyzer(MODERN_CONFIG),
                 ),
                 new DotEnvPlugin({
-                  path: path.resolve(__dirname, './.env')
+                  path: path.resolve(__dirname, './.env.release')
                 }),
                 new HtmlWebpackExternalsPlugin({
                   externals: [
