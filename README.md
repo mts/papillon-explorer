@@ -8,20 +8,28 @@
 <p align="center">Component Explorer for Papillon</p>
 
 <p align="center">
-  <a aria-label="travis build" href="https://travis-ci.org/mts/papillon-explorer">
-    <img alt="" src="https://img.shields.io/travis/mts/papillon-explorer.svg?logo=travis">
+  <a aria-label="npm package" href="https://www.npmjs.com/package/papillon-explorer-client">
+    <img alt="" src="https://img.shields.io/npm/v/papillon-explorer-client.svg">
   </a>
 
-  <a aria-label="last commit" href="https://github.com/mts/papillon-explorer/commits/master">
-    <img alt="" src="https://img.shields.io/github/last-commit/mts/papillon-explorer.svg">
+  <a aria-label="travis build" href="https://travis-ci.org/mts/papillon/explorer">
+    <img alt="" src="https://img.shields.io/travis/mts/papillon/explorer.svg?logo=travis">
   </a>
 
-  <a aria-label="contributors graph" href="https://github.com/mts/papillon-explorer/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/mts/papillon-explorer.svg">
+  <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-explorer-client&from=2018-10-13">
+    <img alt="" src="https://img.shields.io/npm/dm/papillon-explorer-client.svg">
   </a>
 
-  <a aria-label="license" href="https://github.com/mts/papillon-explorer/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mts/papillon-explorer.svg" alt="">
+  <a aria-label="last commit" href="https://github.com/mts/papillon/explorer/commits/master">
+    <img alt="" src="https://img.shields.io/github/last-commit/mts/papillon/explorer.svg">
+  </a>
+
+  <a aria-label="contributors graph" href="https://github.com/mts/papillon/explorer/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/mts/papillon/explorer.svg">
+  </a>
+
+  <a aria-label="license" href="https://github.com/mts/papillon/explorer/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/mts/papillon/explorer.svg" alt="">
   </a>
 </p>
 
@@ -29,44 +37,12 @@
 
 **⚠️ This project is a work in progress and is not ready for production use yet!**
 
-## Table of Contents
+## Client
+- Apollo GraphQL Client running at https://mts.github.io/papillon-explorer/
 
-### :octocat: Server
-
-<details>
-<summary>View contents</summary>
-
-* [`Server`](#server)
-
-</details>
-
-### :octocat: Client
-
-<details>
-<summary>View contents</summary>
-
-* [`Client`](#client)
-
-</details>
-
----
-
-## :octocat: Server
-
-> Papillon Explorer Server is an Express Server
-
-<br>[⬆ Back to top](#table-of-contents)
-
-## :octocat: Client
-
-> Papillon Explorer Client is a React Client
-
-<br>[⬆ Back to top](#table-of-contents)
-
----
+## Server
+- Apollo GraphQL Server running at https://papillon-explorer-server.herokuapp.com/
 
 ## License
 
 [MIT](./LICENSE) &copy; [MTS](https://github.com/mts)
-
-[lerna]: https://github.com/lerna/lerna/
