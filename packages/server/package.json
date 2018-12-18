@@ -11,7 +11,7 @@
     "papillon explorer server"
   ],
   "scripts": {
-    "start": "nodemon build/index.js",
+    "start": "nodemon src/index.js",
     "serve": "npm start",
     "prebuild": "rimraf build",
     "build": "babel src --out-dir build --copy-files",
@@ -20,7 +20,6 @@
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "test": "echo \"No test specified\" && exit 0",
-    "remove-packages": "rm -rf node_modules package-lock.json",
     "ci": "npm-run-all build test"
   },
   "dependencies": {
