@@ -1,15 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import StartPage from './components/pages/StartPage'
-import AlertsPage from './components/pages/AlertsPage'
-import AvatarsPage from './components/pages/AvatarsPage'
-import BlankslatePage from './components/pages/BlankslatePage'
-import BreadcrumbPage from './components/pages/BreadcrumbPage'
-import ButtonsPage from './components/pages/ButtonsPage'
-import LabelsPage from './components/pages/LabelsPage'
-import LayoutPage from './components/pages/LayoutPage'
-import NavigationPage from './components/pages/NavigationPage'
+
 import './index.scss'
 import {
   startPageRoute,
@@ -24,6 +16,34 @@ import {
 } from './routes'
 import '@babel/polyfill'
 
+const StartPage = React.lazy(() => import('./components/pages/StartPage'))
+const asyncStartPage = () => <React.Suspense fallback={null}><StartPage /></React.Suspense>
+
+const AlertsPage = React.lazy(() => import('./components/pages/AlertsPage'))
+const asyncAlertsPage = () => <React.Suspense fallback={null}><AlertsPage /></React.Suspense>
+
+const AvatarsPage = React.lazy(() => import('./components/pages/AvatarsPage'))
+const asyncAvatarsPage = () => <React.Suspense fallback={null}><AvatarsPage /></React.Suspense>
+
+const BlankslatePage = React.lazy(() => import('./components/pages/BlankslatePage'))
+const asyncBlankslatePage = () => <React.Suspense fallback={null}><BlankslatePage /></React.Suspense>
+
+const BreadcrumbPage = React.lazy(() => import('./components/pages/BreadcrumbPage'))
+const asyncBreadcrumbPage = () => <React.Suspense fallback={null}><BreadcrumbPage /></React.Suspense>
+
+const ButtonsPage = React.lazy(() => import('./components/pages/ButtonsPage'))
+const asyncButtonsPage = () => <React.Suspense fallback={null}><ButtonsPage /></React.Suspense>
+
+const LabelsPage = React.lazy(() => import('./components/pages/LabelsPage'))
+const asyncLabelsPage = () => <React.Suspense fallback={null}><LabelsPage /></React.Suspense>
+
+const LayoutPage = React.lazy(() => import('./components/pages/LayoutPage'))
+const asyncLayoutPage = () => <React.Suspense fallback={null}><LayoutPage /></React.Suspense>
+
+const NavigationPage = React.lazy(() => import('./components/pages/NavigationPage'))
+const asyncNavigationPage = () => <React.Suspense fallback={null}><NavigationPage /></React.Suspense>
+
+
 function addDivWithIdToBody() {
   const appElement = document.createElement("div")
   appElement.id = 'app'
@@ -36,15 +56,15 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path={startPageRoute} component={StartPage} />
-        <Route exact path={alertsPageRoute} component={AlertsPage} />
-        <Route exact path={avatarsPageRoute} component={AvatarsPage} />
-        <Route exact path={blankslatePageRoute} component={BlankslatePage} />
-        <Route exact path={breadcrumbPageRoute} component={BreadcrumbPage} />
-        <Route exact path={buttonsPageRoute} component={ButtonsPage} />
-        <Route exact path={labelsPageRoute} component={LabelsPage} />
-        <Route exact path={layoutPageRoute} component={LayoutPage} />
-        <Route exact path={navigationPageRoute} component={NavigationPage} />
+        <Route exact path={startPageRoute} component={asyncStartPage} />
+        <Route exact path={alertsPageRoute} component={asyncAlertsPage} />
+        <Route exact path={avatarsPageRoute} component={asyncAvatarsPage} />
+        <Route exact path={blankslatePageRoute} component={asyncBlankslatePage} />
+        <Route exact path={breadcrumbPageRoute} component={asyncBreadcrumbPage} />
+        <Route exact path={buttonsPageRoute} component={asyncButtonsPage} />
+        <Route exact path={labelsPageRoute} component={asyncLabelsPage} />
+        <Route exact path={layoutPageRoute} component={asyncLayoutPage} />
+        <Route exact path={navigationPageRoute} component={asyncNavigationPage} />
       </Switch>
     </Router>
   )

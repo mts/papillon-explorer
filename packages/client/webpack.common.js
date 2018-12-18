@@ -44,7 +44,8 @@ const configureBabelLoader = (browserList) => {
                         "@babel/plugin-transform-runtime", {
                             "regenerator": true
                         }
-                    ]
+                    ],
+                    "@babel/plugin-transform-spread"
                 ],
             },
         },
