@@ -11,8 +11,10 @@
     "deploy": "npm-run-all build deploy-client",
     "test": "lerna exec --concurrency 1 -- npm run test",
     "ci": "lerna run ci --stream",
-    "prettify-js": "npx prettier --write \"**/*.js\"",
-    "pretty-quick": "pretty-quick"
+    "prettier-js-init": "npx prettier --write \"**/*.js\"",
+    "pretty-quick": "pretty-quick",
+    "eslint-js-init": "npx eslint --init",
+    "lint": "eslint ./"
   },
   "license": "MIT",
   "devDependencies": {
@@ -30,6 +32,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "^5.10.0",
+    "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^2.0.1",
     "jest": "^23.6.0",
     "jest-enzyme": "^7.0.1",
