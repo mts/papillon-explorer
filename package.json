@@ -1,6 +1,5 @@
 {
   "name": "papillon-explorer",
-  "version": "0.0.0",
   "description": "Papillon Explorer",
   "scripts": {
     "build": "lerna run build --stream",
