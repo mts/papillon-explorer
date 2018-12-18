@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import RegularLabels from './RegularLabels'
 import ThemeLabels from './ThemeLabels'
 import StateLabels from './StateLabels'
@@ -9,7 +9,9 @@ import { startPageRoute } from '../../routes'
 const LayoutPage = () => {
   return (
     <div>
-      <h1 align="center" className="p-4">🎨 Papillon Labels Component Explorer</h1>
+      <h1 align="center" className="p-4">
+        🎨 Papillon Labels Component Explorer
+      </h1>
       <div className="d-flex flex-justify-around">
         <div className="col-3">
           <RegularLabels />
@@ -31,4 +33,4 @@ const LayoutPage = () => {
   )
 }
 
-export default LayoutPage;
+export default LayoutPage

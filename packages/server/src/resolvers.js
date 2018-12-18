@@ -14,10 +14,7 @@ module.exports = {
       return {
         pages,
         cursor: pages.length ? pages[pages.length - 1].cursor : null,
-        hasMore: pages.length
-          ? pages[pages.length - 1].cursor !==
-            allPages[allPages.length - 1].cursor
-          : false,
+        hasMore: pages.length ? pages[pages.length - 1].cursor !== allPages[allPages.length - 1].cursor : false,
       }
     },
   },

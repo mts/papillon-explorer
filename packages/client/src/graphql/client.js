@@ -13,5 +13,4 @@ const client = new ApolloClient({
   typeDefs,
 })
 
-
 export default client
