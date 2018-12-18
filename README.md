@@ -12,24 +12,24 @@
     <img alt="" src="https://img.shields.io/npm/v/papillon-explorer-client.svg">
   </a>
 
-  <a aria-label="travis build" href="https://travis-ci.org/mts/papillon/explorer">
-    <img alt="" src="https://img.shields.io/travis/mts/papillon/explorer.svg?logo=travis">
+  <a aria-label="travis build" href="https://travis-ci.org/mts/papillon-explorer">
+    <img alt="" src="https://img.shields.io/travis/mts/papillon-explorer.svg?logo=travis">
   </a>
 
   <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-explorer-client&from=2018-10-13">
     <img alt="" src="https://img.shields.io/npm/dm/papillon-explorer-client.svg">
   </a>
 
-  <a aria-label="last commit" href="https://github.com/mts/papillon/explorer/commits/master">
-    <img alt="" src="https://img.shields.io/github/last-commit/mts/papillon/explorer.svg">
+  <a aria-label="last commit" href="https://github.com/mts/papillon-explorer/commits/master">
+    <img alt="" src="https://img.shields.io/github/last-commit/mts/papillon-explorer.svg">
   </a>
 
-  <a aria-label="contributors graph" href="https://github.com/mts/papillon/explorer/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/mts/papillon/explorer.svg">
+  <a aria-label="contributors graph" href="https://github.com/mts/papillon-explorer/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/mts/papillon-explorer.svg">
   </a>
 
-  <a aria-label="license" href="https://github.com/mts/papillon/explorer/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mts/papillon/explorer.svg" alt="">
+  <a aria-label="license" href="https://github.com/mts/papillon-explorer/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/mts/papillon-explorer.svg" alt="">
   </a>
 </p>
 
