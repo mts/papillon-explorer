@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 import alertsPageDefault from './AlertsPage.render'
 
 jest.mock('react-router-dom', () => {
   return {
-    Link: () => <div />
+    Link: () => <div />,
   }
-});
+})
 
 jest.mock('react-apollo', () => {
   return {
-    Query: () => <div />
+    Query: () => <div />,
   }
-});
+})
 
 describe('<AlertsPage />', () => {
   describe('Snaphot', () => {

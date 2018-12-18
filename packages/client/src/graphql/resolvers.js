@@ -3,10 +3,7 @@ import gql from 'graphql-tag'
 
 export const typeDefs = gql`
   extend type Query {
-    pages(
-      pageSize: Int
-      after: String
-    ): PageConnection!
+    pages(pageSize: Int, after: String): PageConnection!
     page(id: String!): Page
   }
 
@@ -19,4 +16,5 @@ export const typeDefs = gql`
   extend type Page {
     id: String!
     name: Float!
-  }`
+  }
+`

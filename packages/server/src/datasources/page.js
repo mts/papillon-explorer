@@ -20,9 +20,7 @@ class PageAPI extends RESTDataSource {
   }
 
   getPagesByIds({ pageIds }) {
-    return Promise.all(
-      pageIds.map(pageId => this.getPageById({ pageId })),
-    )
+    return Promise.all(pageIds.map(pageId => this.getPageById({ pageId })))
   }
 }
 
