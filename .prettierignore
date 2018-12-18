@@ -1,3 +1,4 @@
+package-lock.json
 node_modules
 packages/client/build
 packages/client/node_modules

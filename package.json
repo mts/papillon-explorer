@@ -11,7 +11,8 @@
     "deploy": "npm-run-all build deploy-client",
     "test": "lerna exec --concurrency 1 -- npm run test",
     "ci": "lerna run ci --stream",
-    "prettify-js": " npx prettier --write \"**/*.js\" "
+    "prettify-js": "npx prettier --write \"**/*.js\"",
+    "pretty-quick": "pretty-quick"
   },
   "license": "MIT",
   "devDependencies": {
