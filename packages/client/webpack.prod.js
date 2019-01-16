@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // !!!
 // Remove .env file to check production build locally in the build folder
 // !!!
@@ -317,3 +319,4 @@ module.exports = [
     },
   }),
 ]
+/* eslint-enable */

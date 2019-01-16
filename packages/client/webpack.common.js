@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // webpack.common.js - common webpack config
 
 const LEGACY_CONFIG = 'legacy'
@@ -142,3 +144,5 @@ module.exports = {
   legacyConfig: merge(legacyConfig, baseConfig),
   modernConfig: merge(modernConfig, baseConfig),
 }
+
+/* eslint-enable */

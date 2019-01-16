@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // webpack.dev.js - development builds
 
 const LEGACY_CONFIG = 'legacy'
@@ -153,3 +155,5 @@ module.exports = [
     ],
   }),
 ]
+
+/* eslint-enable */
