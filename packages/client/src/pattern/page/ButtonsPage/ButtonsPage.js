@@ -4,7 +4,7 @@ import { startPageRoute } from '../../../routes'
 import { PAGES } from '../../../graphql/query'
 import ButtonsTemplate from '../../template/ButtonsTemplate'
 
-const AlertsPage = () => {
+const ButtonsPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -16,4 +16,4 @@ const AlertsPage = () => {
   )
 }
 
-export default AlertsPage
+export default ButtonsPage

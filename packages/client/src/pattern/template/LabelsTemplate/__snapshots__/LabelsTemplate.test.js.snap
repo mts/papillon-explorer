@@ -13,7 +13,6 @@ exports[`<LabelsTemplate /> Snaphot must match labelsTemplateDefault 1`] = `
       🎨
     </span>
      
-    some-name
   </h1>
   <div
     className="d-flex flex-justify-around"
