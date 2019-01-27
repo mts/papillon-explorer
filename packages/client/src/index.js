@@ -22,14 +22,8 @@ import AsyncAlertsPage from './pages/AlertsPage'
 import AsyncAvatarsPage from './pages/AvatarsPage'
 import AsyncBlankslatePage from './pages/BlankslatePage'
 import AsyncBreadcrumbPage from './pages/BreadcrumbPage'
-import AsyncButtonsPage from './pages/BreadcrumbPage'
-
-const LabelsPage = React.lazy(() => import('./pages/LabelsPage'))
-const asyncLabelsPage = () => (
-  <React.Suspense fallback={null}>
-    <LabelsPage />
-  </React.Suspense>
-)
+import AsyncButtonsPage from './pages/ButtonsPage'
+import AsyncLabelsPage from './pages/LabelsPage'
 
 const LayoutPage = React.lazy(() => import('./pages/LayoutPage'))
 const asyncLayoutPage = () => (
@@ -64,7 +58,7 @@ const App = () => {
           <Route exact path={blankslatePageRoute} component={AsyncBlankslatePage} />
           <Route exact path={breadcrumbPageRoute} component={AsyncBreadcrumbPage} />
           <Route exact path={buttonsPageRoute} component={AsyncButtonsPage} />
-          <Route exact path={labelsPageRoute} component={asyncLabelsPage} />
+          <Route exact path={labelsPageRoute} component={AsyncLabelsPage} />
           <Route exact path={layoutPageRoute} component={asyncLayoutPage} />
           <Route exact path={navigationPageRoute} component={asyncNavigationPage} />
         </Switch>
