@@ -1,28 +1,11 @@
 import React from 'react'
 import { Query } from 'react-apollo'
-import { Link } from 'react-router-dom'
-import { startPageRoute } from '../../routes'
-import { PAGES } from '../../graphql/query'
+import { startPageRoute } from '../../../routes'
+import { PAGES } from '../../../graphql/query'
+import AlertsTemplate from '../../template/AlertsTemplate'
 
 const AlertsPage = () => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? (
-          <div>
-            <h2>{data.pages.pages.find(page => page.id === 'alerts').name}</h2>
-            <div>
-              Under construction{' '}
-              <span role="img" aria-label="emoji">
-                🙂
-              </span>
-              <Link to={startPageRoute}> Back to Home Page</Link>
-            </div>
-          </div>
-        ) : null
-      }
-    </Query>
-  )
+  return <Query query={PAGES}>{({ data }) => <AlertsTemplate data={data} startPageRoute={startPageRoute} />}</Query>
 }
 
 export default AlertsPage

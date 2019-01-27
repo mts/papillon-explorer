@@ -1,12 +1,6 @@
 import React from 'react'
 import alertsPageDefault from './AlertsPage.render'
 
-jest.mock('react-router-dom', () => {
-  return {
-    Link: () => <div />,
-  }
-})
-
 jest.mock('react-apollo', () => {
   return {
     Query: () => <div />,
