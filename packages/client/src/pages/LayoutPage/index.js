@@ -12,7 +12,7 @@ const LayoutPage = () => {
           <div>
             <h2>{data.pages.pages.find(page => page.id === 'layout').name}</h2>
             <div>
-              Under construction 🙂
+              Under construction <span role="img" aria-label="emoji">🙂</span>
               <Link to={startPageRoute}> Back to Home Page</Link>
             </div>
           </div>
