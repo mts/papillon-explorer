@@ -777,7 +777,9 @@ const StartPage = () => {
               <div className="">
                 <h1 className="f000-light mb-4">Papillon Explorer</h1>
                 <div className="f2-light pb-4">
-                  {"Resources, tooling, and design guidelines for building websites with Papillon, React components for GitHub's Primer Design System"}
+                  {
+                    "Resources, tooling, and design guidelines for building websites with Papillon, React components for GitHub's Primer Design System"
+                  }
                 </div>
               </div>
             </div>
