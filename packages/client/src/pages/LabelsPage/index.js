@@ -10,7 +10,10 @@ const LayoutPage = () => {
   return (
     <div>
       <h1 align="center" className="p-4">
-         <span role="img" aria-label="emoji">🎨</span> Papillon Labels Component Explorer
+        <span role="img" aria-label="emoji">
+          🎨
+        </span>{' '}
+        Papillon Labels Component Explorer
       </h1>
       <div className="d-flex flex-justify-around">
         <div className="col-3">
