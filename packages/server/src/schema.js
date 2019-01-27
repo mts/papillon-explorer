@@ -2,10 +2,7 @@ const { gql } = require('apollo-server')
 
 const typeDefs = gql`
   type Query {
-    pages(
-      pageSize: Int
-      after: String
-    ): PageConnection!
+    pages(pageSize: Int, after: String): PageConnection!
     page(id: String!): Page
   }
 

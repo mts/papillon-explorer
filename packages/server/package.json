@@ -20,15 +20,18 @@
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "test": "echo \"No test specified\" && exit 0",
-    "ci": "npm-run-all build test"
+    "lint": "npm-run-all lint:js",
+    "lint:js": "eslint src/*.js --fix",
+    "lint:staged": "lint-staged",
+    "ci": "npm-run-all lint build test"
   },
   "dependencies": {
-    "@babel/cli": "^7.2.0",
+    "@babel/cli": "^7.2.3",
     "apollo-datasource-rest": "^0.2.1",
     "apollo-server": "^2.3.1",
-    "graphql": "^14.0.2",
+    "graphql": "^14.1.0",
     "nodemon": "^1.18.9",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.3"
   }
 }
