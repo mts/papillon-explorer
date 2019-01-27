@@ -9,7 +9,7 @@ const BlankslatePage = () => {
     <Query query={PAGES}>
       {({ data }) =>
         data.pages && data.pages.pages ? (
-          <BlankslateTemplate page={data.pages.pages.find(page => page.id === 'alerts')} startPageRoute={startPageRoute} />
+          <BlankslateTemplate page={data.pages.pages.find(page => page.id === 'blankslate')} startPageRoute={startPageRoute} />
         ) : null
       }
     </Query>

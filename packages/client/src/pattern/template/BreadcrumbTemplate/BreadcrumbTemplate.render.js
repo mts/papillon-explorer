@@ -1,17 +1,13 @@
 import React from 'react'
 import BreadcrumbTemplate from './BreadcrumbTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'breadcrumb',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'breadcrumb',
+    name: 'some-name',
   },
 }
 
-const BreadcrumbTemplateDefault = <BreadcrumbTemplate data={data} startPageRoute="/" />
+const breadcrumbTemplateDefault = <BreadcrumbTemplate page={page} startPageRoute="/" />
 
-export default BreadcrumbTemplateDefault
+export default breadcrumbTemplateDefault
