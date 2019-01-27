@@ -1,39 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import RegularLabels from './RegularLabels'
-import ThemeLabels from './ThemeLabels'
-import StateLabels from './StateLabels'
-import CounterLabels from './CounterLabels'
+import { Query } from 'react-apollo'
 import { startPageRoute } from '../../../routes'
+import { PAGES } from '../../../graphql/query'
+import LabelsTemplate from '../../template/LabelsTemplate'
 
-const LayoutPage = () => {
-  return (
-    <div>
-      <h1 align="center" className="p-4">
-        <span role="img" aria-label="emoji">
-          🎨
-        </span>{' '}
-        Papillon Labels Component Explorer
-      </h1>
-      <div className="d-flex flex-justify-around">
-        <div className="col-3">
-          <RegularLabels />
-        </div>
-        <div className="col-3">
-          <ThemeLabels />
-        </div>
-        <div className="col-3">
-          <StateLabels />
-        </div>
-        <div className="col-3">
-          <CounterLabels />
-        </div>
-      </div>
-      <div className="p-4">
-        <Link to={startPageRoute}> Back to Home Page</Link>
-      </div>
-    </div>
-  )
+const LabelsPage = () => {
+  return <Query query={PAGES}>{({ data }) => <LabelsTemplate data={data} startPageRoute={startPageRoute} />}</Query>
 }
 
-export default LayoutPage
+export default LabelsPage
