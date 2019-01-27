@@ -2,7 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import './index.scss'
+import AsyncStartPage from './pages/StartPage'
+import AsyncAlertsPage from './pages/AlertsPage'
+import AsyncAvatarsPage from './pages/AvatarsPage'
+import AsyncBlankslatePage from './pages/BlankslatePage'
+import AsyncBreadcrumbPage from './pages/BreadcrumbPage'
+import AsyncButtonsPage from './pages/ButtonsPage'
+import AsyncLabelsPage from './pages/LabelsPage'
+import AsyncLayoutPage from './pages/LayoutPage'
+import AsyncNavigationPage from './pages/NavigationPage'
 import {
   startPageRoute,
   alertsPageRoute,
@@ -14,38 +22,10 @@ import {
   layoutPageRoute,
   navigationPageRoute,
 } from './routes'
+import './index.scss'
 import '@babel/polyfill'
 import client from './graphql/client'
-
-import AsyncStartPage from './pages/StartPage'
-import AsyncAlertsPage from './pages/AlertsPage'
-import AsyncAvatarsPage from './pages/AvatarsPage'
-import AsyncBlankslatePage from './pages/BlankslatePage'
-import AsyncBreadcrumbPage from './pages/BreadcrumbPage'
-import AsyncButtonsPage from './pages/ButtonsPage'
-import AsyncLabelsPage from './pages/LabelsPage'
-
-const LayoutPage = React.lazy(() => import('./pages/LayoutPage'))
-const asyncLayoutPage = () => (
-  <React.Suspense fallback={null}>
-    <LayoutPage />
-  </React.Suspense>
-)
-
-const NavigationPage = React.lazy(() => import('./pages/NavigationPage'))
-const asyncNavigationPage = () => (
-  <React.Suspense fallback={null}>
-    <NavigationPage />
-  </React.Suspense>
-)
-
-function addDivWithIdToBody() {
-  const appElement = document.createElement('div')
-  appElement.id = 'app'
-  document.body.appendChild(appElement)
-}
-
-addDivWithIdToBody()
+import { addDivWithIdToBody } from './utility/startup'
 
 const App = () => {
   return (
@@ -59,13 +39,15 @@ const App = () => {
           <Route exact path={breadcrumbPageRoute} component={AsyncBreadcrumbPage} />
           <Route exact path={buttonsPageRoute} component={AsyncButtonsPage} />
           <Route exact path={labelsPageRoute} component={AsyncLabelsPage} />
-          <Route exact path={layoutPageRoute} component={asyncLayoutPage} />
-          <Route exact path={navigationPageRoute} component={asyncNavigationPage} />
+          <Route exact path={layoutPageRoute} component={AsyncLayoutPage} />
+          <Route exact path={navigationPageRoute} component={AsyncNavigationPage} />
         </Switch>
       </ApolloProvider>
     </BrowserRouter>
   )
 }
+
+addDivWithIdToBody('app')
 
 ReactDOM.render(<App />, document.getElementById('app'))
 
