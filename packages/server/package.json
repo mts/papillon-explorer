@@ -1,6 +1,6 @@
 {
   "name": "papillon-explorer-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Papillon Explorer Server",
   "main": "index.js",
   "license": "MIT",
@@ -20,7 +20,10 @@
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "test": "echo \"No test specified\" && exit 0",
-    "ci": "npm-run-all build test"
+    "lint": "npm-run-all lint:js",
+    "lint:js": "eslint src/*.js --fix",
+    "lint:staged": "lint-staged",
+    "ci": "npm-run-all lint build test"
   },
   "dependencies": {
     "@babel/cli": "^7.2.3",

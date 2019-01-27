@@ -10,6 +10,7 @@ import {
   layoutPageRoute,
   navigationPageRoute,
 } from '../../routes'
+import { version } from '../../../../../lerna.json'
 
 const style = {
   // position: '-webkit-sticky',
@@ -61,7 +62,7 @@ const StartPage = () => {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    Papillon Explorer
+                    Papillon Explorer v{version}
                   </button>
                 </h1>
               </div>
@@ -777,7 +778,9 @@ const StartPage = () => {
               <div className="">
                 <h1 className="f000-light mb-4">Papillon Explorer</h1>
                 <div className="f2-light pb-4">
-                  {"Resources, tooling, and design guidelines for building websites with Papillon, React components for GitHub's Primer Design System"}
+                  {
+                    "Resources, tooling, and design guidelines for building websites with Papillon, React components for GitHub's Primer Design System"
+                  }
                 </div>
               </div>
             </div>

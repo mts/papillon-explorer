@@ -1,6 +1,6 @@
 {
   "name": "papillon-explorer-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Papillon Explorer Client",
   "main": "index.js",
   "license": "MIT",
@@ -18,11 +18,16 @@
     "start": "nodemon --watch webpack.settings.js --watch webpack.common.js --watch webpack.dev.js --exec \"webpack-dev-server --config webpack.dev.js\"",
     "serve": "echo \"No serve specified\" && exit 0",
     "build": "webpack --config webpack.prod.js --progress --hide-modules",
+    "release": "npm publish",
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
-    "ci": "npm-run-all build test"
+    "lint": "npm-run-all lint:scss lint:js",
+    "lint:scss": "stylelint src/*.scss --fix",
+    "lint:js": "eslint src/*.js --fix",
+    "lint:staged": "lint-staged",
+    "ci": "npm-run-all lint build test"
   },
   "browserslist": {
     "production": [
