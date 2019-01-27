@@ -26,7 +26,7 @@ import {
 import './index.scss'
 import '@babel/polyfill'
 import client from './graphql/client'
-import { addDivWithIdToBody } from './utility/startup'
+import { addDivWithIdToBody, checkAccessibilityIssues } from './utility/startup'
 import ErrorBoundary from './pattern/atom/ErrorBoundary'
 
 const App = () => (
@@ -48,6 +48,7 @@ const App = () => (
 )
 
 addDivWithIdToBody('app')
+checkAccessibilityIssues(React, ReactDOM, 1000)
 
 const StrictApp = () => (
   <React.StrictMode>
