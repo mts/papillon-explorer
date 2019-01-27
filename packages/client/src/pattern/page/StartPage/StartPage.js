@@ -9,8 +9,8 @@ import {
   labelsPageRoute,
   layoutPageRoute,
   navigationPageRoute,
-} from '../../routes'
-import { version } from '../../../../../lerna.json'
+} from '../../../routes'
+import { version } from '../../../../../../lerna.json'
 
 const style = {
   // position: '-webkit-sticky',

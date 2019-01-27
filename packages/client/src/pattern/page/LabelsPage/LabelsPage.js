@@ -4,7 +4,7 @@ import RegularLabels from './RegularLabels'
 import ThemeLabels from './ThemeLabels'
 import StateLabels from './StateLabels'
 import CounterLabels from './CounterLabels'
-import { startPageRoute } from '../../routes'
+import { startPageRoute } from '../../../routes'
 
 const LayoutPage = () => {
   return (

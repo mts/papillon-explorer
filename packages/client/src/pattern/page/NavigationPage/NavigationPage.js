@@ -1,8 +1,8 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { Link } from 'react-router-dom'
-import { startPageRoute } from '../../routes'
-import { PAGES } from '../../graphql/query'
+import { startPageRoute } from '../../../routes'
+import { PAGES } from '../../../graphql/query'
 
 const NavigationPage = () => {
   return (
