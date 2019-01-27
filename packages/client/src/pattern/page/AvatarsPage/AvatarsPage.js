@@ -4,8 +4,8 @@ import { startPageRoute } from '../../../routes'
 import { PAGES } from '../../../graphql/query'
 import AvatarsTemplate from '../../template/AvatarsTemplate'
 
-const AlertsPage = () => {
+const AvatarsPage = () => {
   return <Query query={PAGES}>{({ data }) => <AvatarsTemplate data={data} startPageRoute={startPageRoute} />}</Query>
 }
 
-export default AlertsPage
+export default AvatarsPage
