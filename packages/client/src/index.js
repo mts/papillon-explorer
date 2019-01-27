@@ -17,30 +17,12 @@ import {
 import '@babel/polyfill'
 import client from './graphql/client'
 
+import AsyncStartPage from './pages/StartPage'
 import AsyncAlertsPage from './pages/AlertsPage'
 import AsyncAvatarsPage from './pages/AvatarsPage'
 import AsyncBlankslatePage from './pages/BlankslatePage'
-
-const StartPage = React.lazy(() => import('./pages/StartPage'))
-const asyncStartPage = () => (
-  <React.Suspense fallback={null}>
-    <StartPage />
-  </React.Suspense>
-)
-
-const BreadcrumbPage = React.lazy(() => import('./pages/BreadcrumbPage'))
-const asyncBreadcrumbPage = () => (
-  <React.Suspense fallback={null}>
-    <BreadcrumbPage />
-  </React.Suspense>
-)
-
-const ButtonsPage = React.lazy(() => import('./pages/ButtonsPage'))
-const asyncButtonsPage = () => (
-  <React.Suspense fallback={null}>
-    <ButtonsPage />
-  </React.Suspense>
-)
+import AsyncBreadcrumbPage from './pages/BreadcrumbPage'
+import AsyncButtonsPage from './pages/BreadcrumbPage'
 
 const LabelsPage = React.lazy(() => import('./pages/LabelsPage'))
 const asyncLabelsPage = () => (
@@ -76,12 +58,12 @@ const App = () => {
     <BrowserRouter>
       <ApolloProvider client={client}>
         <Switch>
-          <Route exact path={startPageRoute} component={asyncStartPage} />
+          <Route exact path={startPageRoute} component={AsyncStartPage} />
           <Route exact path={alertsPageRoute} component={AsyncAlertsPage} />
           <Route exact path={avatarsPageRoute} component={AsyncAvatarsPage} />
           <Route exact path={blankslatePageRoute} component={AsyncBlankslatePage} />
-          <Route exact path={breadcrumbPageRoute} component={asyncBreadcrumbPage} />
-          <Route exact path={buttonsPageRoute} component={asyncButtonsPage} />
+          <Route exact path={breadcrumbPageRoute} component={AsyncBreadcrumbPage} />
+          <Route exact path={buttonsPageRoute} component={AsyncButtonsPage} />
           <Route exact path={labelsPageRoute} component={asyncLabelsPage} />
           <Route exact path={layoutPageRoute} component={asyncLayoutPage} />
           <Route exact path={navigationPageRoute} component={asyncNavigationPage} />
