@@ -1,17 +1,13 @@
 import React from 'react'
 import ButtonsTemplate from './ButtonsTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'buttons',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'alerts',
+    name: 'some-name',
   },
 }
 
-const ButtonsTemplateDefault = <ButtonsTemplate data={data} startPageRoute="/" />
+const buttonsTemplateDefault = <ButtonsTemplate page={page} startPageRoute="/" />
 
-export default ButtonsTemplateDefault
+export default buttonsTemplateDefault
