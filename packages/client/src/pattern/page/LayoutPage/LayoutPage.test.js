@@ -1,12 +1,6 @@
 import React from 'react'
 import layoutPageDefault from './LayoutPage.render'
 
-jest.mock('react-router-dom', () => {
-  return {
-    Link: () => <div />,
-  }
-})
-
 jest.mock('react-apollo', () => {
   return {
     Query: () => <div />,
