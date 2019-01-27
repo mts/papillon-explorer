@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationPage /> Snaphot must match navigationPageDefault 1`] = `<div />`;
