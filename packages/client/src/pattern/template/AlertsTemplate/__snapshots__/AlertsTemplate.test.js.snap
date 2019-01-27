@@ -2,9 +2,7 @@
 
 exports[`<AlertsTemplate /> Snaphot must match alertsTemplateDefault 1`] = `
 <div>
-  <h2>
-    some-name
-  </h2>
+  <h2 />
   <div>
     Under construction
      
