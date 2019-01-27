@@ -3,7 +3,7 @@ import LabelsTemplate from './LabelsTemplate'
 
 const page = {
   page: {
-    id: 'alerts',
+    id: 'labels',
     name: 'some-name',
   },
 }

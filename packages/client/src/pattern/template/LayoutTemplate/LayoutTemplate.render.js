@@ -1,17 +1,13 @@
 import React from 'react'
 import LayoutTemplate from './LayoutTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'layout',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'layout',
+    name: 'some-name',
   },
 }
 
-const LayoutTemplateDefault = <LayoutTemplate data={data} startPageRoute="/" />
+const LayoutTemplateDefault = <LayoutTemplate page={page} startPageRoute="/" />
 
 export default LayoutTemplateDefault

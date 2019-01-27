@@ -3,7 +3,7 @@ import ButtonsTemplate from './ButtonsTemplate'
 
 const page = {
   page: {
-    id: 'alerts',
+    id: 'buttons',
     name: 'some-name',
   },
 }
