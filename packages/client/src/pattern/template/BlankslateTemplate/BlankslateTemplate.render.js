@@ -1,17 +1,13 @@
 import React from 'react'
 import BlankslateTemplate from './BlankslateTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'blankslate',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'blankslate',
+    name: 'some-name',
   },
 }
 
-const blankslateTemplateDefault = <BlankslateTemplate data={data} startPageRoute="/" />
+const blankslateTemplateDefault = <BlankslateTemplate page={page} startPageRoute="/" />
 
 export default blankslateTemplateDefault
