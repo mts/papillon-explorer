@@ -1,0 +1,839 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelsTemplate /> Snaphot must match labelsTemplateDefault 1`] = `
+<div>
+  <h1
+    align="center"
+    className="p-4"
+  >
+    <span
+      aria-label="emoji"
+      role="img"
+    >
+      🎨
+    </span>
+     
+  </h1>
+  <div
+    className="d-flex flex-justify-around"
+  >
+    <div
+      className="col-3"
+    >
+      <div>
+        <h2
+          className="p-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🎨
+             
+          </span>
+          Regular Labels
+        </h2>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          white on blue
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label text-white bg-blue"
+          >
+             
+            papillon regular label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          white on dark gray
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label text-white bg-gray-dark"
+          >
+             
+            papillon regular label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          white on green
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label text-white bg-green"
+          >
+             
+            papillon regular label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          white on red
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label text-white bg-red"
+          >
+             
+            papillon regular label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          white on yellow
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label text-white bg-yellow"
+          >
+             
+            papillon regular label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          white on purple
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label text-white bg-purple"
+          >
+             
+            papillon regular label
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-3"
+    >
+      <div>
+        <h2
+          className="p-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🎨
+             
+          </span>
+          Theme Labels
+        </h2>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          gray
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label Label--gray"
+          >
+             
+            papillon theme label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          dark gray
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label Label--gray-darker"
+          >
+             
+            papillon theme label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          orange
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label Label--orange"
+          >
+             
+            papillon theme label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          outline
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label Label--outline"
+          >
+             
+            papillon theme label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          outline green
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Label Label--outline Label--outline-green"
+          >
+             
+            papillon theme label
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-3"
+    >
+      <div>
+        <h2
+          className="p-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🎨
+             
+          </span>
+          State Labels
+        </h2>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          default
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          green
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--green"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          purple
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--purple"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          red
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--red"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          default small
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--small"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          green small
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--green State--small"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          purple small
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--small State--purple"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          red small
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--small State--red"
+          >
+             
+            papillon state label
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          open
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--green"
+          >
+            <svg
+              aria-hidden="true"
+              className="octicon"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "fill": "currentColor",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 12 16"
+              width={12}
+            >
+              <path
+                d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+                fillRule="evenodd"
+              />
+            </svg>
+             
+            Open
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          closed
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--red"
+          >
+            <svg
+              aria-hidden="true"
+              className="octicon"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "fill": "currentColor",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 12 16"
+              width={12}
+            >
+              <path
+                d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+                fillRule="evenodd"
+              />
+            </svg>
+             
+            Closed
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          merged
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="State State--purple"
+          >
+            <svg
+              aria-hidden="true"
+              className="octicon"
+              height={16}
+              role="img"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "fill": "currentColor",
+                  "userSelect": "none",
+                  "verticalAlign": "text-bottom",
+                }
+              }
+              viewBox="0 0 12 16"
+              width={12}
+            >
+              <path
+                d="M10 7c-.73 0-1.38.41-1.73 1.02V8C7.22 7.98 6 7.64 5.14 6.98c-.75-.58-1.5-1.61-1.89-2.44A1.993 1.993 0 0 0 2 .99C.89.99 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2a1.993 1.993 0 0 0 1-3.72V7.67c.67.7 1.44 1.27 2.3 1.69.86.42 2.03.63 2.97.64v-.02c.36.61 1 1.02 1.73 1.02 1.11 0 2-.89 2-2 0-1.11-.89-2-2-2zm-6.8 6c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm8 6c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+                fillRule="evenodd"
+              />
+            </svg>
+             
+            Merged
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-3"
+    >
+      <div>
+        <h2
+          className="p-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🎨
+             
+          </span>
+          Counter Labels
+        </h2>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          default
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Counter"
+          >
+             
+            16
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          gray
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Counter Counter--gray"
+          >
+             
+            32
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          gray light
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <span
+            className="Counter Counter--gray-light"
+          >
+             
+            32
+          </span>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          in tabs
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <div
+            className="tabnav"
+          >
+            <nav
+              aria-label="Foo bar"
+              className="tabnav-tabs"
+            >
+              <a
+                aria-current="page"
+                className="tabnav-tab selected"
+                href="#url"
+              >
+                Foo tab
+                <span
+                  className="Counter"
+                >
+                   
+                  23
+                </span>
+              </a>
+              <a
+                className="tabnav-tab ml-1"
+                href="#url"
+              >
+                Bar tab
+              </a>
+            </nav>
+          </div>
+        </div>
+        <h3
+          className="pl-2"
+        >
+          <span
+            aria-label="moyai"
+            role="img"
+          >
+             
+            🐝
+             
+          </span>
+          in box headers
+        </h3>
+        <div
+          className="pl-6"
+        >
+          <div
+            className="Box"
+          >
+            <div
+              className="Box-header"
+            >
+              <h3
+                className="Box-title"
+              >
+                Box title
+                <span
+                  className="Counter"
+                >
+                   
+                  3
+                </span>
+              </h3>
+            </div>
+            <ul>
+              <li
+                className="Box-row"
+              >
+                Box row one
+              </li>
+              <li
+                className="Box-row"
+              >
+                Box row two
+              </li>
+              <li
+                className="Box-row"
+              >
+                Box row three
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="p-4"
+  >
+    <div />
+  </div>
+</div>
+`;

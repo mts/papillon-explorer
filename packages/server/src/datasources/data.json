@@ -1,13 +1,13 @@
 {
   "pages": [
-    { "id": "start", "name": "Start Page" },
-    { "id": "alerts", "name": "Alerts Page" },
-    { "id": "avatars", "name": "Avatars Page" },
-    { "id": "blankslate", "name": "Blankslate" },
-    { "id": "breadcrumb", "name": "Breadcrumb" },
-    { "id": "buttons", "name": "Buttons" },
-    { "id": "labels", "name": "Labels" },
-    { "id": "layout", "name": "Layout" },
-    { "id": "navigation", "name": "Navigation" }
+    { "id": "start", "name": "Papillon Component Explorer" },
+    { "id": "alerts", "name": "Papillon Alerts Component Explorer" },
+    { "id": "avatars", "name": "Papillon Avatars Component Explorer" },
+    { "id": "blankslate", "name": "Papillon Blankslate Component Explorer" },
+    { "id": "breadcrumb", "name": "Papillon Breadcrumb Component Explorer" },
+    { "id": "buttons", "name": "Papillon Buttons Component Explorer" },
+    { "id": "labels", "name": "Papillon Labels Component Explorer" },
+    { "id": "layout", "name": "Papillon Layout Component Explorer" },
+    { "id": "navigation", "name": "Papillon Navigation Component Explorer" }
   ]
 }
