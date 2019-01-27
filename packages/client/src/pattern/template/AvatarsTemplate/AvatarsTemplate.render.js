@@ -1,17 +1,13 @@
 import React from 'react'
 import AvatarsTemplate from './AvatarsTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'avatars',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'avatars',
+    name: 'some-name',
   },
 }
 
-const AvatarsTemplateDefault = <AvatarsTemplate data={data} startPageRoute="/" />
+const avatarsTemplateDefault = <AvatarsTemplate page={page} startPageRoute="/" />
 
-export default AvatarsTemplateDefault
+export default avatarsTemplateDefault
