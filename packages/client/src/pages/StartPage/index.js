@@ -10,6 +10,7 @@ import {
   layoutPageRoute,
   navigationPageRoute,
 } from '../../routes'
+import { version } from '../../../../../lerna.json'
 
 const style = {
   // position: '-webkit-sticky',
@@ -61,7 +62,7 @@ const StartPage = () => {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    Papillon Explorer
+                    Papillon Explorer v{version}
                   </button>
                 </h1>
               </div>
