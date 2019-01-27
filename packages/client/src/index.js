@@ -18,18 +18,12 @@ import '@babel/polyfill'
 import client from './graphql/client'
 
 import AsyncAlertsPage from './pages/AlertsPage'
+import AsyncAvatarsPage from './pages/AvatarsPage'
 
 const StartPage = React.lazy(() => import('./pages/StartPage'))
 const asyncStartPage = () => (
   <React.Suspense fallback={null}>
     <StartPage />
-  </React.Suspense>
-)
-
-const AvatarsPage = React.lazy(() => import('./pages/AvatarsPage'))
-const asyncAvatarsPage = () => (
-  <React.Suspense fallback={null}>
-    <AvatarsPage />
   </React.Suspense>
 )
 
@@ -90,7 +84,7 @@ const App = () => {
         <Switch>
           <Route exact path={startPageRoute} component={asyncStartPage} />
           <Route exact path={alertsPageRoute} component={AsyncAlertsPage} />
-          <Route exact path={avatarsPageRoute} component={asyncAvatarsPage} />
+          <Route exact path={avatarsPageRoute} component={AsyncAvatarsPage} />
           <Route exact path={blankslatePageRoute} component={asyncBlankslatePage} />
           <Route exact path={breadcrumbPageRoute} component={asyncBreadcrumbPage} />
           <Route exact path={buttonsPageRoute} component={asyncButtonsPage} />
