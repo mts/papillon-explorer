@@ -1,12 +1,6 @@
 import React from 'react'
 import breadcrumbPageDefault from './BreadcrumbPage.render'
 
-jest.mock('react-router-dom', () => {
-  return {
-    Link: () => <div />,
-  }
-})
-
 jest.mock('react-apollo', () => {
   return {
     Query: () => <div />,
