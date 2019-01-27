@@ -1,8 +1,17 @@
+/* eslint no-unused-vars : 0 */
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import './index.scss'
+import AsyncStartPage from './pattern/page/StartPage'
+import AsyncAlertsPage from './pattern/page/AlertsPage'
+import AsyncAvatarsPage from './pattern/page/AvatarsPage'
+import AsyncBlankslatePage from './pattern/page/BlankslatePage'
+import AsyncBreadcrumbPage from './pattern/page/BreadcrumbPage'
+import AsyncButtonsPage from './pattern/page/ButtonsPage'
+import AsyncLabelsPage from './pattern/page/LabelsPage'
+import AsyncLayoutPage from './pattern/page/LayoutPage'
+import AsyncNavigationPage from './pattern/page/NavigationPage'
 import {
   startPageRoute,
   alertsPageRoute,
@@ -14,101 +23,48 @@ import {
   layoutPageRoute,
   navigationPageRoute,
 } from './routes'
+import './index.scss'
 import '@babel/polyfill'
 import client from './graphql/client'
+import { addDivWithIdToBody, checkAccessibilityIssues } from './utility/startup'
+import ErrorBoundary from './pattern/atom/ErrorBoundary'
 
-const StartPage = React.lazy(() => import('./pages/StartPage'))
-const asyncStartPage = () => (
-  <React.Suspense fallback={null}>
-    <StartPage />
-  </React.Suspense>
+const App = () => (
+  <BrowserRouter>
+    <ApolloProvider client={client}>
+      <Switch>
+        <Route exact path={startPageRoute} component={AsyncStartPage} />
+        <Route exact path={alertsPageRoute} component={AsyncAlertsPage} />
+        <Route exact path={avatarsPageRoute} component={AsyncAvatarsPage} />
+        <Route exact path={blankslatePageRoute} component={AsyncBlankslatePage} />
+        <Route exact path={breadcrumbPageRoute} component={AsyncBreadcrumbPage} />
+        <Route exact path={buttonsPageRoute} component={AsyncButtonsPage} />
+        <Route exact path={labelsPageRoute} component={AsyncLabelsPage} />
+        <Route exact path={layoutPageRoute} component={AsyncLayoutPage} />
+        <Route exact path={navigationPageRoute} component={AsyncNavigationPage} />
+      </Switch>
+    </ApolloProvider>
+  </BrowserRouter>
 )
 
-const AlertsPage = React.lazy(() => import('./pages/AlertsPage'))
-const asyncAlertsPage = () => (
-  <React.Suspense fallback={null}>
-    <AlertsPage />
-  </React.Suspense>
+addDivWithIdToBody('app')
+checkAccessibilityIssues(React, ReactDOM, 1000)
+
+const StrictApp = () => (
+  <React.StrictMode>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+  </React.StrictMode>
 )
 
-const AvatarsPage = React.lazy(() => import('./pages/AvatarsPage'))
-const asyncAvatarsPage = () => (
-  <React.Suspense fallback={null}>
-    <AvatarsPage />
-  </React.Suspense>
+const RegularApp = () => (
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>
 )
 
-const BlankslatePage = React.lazy(() => import('./pages/BlankslatePage'))
-const asyncBlankslatePage = () => (
-  <React.Suspense fallback={null}>
-    <BlankslatePage />
-  </React.Suspense>
-)
-
-const BreadcrumbPage = React.lazy(() => import('./pages/BreadcrumbPage'))
-const asyncBreadcrumbPage = () => (
-  <React.Suspense fallback={null}>
-    <BreadcrumbPage />
-  </React.Suspense>
-)
-
-const ButtonsPage = React.lazy(() => import('./pages/ButtonsPage'))
-const asyncButtonsPage = () => (
-  <React.Suspense fallback={null}>
-    <ButtonsPage />
-  </React.Suspense>
-)
-
-const LabelsPage = React.lazy(() => import('./pages/LabelsPage'))
-const asyncLabelsPage = () => (
-  <React.Suspense fallback={null}>
-    <LabelsPage />
-  </React.Suspense>
-)
-
-const LayoutPage = React.lazy(() => import('./pages/LayoutPage'))
-const asyncLayoutPage = () => (
-  <React.Suspense fallback={null}>
-    <LayoutPage />
-  </React.Suspense>
-)
-
-const NavigationPage = React.lazy(() => import('./pages/NavigationPage'))
-const asyncNavigationPage = () => (
-  <React.Suspense fallback={null}>
-    <NavigationPage />
-  </React.Suspense>
-)
-
-function addDivWithIdToBody() {
-  const appElement = document.createElement('div')
-  appElement.id = 'app'
-  document.body.appendChild(appElement)
-}
-
-addDivWithIdToBody()
-
-const App = () => {
-  return (
-    <BrowserRouter>
-      <ApolloProvider client={client}>
-        <Switch>
-          <Route exact path={startPageRoute} component={asyncStartPage} />
-          <Route exact path={alertsPageRoute} component={asyncAlertsPage} />
-          <Route exact path={avatarsPageRoute} component={asyncAvatarsPage} />
-          <Route exact path={blankslatePageRoute} component={asyncBlankslatePage} />
-          <Route exact path={breadcrumbPageRoute} component={asyncBreadcrumbPage} />
-          <Route exact path={buttonsPageRoute} component={asyncButtonsPage} />
-          <Route exact path={labelsPageRoute} component={asyncLabelsPage} />
-          <Route exact path={layoutPageRoute} component={asyncLayoutPage} />
-          <Route exact path={navigationPageRoute} component={asyncNavigationPage} />
-        </Switch>
-      </ApolloProvider>
-    </BrowserRouter>
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<RegularApp />, document.getElementById('app'))
 
 if (module.hot) {
   module.hot.accept()
