@@ -1,6 +1,6 @@
 {
   "name": "papillon-explorer-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Papillon Explorer Server",
   "main": "index.js",
   "license": "MIT",
