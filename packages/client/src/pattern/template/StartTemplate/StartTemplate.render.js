@@ -1,17 +1,13 @@
 import React from 'react'
 import StartTemplate from './StartTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'start',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'start',
+    name: 'some-name',
   },
 }
 
-const StartTemplateDefault = <StartTemplate data={data} startPageRoute="/" />
+const startTemplateDefault = <StartTemplate page={page} startPageRoute="/" />
 
-export default StartTemplateDefault
+export default startTemplateDefault
