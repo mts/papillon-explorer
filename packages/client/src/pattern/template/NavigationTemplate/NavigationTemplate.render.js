@@ -1,17 +1,13 @@
 import React from 'react'
 import NavigationTemplate from './NavigationTemplate'
 
-const data = {
-  pages: {
-    pages: [
-      {
-        id: 'navigation',
-        name: 'some-name',
-      },
-    ],
+const page = {
+  page: {
+    id: 'navigation',
+    name: 'some-name',
   },
 }
 
-const NavigationTemplateDefault = <NavigationTemplate data={data} startPageRoute="/" />
+const navigationTemplateDefault = <NavigationTemplate page={page} startPageRoute="/" />
 
-export default NavigationTemplateDefault
+export default navigationTemplateDefault
