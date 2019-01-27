@@ -17,17 +17,12 @@ import {
 import '@babel/polyfill'
 import client from './graphql/client'
 
+import AsyncAlertsPage from './pages/AlertsPage'
+
 const StartPage = React.lazy(() => import('./pages/StartPage'))
 const asyncStartPage = () => (
   <React.Suspense fallback={null}>
     <StartPage />
-  </React.Suspense>
-)
-
-const AlertsPage = React.lazy(() => import('./pages/AlertsPage'))
-const asyncAlertsPage = () => (
-  <React.Suspense fallback={null}>
-    <AlertsPage />
   </React.Suspense>
 )
 
@@ -94,7 +89,7 @@ const App = () => {
       <ApolloProvider client={client}>
         <Switch>
           <Route exact path={startPageRoute} component={asyncStartPage} />
-          <Route exact path={alertsPageRoute} component={asyncAlertsPage} />
+          <Route exact path={alertsPageRoute} component={AsyncAlertsPage} />
           <Route exact path={avatarsPageRoute} component={asyncAvatarsPage} />
           <Route exact path={blankslatePageRoute} component={asyncBlankslatePage} />
           <Route exact path={breadcrumbPageRoute} component={asyncBreadcrumbPage} />
