@@ -27,6 +27,7 @@ import './index.scss'
 import '@babel/polyfill'
 import client from './graphql/client'
 import { addDivWithIdToBody } from './utility/startup'
+import ErrorBoundary from './pattern/atom/ErrorBoundary'
 
 const App = () => (
   <BrowserRouter>
@@ -50,11 +51,19 @@ addDivWithIdToBody('app')
 
 const StrictApp = () => (
   <React.StrictMode>
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>
 )
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const RegularApp = () => (
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>
+)
+
+ReactDOM.render(<RegularApp />, document.getElementById('app'))
 
 if (module.hot) {
   module.hot.accept()
