@@ -19,18 +19,12 @@ import client from './graphql/client'
 
 import AsyncAlertsPage from './pages/AlertsPage'
 import AsyncAvatarsPage from './pages/AvatarsPage'
+import AsyncBlankslatePage from './pages/BlankslatePage'
 
 const StartPage = React.lazy(() => import('./pages/StartPage'))
 const asyncStartPage = () => (
   <React.Suspense fallback={null}>
     <StartPage />
-  </React.Suspense>
-)
-
-const BlankslatePage = React.lazy(() => import('./pages/BlankslatePage'))
-const asyncBlankslatePage = () => (
-  <React.Suspense fallback={null}>
-    <BlankslatePage />
   </React.Suspense>
 )
 
@@ -85,7 +79,7 @@ const App = () => {
           <Route exact path={startPageRoute} component={asyncStartPage} />
           <Route exact path={alertsPageRoute} component={AsyncAlertsPage} />
           <Route exact path={avatarsPageRoute} component={AsyncAvatarsPage} />
-          <Route exact path={blankslatePageRoute} component={asyncBlankslatePage} />
+          <Route exact path={blankslatePageRoute} component={AsyncBlankslatePage} />
           <Route exact path={breadcrumbPageRoute} component={asyncBreadcrumbPage} />
           <Route exact path={buttonsPageRoute} component={asyncButtonsPage} />
           <Route exact path={labelsPageRoute} component={asyncLabelsPage} />
