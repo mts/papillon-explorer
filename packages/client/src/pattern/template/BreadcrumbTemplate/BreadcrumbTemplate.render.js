@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const breadcrumbTemplateDefault = <BreadcrumbTemplate page={page} startPageRoute="/" />
+const breadcrumbTemplateDefault = <BreadcrumbTemplate page={page} />
 
 export default breadcrumbTemplateDefault

@@ -8,7 +8,7 @@ import {
   buttonsPageRoute,
   labelsPageRoute,
   navigationPageRoute,
-} from '../../../../../routes'
+} from '../../../../../route'
 
 const ComponentsLinks = () => {
   return (
@@ -18,17 +18,17 @@ const ComponentsLinks = () => {
       </a>
       <ul className="pt-2 list-style-none">
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={alertsPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={alertsPageRoute.path}>
             Alerts
           </Link>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={avatarsPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={avatarsPageRoute.path}>
             Avatars
           </Link>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={blankslatePageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={blankslatePageRoute.path}>
             Blankslate
           </Link>
         </li>
@@ -95,12 +95,12 @@ const ComponentsLinks = () => {
           </a>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={breadcrumbPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={breadcrumbPageRoute.path}>
             Breadcrumb
           </Link>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={buttonsPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={buttonsPageRoute.path}>
             Buttons
           </Link>
         </li>
@@ -134,7 +134,7 @@ const ComponentsLinks = () => {
           </a>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={labelsPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={labelsPageRoute.path}>
             Labels
             <span className="position-absolute right-0">
               <span className="text-green  tooltipped tooltipped-nw" aria-label="New release">
@@ -177,7 +177,7 @@ const ComponentsLinks = () => {
           </a>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={navigationPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={navigationPageRoute.path}>
             Navigation
           </Link>
         </li>

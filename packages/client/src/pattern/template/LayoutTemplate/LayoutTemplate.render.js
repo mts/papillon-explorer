@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const LayoutTemplateDefault = <LayoutTemplate page={page} startPageRoute="/" />
+const LayoutTemplateDefault = <LayoutTemplate page={page} />
 
 export default LayoutTemplateDefault

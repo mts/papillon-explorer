@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const navigationTemplateDefault = <NavigationTemplate page={page} startPageRoute="/" />
+const navigationTemplateDefault = <NavigationTemplate page={page} />
 
 export default navigationTemplateDefault

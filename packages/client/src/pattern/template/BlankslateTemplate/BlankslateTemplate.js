@@ -1,8 +1,9 @@
 import React from 'react'
-import { object, string } from 'prop-types'
+import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { startPagePath } from '../../../route/path'
 
-const BlankslateTemplate = ({ page, startPageRoute }) => (
+const BlankslateTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -10,14 +11,13 @@ const BlankslateTemplate = ({ page, startPageRoute }) => (
       <span role="img" aria-label="emoji">
         🙂
       </span>
-      <Link to={startPageRoute}> Back to Home Page</Link>
+      <Link to={startPagePath}> Back to Home Page</Link>
     </div>
   </div>
 )
 
 BlankslateTemplate.propTypes = {
   page: object.isRequired,
-  startPageRoute: string.isRequired,
 }
 
 export default BlankslateTemplate

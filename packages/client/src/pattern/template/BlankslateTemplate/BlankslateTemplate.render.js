@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const blankslateTemplateDefault = <BlankslateTemplate page={page} startPageRoute="/" />
+const blankslateTemplateDefault = <BlankslateTemplate page={page} />
 
 export default blankslateTemplateDefault
