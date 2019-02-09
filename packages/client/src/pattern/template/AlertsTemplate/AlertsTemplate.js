@@ -1,9 +1,9 @@
 import React from 'react'
 import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
-import { routeShape } from '../../../route/shape'
+import { startPagePath } from '../../../route/path'
 
-const AlertsTemplate = ({ page, startPageRoute }) => (
+const AlertsTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -11,14 +11,13 @@ const AlertsTemplate = ({ page, startPageRoute }) => (
       <span role="img" aria-label="emoji">
         🙂
       </span>
-      <Link to={startPageRoute.path}> Back to Home Page</Link>
+      <Link to={startPagePath}> Back to Home Page</Link>
     </div>
   </div>
 )
 
 AlertsTemplate.propTypes = {
   page: object.isRequired,
-  startPageRoute: routeShape.isRequired,
 }
 
 export default AlertsTemplate
