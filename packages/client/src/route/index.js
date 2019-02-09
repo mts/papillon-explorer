@@ -1,44 +1,72 @@
+import AsyncStartPage from '../pattern/page/StartPage'
+import AsyncAlertsPage from '../pattern/page/AlertsPage'
+import AsyncAvatarsPage from '../pattern/page/AvatarsPage'
+import AsyncBlankslatePage from '../pattern/page/BlankslatePage'
+import AsyncBreadcrumbPage from '../pattern/page/BreadcrumbPage'
+import AsyncButtonsPage from '../pattern/page/ButtonsPage'
+import AsyncLabelsPage from '../pattern/page/LabelsPage'
+import AsyncLayoutPage from '../pattern/page/LayoutPage'
+import AsyncNavigationPage from '../pattern/page/NavigationPage'
+import { startPagePath } from './path'
+import { alertsPagePath } from './path'
+import { avatarsPagePath } from './path'
+import { blankslatePagePath } from './path'
+import { breadcrumbPagePath } from './path'
+import { buttonsPagePath } from './path'
+import { labelsPagePath } from './path'
+import { layoutPagePath } from './path'
+import { navigationPagePath } from './path'
+
 export const startPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/` : '/',
+  path: startPagePath,
   exact: true,
+  component: AsyncStartPage,
 }
 
 export const alertsPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/alerts` : '/alerts',
+  path: alertsPagePath,
   exact: true,
+  component: AsyncAlertsPage,
 }
 
 export const avatarsPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/avatars` : '/avatars',
+  path: avatarsPagePath,
   exact: true,
+  component: AsyncAvatarsPage,
 }
 
 export const blankslatePageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/blankslate` : '/blankslate',
+  path: blankslatePagePath,
   exact: true,
+  component: AsyncBlankslatePage,
 }
 
 export const breadcrumbPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/breadcrumb` : '/breadcrumb',
+  path: breadcrumbPagePath,
   exact: true,
+  component: AsyncBreadcrumbPage,
 }
 
 export const buttonsPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/buttons` : '/buttons',
+  path: buttonsPagePath,
   exact: true,
+  component: AsyncButtonsPage,
 }
 
 export const labelsPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/labels` : '/labels',
+  path: labelsPagePath,
   exact: true,
+  component: AsyncLabelsPage,
 }
 
 export const layoutPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/layout` : '/layout',
+  path: layoutPagePath,
   exact: true,
+  component: AsyncLayoutPage,
 }
 
 export const navigationPageRoute = {
-  path: process.env.BASE_URL ? `${process.env.BASE_URL}/navigation` : '/navigation',
+  path: navigationPagePath,
   exact: true,
+  component: AsyncNavigationPage,
 }
