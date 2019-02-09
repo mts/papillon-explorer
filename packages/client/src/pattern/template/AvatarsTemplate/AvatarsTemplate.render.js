@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const avatarsTemplateDefault = <AvatarsTemplate page={page} startPageRoute="/" />
+const avatarsTemplateDefault = <AvatarsTemplate page={page} />
 
 export default avatarsTemplateDefault

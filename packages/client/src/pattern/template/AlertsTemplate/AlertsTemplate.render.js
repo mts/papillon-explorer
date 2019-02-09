@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const alertsTemplateDefault = <AlertsTemplate page={page} startPageRoute="/" />
+const alertsTemplateDefault = <AlertsTemplate page={page} />
 
 export default alertsTemplateDefault
