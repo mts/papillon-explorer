@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const labelsTemplateDefault = <LabelsTemplate page={page} startPageRoute="/" />
+const labelsTemplateDefault = <LabelsTemplate page={page} />
 
 export default labelsTemplateDefault

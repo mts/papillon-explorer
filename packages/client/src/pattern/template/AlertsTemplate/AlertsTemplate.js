@@ -1,23 +1,19 @@
 import React from 'react'
-import { object, string } from 'prop-types'
+import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { startPagePath } from '../../../route/path'
+import UnderConstruction from '../../atom/info/UnderConstruction'
 
-const AlertsTemplate = ({ page, startPageRoute }) => (
+const AlertsTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
-    <div>
-      Under construction{' '}
-      <span role="img" aria-label="emoji">
-        🙂
-      </span>
-      <Link to={startPageRoute}> Back to Home Page</Link>
-    </div>
+    <UnderConstruction />
+    <Link to={startPagePath}> Back to Home Page</Link>
   </div>
 )
 
 AlertsTemplate.propTypes = {
   page: object.isRequired,
-  startPageRoute: string.isRequired,
 }
 
 export default AlertsTemplate

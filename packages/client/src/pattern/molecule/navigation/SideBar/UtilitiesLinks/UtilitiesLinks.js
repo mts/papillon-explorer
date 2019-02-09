@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { layoutPageRoute } from '../../../../../routes'
+import { layoutPageRoute } from '../../../../../route'
 
 const UtilitiesLinks = () => {
   return (
@@ -148,7 +148,7 @@ const UtilitiesLinks = () => {
           </a>
         </li>
         <li className="">
-          <Link className="position-relative f5 py-1 d-block" to={layoutPageRoute}>
+          <Link className="position-relative f5 py-1 d-block" to={layoutPageRoute.path}>
             Layout
           </Link>
         </li>

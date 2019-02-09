@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UnderConstruction /> Snaphot must match underConstructionDefault 1`] = `
+Array [
+  "Under construction",
+  " ",
+  <span
+    aria-label="emoji"
+    role="img"
+  >
+    🙂
+  </span>,
+]
+`;

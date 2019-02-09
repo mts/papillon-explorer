@@ -8,6 +8,6 @@ const page = {
   },
 }
 
-const buttonsTemplateDefault = <ButtonsTemplate page={page} startPageRoute="/" />
+const buttonsTemplateDefault = <ButtonsTemplate page={page} />
 
 export default buttonsTemplateDefault
