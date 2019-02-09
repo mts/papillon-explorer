@@ -1,0 +1,1175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideBar /> Snaphot must match sideBarDefault 1`] = `
+<nav
+  className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pb-4"
+  data-pjax=""
+  id="navigation"
+>
+  <ul
+    className="list-style-none"
+  >
+    <li
+      className="px-4 my-4"
+    >
+      <a
+        className="position-relative f4 d-block text-gray-dark"
+        href="/papillon/support/"
+      >
+        Support
+      </a>
+      <ul
+        className="pt-2 list-style-none"
+      >
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/support/breakpoints/"
+          >
+            Breakpoints
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/support/color-system/"
+          >
+            Color system
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/support/spacing/"
+          >
+            Spacing
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/support/typography/"
+          >
+            Typography
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/support/marketing-variables/"
+          >
+            Marketing variables
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="new release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li
+      className="mt-4 border-bottom"
+    />
+    <li
+      className="px-4 my-4"
+    >
+      <a
+        className="position-relative f4 d-block text-gray-dark"
+        href="/papillon/utilities/"
+      >
+        Utilities
+      </a>
+      <ul
+        className="pt-2 list-style-none"
+      >
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/animations/"
+          >
+            Animations
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/borders/"
+          >
+            Borders
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/marketing-borders/"
+          >
+            Marketing borders
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/box-shadow/"
+          >
+            Box shadow
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/colors/"
+          >
+            Colors
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/details/"
+          >
+            Details
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/marketing-filters/"
+          >
+            Filters
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/flexbox/"
+          >
+            Flexbox
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/marketing-layout/"
+          >
+            Marketing layout
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/margin/"
+          >
+            Margin
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/marketing-margin/"
+          >
+            Marketing margin
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/padding/"
+          >
+            Padding
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/marketing-padding/"
+          >
+            Marketing padding
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/typography/"
+          >
+            Typography
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/utilities/marketing-type/"
+          >
+            Marketing typography
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New Release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li
+      className="mt-4 border-bottom"
+    />
+    <li
+      className="px-4 my-4"
+    >
+      <a
+        className="position-relative f4 d-block text-gray-dark"
+        href="/papillon/objects/"
+      >
+        Objects
+      </a>
+      <ul
+        className="pt-2 list-style-none"
+      >
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/objects/grid/"
+          >
+            Grid
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/objects/layout/"
+          >
+            Layout
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Deprecated"
+                className="text-red  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/papillon/objects/table-object/"
+          >
+            Table object
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li
+      className="mt-4 border-bottom"
+    />
+    <li
+      className="px-4 my-4"
+    >
+      <a
+        className="position-relative f4 d-block text-gray-dark"
+        href="/"
+      >
+        Components
+      </a>
+      <ul
+        className="pt-2 list-style-none"
+      >
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/box/"
+          >
+            Box
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/box-overlay/"
+          >
+            Box overlay
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Experimental"
+                className="text-yellow  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/boxed-groups/"
+          >
+            Boxed groups
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Deprecated"
+                className="text-red  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/branch-name/"
+          >
+            Branch name
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/dropdown/"
+          >
+            Dropdown
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/flash-banner/"
+          >
+            Flash banner
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="In review"
+                className="text-yellow  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/forms/"
+          >
+            Forms
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/markdown/"
+          >
+            Markdown
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/marketing-buttons/"
+          >
+            Marketing Buttons
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New Release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <div />
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/octicons/"
+          >
+            Octicons
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/page-headers/"
+          >
+            Page headers
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Deprecated"
+                className="text-red  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/page-sections/"
+          >
+            Page sections
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Deprecated"
+                className="text-red  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/pagehead/"
+          >
+            Pagehead
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/pagination/"
+          >
+            Pagination
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New Release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/popover/"
+          >
+            Popover
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Experimental"
+                className="text-yellow  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/progress/"
+          >
+            Progress Bar
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Experimental"
+                className="text-yellow  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/select-menu/"
+          >
+            Select menu
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/subhead/"
+          >
+            Subhead
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="New release"
+                className="text-green  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/tables/"
+          >
+            Tables
+            <span
+              className="position-absolute right-0"
+            >
+              <span
+                aria-label="Deprecated"
+                className="text-red  tooltipped tooltipped-nw"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot octicon octicon-primitive-dot v-align-text-top"
+                  height="18"
+                  version="1.1"
+                  viewBox="0 0 8 16"
+                  width="9"
+                >
+                  <path
+                    d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/tooltips/"
+          >
+            Tooltips
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            className="position-relative f5 py-1 d-block"
+            href="/truncate/"
+          >
+            Truncate
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+`;
