@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { layoutPageRoute } from '../../../../routes'
-import SideBarComponentsLinks from './Links/Components/SideBarComponentsLinks'
+import ComponentsLinks from './ComponentsLinks'
 
 const SideBar = () => (
   <nav id="navigation" className="sidebar flex-column flex-justify-start overflow-auto border-right bg-gray-light pb-4" data-pjax="">
@@ -375,7 +375,7 @@ const SideBar = () => (
       </li>
       <li className="mt-4 border-bottom" />
 
-      <SideBarComponentsLinks />
+      <ComponentsLinks />
     </ul>
   </nav>
 )

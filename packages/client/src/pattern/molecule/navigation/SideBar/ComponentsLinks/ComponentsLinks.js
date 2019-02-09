@@ -8,9 +8,9 @@ import {
   buttonsPageRoute,
   labelsPageRoute,
   navigationPageRoute,
-} from '../../../../../../routes'
+} from '../../../../../routes'
 
-const SideBarComponentsLinks = () => {
+const ComponentsLinks = () => {
   return (
     <li className="px-4 my-4">
       <a href="/" className="position-relative f4 d-block text-gray-dark">
@@ -344,4 +344,4 @@ const SideBarComponentsLinks = () => {
   )
 }
 
-export default SideBarComponentsLinks
+export default ComponentsLinks
