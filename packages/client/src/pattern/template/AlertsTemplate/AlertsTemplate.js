@@ -2,7 +2,7 @@ import React from 'react'
 import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { startPagePath } from '../../../route/path'
-import { UnderConstruction } from '../../atom/info/UnderConstruction'
+import UnderConstruction from '../../atom/info/UnderConstruction'
 
 const AlertsTemplate = ({ page }) => (
   <div>
