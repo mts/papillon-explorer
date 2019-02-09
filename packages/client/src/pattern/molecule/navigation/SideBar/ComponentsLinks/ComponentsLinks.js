@@ -12,7 +12,7 @@ import {
 
 const ComponentsLinks = () => {
   return (
-    <li className="px-4 my-4">
+    <React.Fragment>
       <a href="/" className="position-relative f4 d-block text-gray-dark">
         Components
       </a>
@@ -340,7 +340,7 @@ const ComponentsLinks = () => {
           </a>
         </li>
       </ul>
-    </li>
+    </React.Fragment>
   )
 }
 
