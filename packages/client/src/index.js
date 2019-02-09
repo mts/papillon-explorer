@@ -22,7 +22,7 @@ import {
   labelsPageRoute,
   layoutPageRoute,
   navigationPageRoute,
-} from './routes'
+} from './route'
 import './index.scss'
 import '@babel/polyfill'
 import client from './graphql/client'
@@ -33,15 +33,15 @@ const App = () => (
   <BrowserRouter>
     <ApolloProvider client={client}>
       <Switch>
-        <Route exact path={startPageRoute} component={AsyncStartPage} />
-        <Route exact path={alertsPageRoute} component={AsyncAlertsPage} />
-        <Route exact path={avatarsPageRoute} component={AsyncAvatarsPage} />
-        <Route exact path={blankslatePageRoute} component={AsyncBlankslatePage} />
-        <Route exact path={breadcrumbPageRoute} component={AsyncBreadcrumbPage} />
-        <Route exact path={buttonsPageRoute} component={AsyncButtonsPage} />
-        <Route exact path={labelsPageRoute} component={AsyncLabelsPage} />
-        <Route exact path={layoutPageRoute} component={AsyncLayoutPage} />
-        <Route exact path={navigationPageRoute} component={AsyncNavigationPage} />
+        <Route exact={startPageRoute.exact} path={startPageRoute.path} component={AsyncStartPage} />
+        <Route exact={alertsPageRoute.exact} path={alertsPageRoute.path} component={AsyncAlertsPage} />
+        <Route exact={avatarsPageRoute.exact} path={avatarsPageRoute.path} component={AsyncAvatarsPage} />
+        <Route exact={blankslatePageRoute.exact} path={blankslatePageRoute.path} component={AsyncBlankslatePage} />
+        <Route exact={breadcrumbPageRoute.exact} path={breadcrumbPageRoute.path} component={AsyncBreadcrumbPage} />
+        <Route exact={buttonsPageRoute.exact} path={buttonsPageRoute.path} component={AsyncButtonsPage} />
+        <Route exact={labelsPageRoute.exact} path={labelsPageRoute.path} component={AsyncLabelsPage} />
+        <Route exact={layoutPageRoute.exact} path={layoutPageRoute.path} component={AsyncLayoutPage} />
+        <Route exact={navigationPageRoute.exact} path={navigationPageRoute.path} component={AsyncNavigationPage} />
       </Switch>
     </ApolloProvider>
   </BrowserRouter>
