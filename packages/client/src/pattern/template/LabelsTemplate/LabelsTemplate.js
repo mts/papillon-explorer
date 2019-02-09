@@ -1,6 +1,7 @@
 import React from 'react'
-import { object, string } from 'prop-types'
+import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { routeShape } from '../../../route/shape'
 import RegularLabels from './RegularLabels'
 import ThemeLabels from './ThemeLabels'
 import StateLabels from './StateLabels'
@@ -29,14 +30,14 @@ const LabelsTemplate = ({ page, startPageRoute }) => (
       </div>
     </div>
     <div className="p-4">
-      <Link to={startPageRoute}> Back to Home Page</Link>
+      <Link to={startPageRoute.path}> Back to Home Page</Link>
     </div>
   </div>
 )
 
 LabelsTemplate.propTypes = {
   page: object.isRequired,
-  startPageRoute: string.isRequired,
+  startPageRoute: routeShape.isRequired,
 }
 
 export default LabelsTemplate

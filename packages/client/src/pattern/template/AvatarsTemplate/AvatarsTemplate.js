@@ -1,6 +1,7 @@
 import React from 'react'
-import { object, string } from 'prop-types'
+import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { routeShape } from '../../../route/shape'
 
 const AvatarsTemplate = ({ page, startPageRoute }) => (
   <div>
@@ -10,14 +11,14 @@ const AvatarsTemplate = ({ page, startPageRoute }) => (
       <span role="img" aria-label="emoji">
         🙂
       </span>
-      <Link to={startPageRoute}> Back to Home Page</Link>
+      <Link to={startPageRoute.path}> Back to Home Page</Link>
     </div>
   </div>
 )
 
 AvatarsTemplate.propTypes = {
   page: object.isRequired,
-  startPageRoute: string.isRequired,
+  startPageRoute: routeShape.isRequired,
 }
 
 export default AvatarsTemplate
