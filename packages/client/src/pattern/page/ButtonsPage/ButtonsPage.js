@@ -1,6 +1,6 @@
 import React from 'react'
 import { Query } from 'react-apollo'
-import { startPageRoute } from '../../../routes'
+import { startPageRoute } from '../../../route'
 import { PAGES } from '../../../graphql/query'
 import ButtonsTemplate from '../../template/ButtonsTemplate'
 
