@@ -14,6 +14,7 @@ import {
   labelsPageRoute,
   layoutPageRoute,
   navigationPageRoute,
+  notFoundPageRoute,
 } from './route'
 import './index.scss'
 import '@babel/polyfill'
@@ -34,6 +35,7 @@ const App = () => (
         <Route exact={labelsPageRoute.exact} path={labelsPageRoute.path} component={labelsPageRoute.component} />
         <Route exact={layoutPageRoute.exact} path={layoutPageRoute.path} component={layoutPageRoute.component} />
         <Route exact={navigationPageRoute.exact} path={navigationPageRoute.path} component={navigationPageRoute.component} />
+        <Route component={notFoundPageRoute.component} />
       </Switch>
     </ApolloProvider>
   </BrowserRouter>

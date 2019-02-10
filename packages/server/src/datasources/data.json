@@ -8,6 +8,7 @@
     { "id": "buttons", "name": "Papillon Buttons Component Explorer" },
     { "id": "labels", "name": "Papillon Labels Component Explorer" },
     { "id": "layout", "name": "Papillon Layout Utilities Explorer" },
-    { "id": "navigation", "name": "Papillon Navigation Component Explorer" }
+    { "id": "navigation", "name": "Papillon Navigation Component Explorer" },
+    { "id": "not-found", "name": "Papillon Page Not Found" }
   ]
 }

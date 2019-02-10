@@ -7,6 +7,7 @@ import AsyncButtonsPage from '../pattern/page/ButtonsPage'
 import AsyncLabelsPage from '../pattern/page/LabelsPage'
 import AsyncLayoutPage from '../pattern/page/LayoutPage'
 import AsyncNavigationPage from '../pattern/page/NavigationPage'
+import AsyncNotFoundPage from '../pattern/page/NotFoundPage'
 import { startPagePath } from './path'
 import { alertsPagePath } from './path'
 import { avatarsPagePath } from './path'
@@ -69,4 +70,8 @@ export const navigationPageRoute = {
   path: navigationPagePath,
   exact: true,
   component: AsyncNavigationPage,
+}
+
+export const notFoundPageRoute = {
+  component: AsyncNotFoundPage,
 }
