@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFoundPage /> Snaphot must match notFoundPageDefault 1`] = `<div />`;
