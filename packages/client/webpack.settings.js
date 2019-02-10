@@ -17,7 +17,7 @@ module.exports = {
     },
   },
   urls: {
-    publicPath: '/',
+    publicPath: process.env.BASE_URL ? `${process.env.BASE_URL}/` : '/',
   },
   vars: {
     cssName: 'styles',
