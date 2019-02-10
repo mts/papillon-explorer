@@ -115,7 +115,7 @@ const baseConfig = {
   entry: configureEntries(),
   output: {
     path: path.resolve(__dirname, settings.paths.build.base),
-    // publicPath: settings.urls.publicPath
+    publicPath: settings.urls.publicPath,
   },
   module: {
     rules: [configureFontLoader()],
