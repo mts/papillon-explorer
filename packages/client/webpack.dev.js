@@ -36,6 +36,7 @@ const configureDevServer = buildType => {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    historyApiFallback: true,
   }
 }
 
