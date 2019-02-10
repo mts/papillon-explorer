@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFoundTemplate /> Snaphot must match notFoundTemplateDefault 1`] = `
+<div>
+  <h2 />
+  Under construction
+   
+  <span
+    aria-label="emoji"
+    role="img"
+  >
+    🙂
+  </span>
+  <div />
+</div>
+`;
