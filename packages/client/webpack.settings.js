@@ -17,7 +17,7 @@ module.exports = {
     },
   },
   urls: {
-    publicPath: process.env.BASE_URL ? `${process.env.BASE_URL}/` : '/',
+    publicPath: '/papillon-explorer/',
   },
   vars: {
     cssName: 'styles',
