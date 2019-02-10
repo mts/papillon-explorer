@@ -17,7 +17,7 @@ module.exports = {
     },
   },
   urls: {
-    publicPath: '/',
+    publicPath: '/papillon-explorer/',
   },
   vars: {
     cssName: 'styles',
