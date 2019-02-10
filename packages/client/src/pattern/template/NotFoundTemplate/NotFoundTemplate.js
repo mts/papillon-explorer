@@ -2,18 +2,19 @@ import React from 'react'
 import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { startPagePath } from '../../../route/path'
-import UnderConstruction from '../../atom/info/UnderConstruction'
+import NoMatch from '../../atom/info/NoMatch'
 
-const NotFoundTemplate = ({ page }) => (
+const NotFoundTemplate = ({ page, location }) => (
   <div>
     <h2>{page.name}</h2>
-    <UnderConstruction />
+    <NoMatch location={location} />
     <Link to={startPagePath}> Back to Home Page</Link>
   </div>
 )
 
 NotFoundTemplate.propTypes = {
   page: object.isRequired,
+  location: object.isRequired,
 }
 
 export default NotFoundTemplate
