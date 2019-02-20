@@ -43,12 +43,7 @@ const configureBabelLoader = browserList => {
         plugins: [
           '@babel/plugin-proposal-class-properties',
           '@babel/plugin-syntax-dynamic-import',
-          [
-            '@babel/plugin-transform-runtime',
-            {
-              regenerator: true,
-            },
-          ],
+          '@babel/plugin-transform-runtime',
           '@babel/plugin-transform-spread',
         ],
       },
