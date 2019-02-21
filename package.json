@@ -29,6 +29,7 @@
     "uninstall-packages": "lerna run uninstall-packages --stream",
     "install-packages": "lerna run install-packages --stream",
     "reinstall-packages": "lerna run reinstall-packages --stream",
+    "npm-update": "lerna run npm-update",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies",
     "start": "lerna run serve --stream",
     "heroku-postbuild": "npm run install-packages",
