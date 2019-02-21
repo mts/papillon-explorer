@@ -23,6 +23,7 @@
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "npm-update": "npm update",
     "test": "echo \"No test specified\" && exit 0",
     "lint": "npm-run-all lint:js",
     "lint:js": "eslint src/*.js --fix",
