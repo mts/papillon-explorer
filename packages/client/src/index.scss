@@ -312,11 +312,11 @@
 }
 
 .anim-box-hover {
-  transition: transform .3s, box-shadow .3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .anim-box-hover:hover {
-  box-shadow: 0 1px 15px rgba(27, 31, 35, .15) !important;
+  box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15) !important;
 
   transform: scale(1.025);
 }
@@ -324,14 +324,14 @@
 .search-dark {
   border: 1px;
   border: 1px solid transparent;
-  background-color: rgba(255, 255, 255, .07);
+  background-color: rgba(255, 255, 255, 0.07);
 
   color: #fff;
 }
 
 .search-dark:focus,
 .search-dark:active {
-  border: 1px solid rgba(255, 255, 255, .15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   outline: none;
   box-shadow: none;
 }
