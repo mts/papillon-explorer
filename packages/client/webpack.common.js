@@ -22,7 +22,7 @@ const settings = require('./webpack.settings.js')
 // Configure Babel loader
 const configureBabelLoader = browserList => {
   return {
-    test: /\.js$/,
+    test: /\.(js|jsx)$/,
     exclude: /node_modules/,
     use: {
       loader: 'babel-loader',
@@ -116,6 +116,9 @@ const baseConfig = {
     rules: [configureFontLoader()],
   },
   plugins: [new CleanWebpackPlugin(settings.paths.build.clean, configureCleanWebpack()), new HtmlWebpackPlugin(configureHtml())],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 }
 
 // Legacy webpack config

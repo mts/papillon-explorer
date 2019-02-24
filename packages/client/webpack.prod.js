@@ -166,8 +166,10 @@ const configurePostcssLoader = buildType => {
         {
           loader: 'css-loader',
           options: {
-            importLoaders: 2,
+            importLoaders: 1,
+            modules: true,
             sourceMap: true,
+            localIdentName: '[name]_[local]_[hash:base64:5]',
           },
         },
         {
