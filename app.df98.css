@@ -1,9 +1,9 @@
 /*!
  * @project        Papillon Explorer
- * @name           app.fc87.css
+ * @name           app.df98.css
  * @author         MTS
- * @build          Thu, Feb 21, 2019 1:32 AM ET
- * @release        e4d5a96219ee8c07be4383aad05445897e77ad33 [master]
+ * @build          Fri, Mar 1, 2019 10:15 PM ET
+ * @release        1a1d127789860894f112f7e084ec38921f5ad99c [master]
  * @copyright      Copyright (c) 2019 MTS
  *
  */
@@ -574,7 +574,7 @@ pre {
 
 .Box-header {
   padding: 16px;
-  margin: -2px 0;
+  margin: -1px -1px 0;
   background-color: #f6f8fa;
   border-color: #d1d5da;
   border-style: solid;
@@ -2329,8 +2329,10 @@ a.tabnav-extra:hover {
 
 .UnderlineNav {
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #e1e4e8; }
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 1px solid #e1e4e8;
+  justify-content: space-between; }
 
 .UnderlineNav-body {
   display: flex;
@@ -7433,6 +7435,7 @@ a.branch-name {
   font-weight: 500;
   src: local("InterUI Medium"), local("InterUI-Medium"), url("/primer-marketing-support/fonts/Inter-UI-Medium.woff") format("woff"); }
 
+.h000-mktg,
 .h00-mktg,
 .h0-mktg,
 .h1-mktg,
@@ -9039,10 +9042,10 @@ a.branch-name {
   color: #0366d6; }
 
 .anim-box-hover {
-  -webkit-transition: -webkit-transform .3s, -webkit-box-shadow .3s;
-  transition: -webkit-transform .3s, -webkit-box-shadow .3s;
-  transition: transform .3s, box-shadow .3s;
-  transition: transform .3s, box-shadow .3s, -webkit-transform .3s, -webkit-box-shadow .3s; }
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s; }
 
 .anim-box-hover:hover {
   -webkit-box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15) !important;
@@ -9257,4 +9260,4 @@ a.branch-name {
   fill: currentColor; }
 
 
-/*# sourceMappingURL=app.fc87.css.map*/
+/*# sourceMappingURL=app.df98.css.map*/
