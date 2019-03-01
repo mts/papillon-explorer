@@ -71,7 +71,7 @@
     "no-eol-whitespace": true,
     "no-extra-semicolons": true,
     "no-duplicate-at-import-rules": true,
-    "number-leading-zero": "never",
+    "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "indentation": 2,
     "property-case": "lower",
