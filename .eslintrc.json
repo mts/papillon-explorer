@@ -9,10 +9,10 @@
   },
   "settings": {
     "react": {
-      "version": "16.7.0"
+      "version": "16.8.6"
     }
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended", "plugin:jest/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true

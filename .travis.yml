@@ -9,6 +9,5 @@ node_js:
 before_script:
   - npm install
   - npm run install-packages
-  - npm run build
 script:
   - npm run ci

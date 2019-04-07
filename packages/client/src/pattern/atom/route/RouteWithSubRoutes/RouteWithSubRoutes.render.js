@@ -1,6 +1,5 @@
 import React from 'react'
 import RouteWithSubRoutes from './RouteWithSubRoutes'
-import { BrowserRouter } from 'react-router-dom'
 
 const SomeComponent = () => <div />
 const SomeOtherComponentOne = () => <div />
@@ -24,10 +23,6 @@ const route = {
   ],
 }
 
-const routeWithSubRoutesDefault = (
-  <BrowserRouter>
-    <RouteWithSubRoutes {...route} />
-  </BrowserRouter>
-)
+const routeWithSubRoutesDefault = <RouteWithSubRoutes route={route} />
 
 export default routeWithSubRoutesDefault
