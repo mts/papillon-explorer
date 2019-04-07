@@ -1,7 +1,4 @@
-/* stylelint-disable font-weight-notation */
-/* stylelint-disable declaration-no-important */
-/* stylelint-disable unit-blacklist */
-/* stylelint-disable declaration-block-no-duplicate-properties */
+/* stylelint-disable */
 
 @import '@primer/css/index.scss';
 
@@ -18,7 +15,6 @@
 
 .highlight .err {
   background-color: #e3d2d2;
-
   color: #a61717;
 } /* Error */
 
@@ -53,13 +49,11 @@
 
 .highlight .gd {
   background-color: #fdd;
-
   color: #000;
 } /* Generic.Deleted */
 
 .highlight .gd .x {
   background-color: #faa;
-
   color: #000;
 } /* Generic.Deleted.Specific */
 
@@ -77,13 +71,11 @@
 
 .highlight .gi {
   background-color: #dfd;
-
   color: #000;
 } /* Generic.Inserted */
 
 .highlight .gi .x {
   background-color: #afa;
-
   color: #000;
 } /* Generic.Inserted.Specific */
 
@@ -286,7 +278,6 @@
 .btn-dark {
   border: 1px solid #586069;
   background: #24292e;
-
   color: #fff;
   fill: #fff;
 }
@@ -298,7 +289,6 @@
 .btn-light {
   border: 1px solid #fff;
   background: transparent;
-
   color: #fff;
   fill: #fff;
 }
@@ -307,7 +297,6 @@
   border: 1px solid #fff;
   background-color: #fff;
   background-image: none;
-
   color: #0366d6;
 }
 
@@ -317,7 +306,6 @@
 
 .anim-box-hover:hover {
   box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15) !important;
-
   transform: scale(1.025);
 }
 
@@ -325,7 +313,6 @@
   border: 1px;
   border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.07);
-
   color: #fff;
 }
 
@@ -350,13 +337,11 @@
 @media (min-width: 1012px) {
   .search-results {
     right: 0;
-
     width: 0;
     min-width: 320px;
     height: auto;
     max-height: 240px;
     padding-bottom: 0;
-
     border: 1px solid #e1e4e8;
     border-radius: 3px;
   }
@@ -369,7 +354,6 @@
 .search-result:focus,
 .search-result.navigation-focus {
   background-color: #0366d6;
-
   color: #fff;
 }
 
@@ -398,13 +382,11 @@
 @keyframes slide-in {
   0% {
     opacity: 0;
-
     transform: translateX(100%);
   }
 
   100% {
     opacity: 1;
-
     transform: translateX(0);
   }
 }
@@ -496,7 +478,6 @@
     top: 0;
     right: 0;
     left: 0;
-
     height: 68px;
   }
 }
@@ -519,7 +500,6 @@
   .main-content {
     top: 88px;
     left: 30%;
-
     order: 1;
     max-width: 56em;
   }
@@ -542,7 +522,6 @@
     position: sticky;
     top: 68;
     left: 0;
-
     width: 24%;
     min-width: 200px;
     max-width: 300px;
@@ -553,7 +532,8 @@
 
 .octicon {
   display: inline-block;
-
   vertical-align: text-top;
   fill: currentColor;
 }
+
+/* stylelint-enable */

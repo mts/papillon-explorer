@@ -25,10 +25,11 @@
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "npm-update": "npm update",
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "npm-run-all lint:js",
-    "lint:js": "eslint src/*.js --fix",
-    "lint:staged": "lint-staged",
-    "ci": "npm-run-all lint build test"
+    "lint:format": "npm-run-all lint format",
+    "lint": "npm-run-all lint:js:jsx",
+    "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "ci": "npm-run-all lint:format build test"
   },
   "dependencies": {
     "@babel/cli": "^7.4.3",

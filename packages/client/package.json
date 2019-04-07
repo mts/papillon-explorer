@@ -24,11 +24,12 @@
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "npm-update": "npm update",
     "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
-    "lint": "npm-run-all lint:scss lint:js",
-    "lint:scss": "stylelint src/*.scss --fix",
-    "lint:js": "eslint src/*.js --fix",
-    "lint:staged": "lint-staged",
-    "ci": "npm-run-all lint build test"
+    "lint:format": "npm-run-all lint format",
+    "lint": "npm-run-all lint:js:jsx lint:css:scss",
+    "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
+    "lint:css:scss": "stylelint \"src/**/*.{css,scss}\" --syntax=scss --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,scss}\"",
+    "ci": "npm-run-all lint:format build test"
   },
   "browserslist": {
     "production": [
