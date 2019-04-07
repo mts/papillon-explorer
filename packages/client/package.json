@@ -24,6 +24,7 @@
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
     "npm-update": "npm update",
     "test": "jest -u --config jest.config.json --no-cache --silent --runInBand",
+    "test:coverage": "jest --config jest.config.json --coverage --collectCoverageFrom=src/**/*.{js,jsx} --silent",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js:jsx lint:css:scss",
     "lint:js:jsx": "eslint --ext .js --ext .jsx src/ --fix",
