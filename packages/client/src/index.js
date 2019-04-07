@@ -17,7 +17,6 @@ import {
   notFoundPageRoute,
 } from './route'
 import './index.scss'
-import '@babel/polyfill'
 import client from './graphql/client'
 import { addDivWithIdToBody, checkAccessibilityIssues } from './utility/startup'
 import ErrorBoundary from './pattern/atom/error/ErrorBoundary'
