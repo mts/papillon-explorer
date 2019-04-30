@@ -57,7 +57,10 @@ const RegularApp = () => (
   </ErrorBoundary>
 )
 
-ReactDOM.render(<RegularApp />, document.getElementById('app'))
+const JustApp = () => <App />
+
+
+ReactDOM.render(<JustApp />, document.getElementById('app'))
 
 if (module.hot) {
   module.hot.accept()
