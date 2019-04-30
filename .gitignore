@@ -7,4 +7,3 @@ packages/server/build
 packages/server/node_modules
 papillon-explorer.sublime-project
 papillon-explorer.sublime-workspace
-coverage
