@@ -6,6 +6,7 @@ jest.mock('react-router-dom', () => {
     Route: () => <div />,
   }
 })
+
 describe('<RouteWithSubRoutes />', () => {
   describe('Snaphot', () => {
     test('must match routeWithSubRoutesDefault', () => {
