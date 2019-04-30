@@ -1,3 +1,3 @@
-import NotFoundPage from './NotFoundPage'
+import AsyncNotFoundPage from './AsyncNotFoundPage'
 
-export default NotFoundPage
+export default AsyncNotFoundPage
