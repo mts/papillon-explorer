@@ -33,7 +33,7 @@ const configureBabelLoader = browserList => {
             {
               modules: false,
               useBuiltIns: 'entry',
-              corejs: '3.0.1',
+              corejs: 3,
               targets: {
                 browsers: browserList,
               },
@@ -116,7 +116,7 @@ const baseConfig = {
   module: {
     rules: [configureFontLoader()],
   },
-  plugins: [new CleanWebpackPlugin(settings.paths.build.clean, configureCleanWebpack()), new HtmlWebpackPlugin(configureHtml())],
+  plugins: [new CleanWebpackPlugin(configureCleanWebpack()), new HtmlWebpackPlugin(configureHtml())],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
