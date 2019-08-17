@@ -1,0 +1,12 @@
+{
+  "packages/**/src/**/*.{js,jsx}": [
+    "eslint --ext .js --ext .jsx packages/**/src/**/*.{js,jsx} --fix",
+    "prettier --write \"packages/**/src/**/*.{js,jsx}\"",
+    "git add"
+  ],
+  "packages/**/src/**/*.{css,scss}": [
+    "stylelint \"packages/**/src/**/*.{css,scss}\" --syntax=scss --fix",
+    "prettier --write \"packages/**/src/**/*.{css,scss}\"",
+    "git add"
+  ]
+}
