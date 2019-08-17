@@ -1,4 +1,3 @@
-/* eslint import/prefer-default-export: 0 */
 import gql from 'graphql-tag'
 
 export const PAGES = gql`
