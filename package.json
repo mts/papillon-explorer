@@ -3,25 +3,7 @@
   "description": "Papillon Explorer",
   "repository": "https://github.com/mts/papillon-explorer",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "packages/src/**/*.{js,jsx,json}": [
-      "eslint --ext .js --ext .jsx packages/src/ --fix",
-      "prettier --write \"packages/src/**/*.{js,jsx}\"",
-      "git add"
-    ],
-    "packages/src/**/*.{css,scss}": [
-      "stylelint \"packages/src/**/*.{css,scss}\" --syntax=scss --fix",
-      "prettier --write \"packages/src/**/*.{css,scss}\"",
-      "git add"
-    ]
-  },
   "scripts": {
-    "build": "lerna run build --stream",
     "release": "lerna publish",
     "uninstall-packages": "lerna run uninstall-packages --stream",
     "install-packages": "lerna run install-packages --stream",
@@ -32,10 +14,17 @@
     "heroku-postbuild": "npm run install-packages",
     "deploy-client": "gh-pages -d packages/client/build",
     "deploy": "npm-run-all build deploy-client",
-    "test": "lerna exec --concurrency 1 -- npm run test",
-    "test:coverage": "lerna exec --concurrency 1 -- npm run test:coverage",
-    "lint:format": "lerna run --stream lint:format",
-    "ci": "lerna run ci --stream"
+    "ci": "npm-run-all lint:format test build",
+    "lint:format": "npm-run-all lint format",
+    "lint": "npm-run-all lint:js:jsx lint:scss",
+    "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/src/**/*.{js,jsx} --fix",
+    "lint:scss": "stylelint \"packages/**/src/**/*.{css,scss}\" --syntax=scss --fix",
+    "format": "npm-run-all format:js:jsx format:scss",
+    "format:js:jsx": "prettier --write \"packages/**/src/**/*.{js,jsx}\"",
+    "format:scss": "prettier --write \"packages/**/src/**/*.{css,scss}\"",
+    "test": "jest -u --no-cache --silent --runInBand",
+    "test:coverage": "jest --coverage --silent",
+    "build": "lerna run build --stream"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
