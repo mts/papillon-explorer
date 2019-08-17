@@ -23,7 +23,8 @@
     "uninstall-packages": "rm -rf node_modules package-lock.json",
     "install-packages": "npm install",
     "reinstall-packages": "npm-run-all uninstall-packages install-packages",
-    "npm-update": "npm update"
+    "npm-update": "npm update",
+    "ci": "npm-run-all build"
   },
   "dependencies": {
     "@babel/cli": "^7.5.5",
