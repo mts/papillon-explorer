@@ -12,7 +12,7 @@ const merge = require('webpack-merge')
 // webpack plugins
 const ManifestPlugin = require('webpack-manifest-plugin')
 
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // config files
@@ -116,7 +116,7 @@ const baseConfig = {
   module: {
     rules: [configureFontLoader()],
   },
-  plugins: [new CleanWebpackPlugin(settings.paths.build.clean, configureCleanWebpack()), new HtmlWebpackPlugin(configureHtml())],
+  plugins: [new CleanWebpackPlugin(configureCleanWebpack()), new HtmlWebpackPlugin(configureHtml())],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
