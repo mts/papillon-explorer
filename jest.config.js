@@ -1,15 +1,22 @@
-// https://github.com/FormidableLabs/enzyme-matchers/tree/master/packages
-import 'jest-enzyme'
-
-import renderer from 'react-test-renderer'
-
-import Enzyme, { shallow, mount } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-
-Enzyme.configure({ adapter: new Adapter() })
-
-global.renderToJSON = component => renderer.create(component).toJSON()
-
-global.renderMount = component => mount(component)
-
-global.renderShallow = component => shallow(component)
+module.exports = {
+  testRegex: '.test\\.js$',
+  roots: ['<rootDir>'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
+  collectCoverageFrom: [
+    '!**/*.md',
+    'packages/**/*.js',
+    'packages/**/*.jsx',
+    '!**/node_modules/**',
+    '!packages/**/index.js',
+    '!packages/**/*.test.js',
+    '!packages/**/*.story.js',
+    '!packages/**/*.render.js',
+  ],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  moduleNameMapper: {
+    '\\.(css|less|scss)$': 'identity-obj-proxy',
+  },
+  moduleFileExtensions: ['js', 'jsx'],
+}
