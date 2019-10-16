@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import BlankslateTemplate from '../../template/BlankslateTemplate'
 
-const BlankslatePage = () => {
+export const BlankslatePage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const BlankslatePage = () => {
     </Query>
   )
 }
-
-export default BlankslatePage

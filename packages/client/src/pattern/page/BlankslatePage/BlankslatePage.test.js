@@ -1,5 +1,5 @@
 import React from 'react'
-import blankslatePageDefault from './BlankslatePage.render'
+import { blankslatePageDefault } from './BlankslatePage.render'
 
 jest.mock('react-apollo', () => {
   return {

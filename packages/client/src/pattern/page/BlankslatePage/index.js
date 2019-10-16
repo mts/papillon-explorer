@@ -1,3 +1,1 @@
-import AsyncBlankslatePage from './AsyncBlankslatePage'
-
-export default AsyncBlankslatePage
+export { AsyncBlankslatePage } from './AsyncBlankslatePage'

@@ -1,6 +1,4 @@
 import React from 'react'
-import BlankslatePage from './BlankslatePage'
+import { BlankslatePage } from './BlankslatePage'
 
-const blankslatePageDefault = <BlankslatePage />
-
-export default blankslatePageDefault
+export const blankslatePageDefault = <BlankslatePage />
