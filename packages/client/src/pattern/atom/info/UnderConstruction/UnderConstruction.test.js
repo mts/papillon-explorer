@@ -1,4 +1,4 @@
-import underConstructionDefault from './UnderConstruction.render'
+import { underConstructionDefault } from './UnderConstruction.render'
 
 describe('<UnderConstruction />', () => {
   describe('Snaphot', () => {

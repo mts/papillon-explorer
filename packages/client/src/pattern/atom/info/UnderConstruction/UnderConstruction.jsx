@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UnderConstruction = () => (
+export const UnderConstruction = () => (
   <React.Fragment>
     Under construction{' '}
     <span role="img" aria-label="emoji">
@@ -8,5 +8,3 @@ const UnderConstruction = () => (
     </span>
   </React.Fragment>
 )
-
-export default UnderConstruction
