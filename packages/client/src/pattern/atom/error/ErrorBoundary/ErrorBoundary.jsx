@@ -1,7 +1,7 @@
 /* eslint no-unused-vars : 0 */
 
 import React from 'react'
-import { node } from 'prop-types'
+import { propTypes } from './ErrorBoundary.props'
 
 export class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -27,6 +27,4 @@ export class ErrorBoundary extends React.Component {
   }
 }
 
-ErrorBoundary.propTypes = {
-  children: node.isRequired,
-}
+ErrorBoundary.propTypes = propTypes
