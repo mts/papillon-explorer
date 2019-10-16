@@ -1,5 +1,5 @@
 import React from 'react'
-import { breadcrumbPageAsync, breadcrumbPageDefault } from './BreadcrumbPage.render'
+import { breadcrumbPageAsync, breadcrumbPageDefault } from './BreadcrumbPage.int.render'
 
 jest.mock('@apollo/react-hooks', () => ({ useQuery: () => {} }))
 jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
