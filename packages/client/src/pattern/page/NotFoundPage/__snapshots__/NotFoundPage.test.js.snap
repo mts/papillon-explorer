@@ -1,3 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NotFoundPage /> Snaphot must match notFoundPageDefault 1`] = `<div />`;
+exports[`<NotFoundPage /> Snaphot must match notFoundPageDefault 1`] = `
+<div>
+  <h2>
+    some-name
+  </h2>
+  <div>
+    <h3>
+      No match for 
+      <code>
+        some-path-name
+      </code>
+    </h3>
+  </div>
+  <div>
+    some link
+  </div>
+</div>
+`;
