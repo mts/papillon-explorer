@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import NavigationTemplate from '../../template/NavigationTemplate'
 
-const NavigationPage = () => {
+export const NavigationPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const NavigationPage = () => {
     </Query>
   )
 }
-
-export default NavigationPage

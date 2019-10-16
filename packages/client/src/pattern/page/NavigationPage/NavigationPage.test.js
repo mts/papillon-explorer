@@ -1,5 +1,5 @@
 import React from 'react'
-import navigationPageDefault from './NavigationPage.render'
+import { navigationPageDefault } from './NavigationPage.render'
 
 jest.mock('react-apollo', () => {
   return {
