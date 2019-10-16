@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ObjectsLinks = () => {
   return (
-    <React.Fragment>
+    <>
       <a href="/papillon/objects/" className="position-relative f4 d-block text-gray-dark">
         Objects
       </a>
@@ -51,6 +51,6 @@ export const ObjectsLinks = () => {
           </a>
         </li>
       </ul>
-    </React.Fragment>
+    </>
   )
 }

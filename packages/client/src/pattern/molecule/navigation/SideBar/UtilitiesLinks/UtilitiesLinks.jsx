@@ -4,7 +4,7 @@ import { layoutPageRoute } from '../../../../../route'
 
 export const UtilitiesLinks = () => {
   return (
-    <React.Fragment>
+    <>
       <a href="/papillon/utilities/" className="position-relative f4 d-block text-gray-dark">
         Utilities
       </a>
@@ -244,6 +244,6 @@ export const UtilitiesLinks = () => {
           </a>
         </li>
       </ul>
-    </React.Fragment>
+    </>
   )
 }

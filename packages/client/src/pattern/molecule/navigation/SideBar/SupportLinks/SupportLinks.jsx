@@ -2,7 +2,7 @@ import React from 'react'
 
 export const SupportLinks = () => {
   return (
-    <React.Fragment>
+    <>
       <a href="/papillon/support/" className="position-relative f4 d-block text-gray-dark">
         Support
       </a>
@@ -75,6 +75,6 @@ export const SupportLinks = () => {
           </a>
         </li>
       </ul>
-    </React.Fragment>
+    </>
   )
 }
