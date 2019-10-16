@@ -1,5 +1,5 @@
 import React from 'react'
-import { node } from 'prop-types'
+import { propTypes, defaultProps } from './Intro.props'
 
 export const Intro = ({ children }) => (
   <div className="md-order-1 d-flex flex-lg-column flex-auto flex-wrap">
@@ -12,10 +12,6 @@ export const Intro = ({ children }) => (
   </div>
 )
 
-Intro.defaultProps = {
-  children: null,
-}
+Intro.propTypes = propTypes
 
-Intro.propTypes = {
-  children: node,
-}
+Intro.defaultProps = defaultProps
