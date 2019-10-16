@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import AlertsTemplate from '../../template/AlertsTemplate'
+import { AlertsTemplate } from '../../template/AlertsTemplate'
 
 export const AlertsPage = () => {
   return (

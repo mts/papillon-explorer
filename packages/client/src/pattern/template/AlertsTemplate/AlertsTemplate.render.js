@@ -1,5 +1,5 @@
 import React from 'react'
-import AlertsTemplate from './AlertsTemplate'
+import { AlertsTemplate } from './AlertsTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const alertsTemplateDefault = <AlertsTemplate page={page} />
-
-export default alertsTemplateDefault
+export const alertsTemplateDefault = <AlertsTemplate page={page} />
