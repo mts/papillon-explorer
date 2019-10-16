@@ -49,7 +49,27 @@
       "not Edge < 15"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.16",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "papillon-alerts": "^1.0.51",
+    "papillon-avatars": "^1.0.51",
+    "papillon-blankslate": "^1.0.51",
+    "papillon-breadcrumb": "^1.0.51",
+    "papillon-buttons": "^1.0.51",
+    "papillon-labels": "^1.0.51",
+    "papillon-layout": "^1.0.51",
+    "papillon-navigation": "^1.0.51",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
