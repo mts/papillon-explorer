@@ -1,6 +1,4 @@
 import React from 'react'
-import AvatarsPage from './AvatarsPage'
+import { AvatarsPage } from './AvatarsPage'
 
-const avatarsPageDefault = <AvatarsPage />
-
-export default avatarsPageDefault
+export const avatarsPageDefault = <AvatarsPage />

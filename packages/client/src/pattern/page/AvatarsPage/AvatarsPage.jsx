@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import AvatarsTemplate from '../../template/AvatarsTemplate'
 
-const AvatarsPage = () => {
+export const AvatarsPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const AvatarsPage = () => {
     </Query>
   )
 }
-
-export default AvatarsPage

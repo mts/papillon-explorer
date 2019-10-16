@@ -1,6 +1,6 @@
 import AsyncStartPage from '../pattern/page/StartPage'
 import { AsyncAlertsPage } from '../pattern/page/AlertsPage'
-import AsyncAvatarsPage from '../pattern/page/AvatarsPage'
+import { AsyncAvatarsPage } from '../pattern/page/AvatarsPage'
 import AsyncBlankslatePage from '../pattern/page/BlankslatePage'
 import AsyncBreadcrumbPage from '../pattern/page/BreadcrumbPage'
 import AsyncButtonsPage from '../pattern/page/ButtonsPage'
