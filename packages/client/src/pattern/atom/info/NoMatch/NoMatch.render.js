@@ -1,5 +1,5 @@
 import React from 'react'
-import NoMatch from './NoMatch'
+import { NoMatch } from './NoMatch'
 
 const props = {
   location: {
@@ -7,6 +7,4 @@ const props = {
   },
 }
 
-const noMatchDefault = <NoMatch {...props} />
-
-export default noMatchDefault
+export const noMatchDefault = <NoMatch {...props} />

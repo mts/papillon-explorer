@@ -1,7 +1,7 @@
 import React from 'react'
 import { object } from 'prop-types'
 
-const NoMatch = ({ location }) => (
+export const NoMatch = ({ location }) => (
   <React.Fragment>
     <div>
       <h3>
@@ -14,5 +14,3 @@ const NoMatch = ({ location }) => (
 NoMatch.propTypes = {
   location: object.isRequired,
 }
-
-export default NoMatch
