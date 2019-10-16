@@ -21,6 +21,7 @@ module.exports = {
     '!packages/**/node_modules/**',
     '!packages/**/webpack*',
     '!packages/client/**/graphql/**',
+    '!packages/client/**/route/**',
     '!packages/client/**/utility/**',
     '!packages/server/**',
   ],
