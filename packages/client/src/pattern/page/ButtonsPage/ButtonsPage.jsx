@@ -6,7 +6,7 @@ import { ButtonsTemplate } from '../../template/ButtonsTemplate'
 export const ButtonsPage = () => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <ButtonsTemplate page={data.pages.pages.find(page => page.id === 'buttons')} />
   }
 

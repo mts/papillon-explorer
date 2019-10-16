@@ -6,7 +6,7 @@ import { AvatarsTemplate } from '../../template/AvatarsTemplate'
 export const AvatarsPage = () => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <AvatarsTemplate page={data.pages.pages.find(page => page.id === 'avatars')} />
   }
 

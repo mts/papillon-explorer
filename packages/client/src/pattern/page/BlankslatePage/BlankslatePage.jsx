@@ -6,7 +6,7 @@ import { BlankslateTemplate } from '../../template/BlankslateTemplate'
 export const BlankslatePage = () => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <BlankslateTemplate page={data.pages.pages.find(page => page.id === 'blankslate')} />
   }
 

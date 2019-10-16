@@ -6,7 +6,7 @@ import { BreadcrumbTemplate } from '../../template/BreadcrumbTemplate'
 export const BreadcrumbPage = () => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <BreadcrumbTemplate page={data.pages.pages.find(page => page.id === 'breadcrumb')} />
   }
 

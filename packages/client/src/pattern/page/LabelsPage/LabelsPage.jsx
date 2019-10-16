@@ -6,7 +6,7 @@ import { LabelsTemplate } from '../../template/LabelsTemplate'
 export const LabelsPage = () => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <LabelsTemplate page={data.pages.pages.find(page => page.id === 'labels')} />
   }
 

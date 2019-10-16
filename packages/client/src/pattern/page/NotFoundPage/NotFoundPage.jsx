@@ -7,7 +7,7 @@ import { NotFoundTemplate } from '../../template/NotFoundTemplate'
 export const NotFoundPage = ({ location }) => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <NotFoundTemplate page={data.pages.pages.find(page => page.id === 'not-found')} location={location} />
   }
 

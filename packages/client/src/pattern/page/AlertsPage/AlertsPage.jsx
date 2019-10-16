@@ -6,7 +6,7 @@ import { AlertsTemplate } from '../../template/AlertsTemplate'
 export const AlertsPage = () => {
   const { data } = useQuery(PAGES)
 
-  if (data && data.pages && data.pages.pages) {
+  if (data?.pages?.pages) {
     return <AlertsTemplate page={data.pages.pages.find(page => page.id === 'alerts')} />
   }
 
