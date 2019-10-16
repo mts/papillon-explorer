@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './LabelsTemplate.props'
 import { RegularLabels } from './RegularLabels'
 import { ThemeLabels } from './ThemeLabels'
 import { StateLabels } from './StateLabels'
@@ -35,6 +35,4 @@ export const LabelsTemplate = ({ page }) => (
   </div>
 )
 
-LabelsTemplate.propTypes = {
-  page: object.isRequired,
-}
+LabelsTemplate.propTypes = propTypes
