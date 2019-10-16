@@ -4,7 +4,7 @@ import Intro from '../../molecule/banner/Intro'
 import Header from '../../molecule/navigation/Header'
 import SideBar from '../../molecule/navigation/SideBar'
 
-const StartTemplate = () => (
+export const StartTemplate = () => (
   <div>
     <Header>Papillon Explorer v{version}</Header>
     <div className="d-flex flex-wrap flex-lg-nowrap">
@@ -20,5 +20,3 @@ const StartTemplate = () => (
     </div>
   </div>
 )
-
-export default StartTemplate

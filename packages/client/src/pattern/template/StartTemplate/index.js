@@ -1,3 +1,1 @@
-import StartTemplate from './StartTemplate'
-
-export default StartTemplate
+export { StartTemplate } from './StartTemplate'
