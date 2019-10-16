@@ -1,5 +1,5 @@
 import React from 'react'
-import routeWithSubRoutesDefault from './RouteWithSubRoutes.render'
+import { routeWithSubRoutesDefault } from './RouteWithSubRoutes.render'
 
 jest.mock('react-router-dom', () => {
   return {
