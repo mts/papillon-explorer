@@ -1,4 +1,4 @@
-import { headerDefault } from './Header.render'
+import { headerDefault } from './Header.int.render'
 
 describe('<Header />', () => {
   describe('Snaphot', () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { node } from 'prop-types'
+import { propTypes, defaultProps } from './Header.props'
 
 const style = {
   position: 'sticky',
@@ -52,10 +52,6 @@ export const Header = ({ children }) => (
   </div>
 )
 
-Header.defaultProps = {
-  children: null,
-}
+Header.propTypes = propTypes
 
-Header.propTypes = {
-  children: node,
-}
+Header.defaultProps = defaultProps
