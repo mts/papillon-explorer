@@ -1,10 +1,10 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './AlertsTemplate.props'
 import { startPagePath } from '../../../route/path'
-import UnderConstruction from '../../atom/info/UnderConstruction'
+import { UnderConstruction } from '../../atom/info/UnderConstruction'
 
-const AlertsTemplate = ({ page }) => (
+export const AlertsTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <UnderConstruction />
@@ -12,8 +12,4 @@ const AlertsTemplate = ({ page }) => (
   </div>
 )
 
-AlertsTemplate.propTypes = {
-  page: object.isRequired,
-}
-
-export default AlertsTemplate
+AlertsTemplate.propTypes = propTypes

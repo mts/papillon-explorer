@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlankslatePage /> Snaphot must match blankslatePageAsync 1`] = `null`;
+
+exports[`<BlankslatePage /> Snaphot must match blankslatePageDefault 1`] = `
+<div>
+  <h2>
+    some-name
+  </h2>
+  <div>
+    Under construction
+     
+    <span
+      aria-label="emoji"
+      role="img"
+    >
+      🙂
+    </span>
+    <div>
+      some link
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BlankslatePage /> Snaphot must match blankslatePageNull 1`] = `null`;

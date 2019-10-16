@@ -1,3 +1,1 @@
-import ObjectsLinks from './ObjectsLinks'
-
-export default ObjectsLinks
+export { ObjectsLinks } from './ObjectsLinks'

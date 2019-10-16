@@ -1,9 +1,9 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './BlankslateTemplate.props'
 import { startPagePath } from '../../../route/path'
 
-const BlankslateTemplate = ({ page }) => (
+export const BlankslateTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -16,8 +16,4 @@ const BlankslateTemplate = ({ page }) => (
   </div>
 )
 
-BlankslateTemplate.propTypes = {
-  page: object.isRequired,
-}
-
-export default BlankslateTemplate
+BlankslateTemplate.propTypes = propTypes

@@ -1,3 +1,1 @@
-import AsyncBreadcrumbPage from './AsyncBreadcrumbPage'
-
-export default AsyncBreadcrumbPage
+export { AsyncBreadcrumbPage } from './AsyncBreadcrumbPage'

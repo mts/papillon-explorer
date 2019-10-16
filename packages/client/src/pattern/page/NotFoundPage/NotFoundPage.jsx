@@ -1,19 +1,17 @@
 import React from 'react'
 import { object } from 'prop-types'
-import { Query } from 'react-apollo'
+import { useQuery } from '@apollo/react-hooks'
 import { PAGES } from '../../../graphql/query'
-import NotFoundTemplate from '../../template/NotFoundTemplate'
+import { NotFoundTemplate } from '../../template/NotFoundTemplate'
 
-const NotFoundPage = ({ location }) => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? (
-          <NotFoundTemplate page={data.pages.pages.find(page => page.id === 'not-found')} location={location} />
-        ) : null
-      }
-    </Query>
-  )
+export const NotFoundPage = ({ location }) => {
+  const { data } = useQuery(PAGES)
+
+  if (data?.pages?.pages) {
+    return <NotFoundTemplate page={data.pages.pages.find(page => page.id === 'not-found')} location={location} />
+  }
+
+  return null
 }
 
 NotFoundPage.propTypes = {

@@ -1,3 +1,1 @@
-import UnderConstruction from './UnderConstruction'
-
-export default UnderConstruction
+export { UnderConstruction } from './UnderConstruction'

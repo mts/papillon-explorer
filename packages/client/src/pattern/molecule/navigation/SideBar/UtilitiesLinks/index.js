@@ -1,3 +1,1 @@
-import UtilitiesLinks from './UtilitiesLinks'
-
-export default UtilitiesLinks
+export { UtilitiesLinks } from './UtilitiesLinks'

@@ -1,9 +1,9 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './NavigationTemplate.props'
 import { startPagePath } from '../../../route/path'
 
-const NavigationTemplate = ({ page }) => (
+export const NavigationTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -16,8 +16,4 @@ const NavigationTemplate = ({ page }) => (
   </div>
 )
 
-NavigationTemplate.propTypes = {
-  page: object.isRequired,
-}
-
-export default NavigationTemplate
+NavigationTemplate.propTypes = propTypes

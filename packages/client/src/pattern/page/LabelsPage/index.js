@@ -1,3 +1,1 @@
-import AsyncLabelsPage from './AsyncLabelsPage'
-
-export default AsyncLabelsPage
+export { AsyncLabelsPage } from './AsyncLabelsPage'

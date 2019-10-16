@@ -1,3 +1,1 @@
-import LayoutTemplate from './LayoutTemplate'
-
-export default LayoutTemplate
+export { LayoutTemplate } from './LayoutTemplate'

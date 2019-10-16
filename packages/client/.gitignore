@@ -1,7 +1,0 @@
-package-lock.json
-.DS_Store
-.env.develop
-.env.release
-build
-.npmrc
-coverage

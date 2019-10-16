@@ -1,3 +1,1 @@
-import AsyncNavigationPage from './AsyncNavigationPage'
-
-export default AsyncNavigationPage
+export { AsyncNavigationPage } from './AsyncNavigationPage'

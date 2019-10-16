@@ -1,16 +1,16 @@
 import React from 'react'
-import { Query } from 'react-apollo'
+import { useQuery } from '@apollo/react-hooks'
 import { PAGES } from '../../../graphql/query'
-import NavigationTemplate from '../../template/NavigationTemplate'
+import { NavigationTemplate } from '../../template/NavigationTemplate'
 
-const NavigationPage = () => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? <NavigationTemplate page={data.pages.pages.find(page => page.id === 'navigation')} /> : null
-      }
-    </Query>
-  )
+export const NavigationPage = () => {
+  const { data } = useQuery(PAGES)
+
+  if (data?.pages?.pages) {
+    return <NavigationTemplate page={data.pages.pages.find(page => page.id === 'navigation')} />
+  }
+
+  return null
 }
 
 export default NavigationPage
