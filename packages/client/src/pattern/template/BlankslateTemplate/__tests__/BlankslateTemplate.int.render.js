@@ -1,5 +1,5 @@
 import React from 'react'
-import { BlankslateTemplate } from './BlankslateTemplate'
+import { BlankslateTemplate } from '../BlankslateTemplate'
 
 const page = {
   page: {

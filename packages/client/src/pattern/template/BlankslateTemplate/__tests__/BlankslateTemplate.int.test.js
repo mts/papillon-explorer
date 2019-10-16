@@ -1,5 +1,5 @@
 import React from 'react'
-import { blankslateTemplateDefault } from './BlankslateTemplate.render'
+import { blankslateTemplateDefault } from './BlankslateTemplate.int.render'
 
 jest.mock('react-router-dom', () => {
   return {
