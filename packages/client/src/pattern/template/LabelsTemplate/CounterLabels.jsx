@@ -1,7 +1,7 @@
 import React from 'react'
 import { Label } from 'papillon-labels'
 
-const CounterLabels = () => (
+export const CounterLabels = () => (
   <div>
     <h2 className="p-2">
       <span role="img" aria-label="moyai">
@@ -89,5 +89,3 @@ const CounterLabels = () => (
     </div>
   </div>
 )
-
-export default CounterLabels

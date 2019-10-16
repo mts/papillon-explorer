@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import LabelsTemplate from '../../template/LabelsTemplate'
+import { LabelsTemplate } from '../../template/LabelsTemplate'
 
 export const LabelsPage = () => {
   return (

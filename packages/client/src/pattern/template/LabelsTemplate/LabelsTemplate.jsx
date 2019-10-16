@@ -1,13 +1,13 @@
 import React from 'react'
 import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
-import RegularLabels from './RegularLabels'
-import ThemeLabels from './ThemeLabels'
-import StateLabels from './StateLabels'
-import CounterLabels from './CounterLabels'
+import { RegularLabels } from './RegularLabels'
+import { ThemeLabels } from './ThemeLabels'
+import { StateLabels } from './StateLabels'
+import { CounterLabels } from './CounterLabels'
 import { startPagePath } from '../../../route/path'
 
-const LabelsTemplate = ({ page }) => (
+export const LabelsTemplate = ({ page }) => (
   <div>
     <h1 align="center" className="p-4">
       <span role="img" aria-label="emoji">
@@ -38,5 +38,3 @@ const LabelsTemplate = ({ page }) => (
 LabelsTemplate.propTypes = {
   page: object.isRequired,
 }
-
-export default LabelsTemplate

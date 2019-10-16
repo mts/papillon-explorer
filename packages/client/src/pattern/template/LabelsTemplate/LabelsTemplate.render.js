@@ -1,5 +1,5 @@
 import React from 'react'
-import LabelsTemplate from './LabelsTemplate'
+import { LabelsTemplate } from './LabelsTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const labelsTemplateDefault = <LabelsTemplate page={page} />
-
-export default labelsTemplateDefault
+export const labelsTemplateDefault = <LabelsTemplate page={page} />

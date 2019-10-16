@@ -1,3 +1,1 @@
-import LabelsTemplate from './LabelsTemplate'
-
-export default LabelsTemplate
+export { LabelsTemplate } from './LabelsTemplate'

@@ -1,5 +1,5 @@
 import React from 'react'
-import labelsTemplateDefault from './LabelsTemplate.render'
+import { labelsTemplateDefault } from './LabelsTemplate.render'
 
 jest.mock('react-router-dom', () => {
   return {
