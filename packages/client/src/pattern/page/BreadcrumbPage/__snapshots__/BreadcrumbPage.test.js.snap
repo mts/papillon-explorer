@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<BreadcrumbPage /> Snaphot must match breadcrumbPageAsync 1`] = `null`;
+
 exports[`<BreadcrumbPage /> Snaphot must match breadcrumbPageDefault 1`] = `
 <div>
   <h2>
@@ -20,3 +22,5 @@ exports[`<BreadcrumbPage /> Snaphot must match breadcrumbPageDefault 1`] = `
   </div>
 </div>
 `;
+
+exports[`<BreadcrumbPage /> Snaphot must match breadcrumbPageNull 1`] = `null`;
