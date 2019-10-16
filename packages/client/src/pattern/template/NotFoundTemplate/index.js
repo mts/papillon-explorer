@@ -1,3 +1,1 @@
-import NotFoundTemplate from './NotFoundTemplate'
-
-export default NotFoundTemplate
+export { NotFoundTemplate } from './NotFoundTemplate'

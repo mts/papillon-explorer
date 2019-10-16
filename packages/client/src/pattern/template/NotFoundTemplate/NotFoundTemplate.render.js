@@ -11,6 +11,4 @@ const props = {
   },
 }
 
-const notFoundTemplateDefault = <NotFoundTemplate {...props} />
-
-export default notFoundTemplateDefault
+export const notFoundTemplateDefault = <NotFoundTemplate {...props} />

@@ -2,7 +2,7 @@ import React from 'react'
 import { object } from 'prop-types'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import NotFoundTemplate from '../../template/NotFoundTemplate'
+import { NotFoundTemplate } from '../../template/NotFoundTemplate'
 
 const NotFoundPage = ({ location }) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import notFoundTemplateDefault from './NotFoundTemplate.render'
+import { notFoundTemplateDefault } from './NotFoundTemplate.render'
 
 jest.mock('react-router-dom', () => {
   return {
