@@ -1,16 +1,16 @@
 import React from 'react'
-import { Query } from 'react-apollo'
+import { useQuery } from '@apollo/react-hooks'
 import { PAGES } from '../../../graphql/query'
 import { LabelsTemplate } from '../../template/LabelsTemplate'
 
 export const LabelsPage = () => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? <LabelsTemplate page={data.pages.pages.find(page => page.id === 'labels')} /> : null
-      }
-    </Query>
-  )
+  const { data } = useQuery(PAGES)
+
+  if (data && data.pages && data.pages.pages) {
+    return <LabelsTemplate page={data.pages.pages.find(page => page.id === 'labels')} />
+  }
+
+  return null
 }
 
 export default LabelsPage
