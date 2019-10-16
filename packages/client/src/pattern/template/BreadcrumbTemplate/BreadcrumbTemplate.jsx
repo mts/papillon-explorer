@@ -3,7 +3,7 @@ import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { startPagePath } from '../../../route/path'
 
-const BreadcrumbTemplate = ({ page }) => (
+export const BreadcrumbTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -19,5 +19,3 @@ const BreadcrumbTemplate = ({ page }) => (
 BreadcrumbTemplate.propTypes = {
   page: object.isRequired,
 }
-
-export default BreadcrumbTemplate

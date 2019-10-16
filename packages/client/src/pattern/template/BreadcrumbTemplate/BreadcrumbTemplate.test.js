@@ -1,5 +1,5 @@
 import React from 'react'
-import breadcrumbTemplateDefault from './BreadcrumbTemplate.render'
+import { breadcrumbTemplateDefault } from './BreadcrumbTemplate.render'
 
 jest.mock('react-router-dom', () => {
   return {

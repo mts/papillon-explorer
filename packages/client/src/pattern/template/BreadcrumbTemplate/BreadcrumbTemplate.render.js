@@ -1,5 +1,5 @@
 import React from 'react'
-import BreadcrumbTemplate from './BreadcrumbTemplate'
+import { BreadcrumbTemplate } from './BreadcrumbTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const breadcrumbTemplateDefault = <BreadcrumbTemplate page={page} />
-
-export default breadcrumbTemplateDefault
+export const breadcrumbTemplateDefault = <BreadcrumbTemplate page={page} />
