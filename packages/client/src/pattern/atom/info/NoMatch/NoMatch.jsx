@@ -1,16 +1,12 @@
 import React from 'react'
-import { object } from 'prop-types'
+import { propTypes } from './NoMatch.props'
 
 export const NoMatch = ({ location }) => (
-  <>
-    <div>
-      <h3>
-        No match for <code>{location?.pathname}</code>
-      </h3>
-    </div>
-  </>
+  <div>
+    <h3>
+      No match for <code>{location?.pathname}</code>
+    </h3>
+  </div>
 )
 
-NoMatch.propTypes = {
-  location: object.isRequired,
-}
+NoMatch.propTypes = propTypes

@@ -1,4 +1,4 @@
-import { noMatchDefault } from './NoMatch.render'
+import { noMatchDefault } from './NoMatch.int.render'
 
 describe('<NoMatch />', () => {
   describe('Snaphot', () => {

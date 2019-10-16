@@ -1,5 +1,5 @@
 import React from 'react'
-import { NoMatch } from './NoMatch'
+import { NoMatch } from '../NoMatch'
 
 const props = {
   location: {
