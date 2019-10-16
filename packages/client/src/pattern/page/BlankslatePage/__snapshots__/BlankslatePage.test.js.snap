@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<BlankslatePage /> Snaphot must match blankslatePageAsync 1`] = `null`;
+
 exports[`<BlankslatePage /> Snaphot must match blankslatePageDefault 1`] = `
 <div>
   <h2>
@@ -20,3 +22,5 @@ exports[`<BlankslatePage /> Snaphot must match blankslatePageDefault 1`] = `
   </div>
 </div>
 `;
+
+exports[`<BlankslatePage /> Snaphot must match blankslatePageNull 1`] = `null`;
