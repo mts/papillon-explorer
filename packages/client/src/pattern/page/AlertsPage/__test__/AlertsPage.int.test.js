@@ -1,5 +1,5 @@
 import React from 'react'
-import { alertsPageAsync, alertsPageDefault } from './AlertsPage.render'
+import { alertsPageAsync, alertsPageDefault } from './AlertsPage.int.render'
 
 jest.mock('@apollo/react-hooks', () => ({ useQuery: () => {} }))
 jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
