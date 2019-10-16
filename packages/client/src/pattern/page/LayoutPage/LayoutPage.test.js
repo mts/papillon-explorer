@@ -1,5 +1,5 @@
 import React from 'react'
-import layoutPageDefault from './LayoutPage.render'
+import { layoutPageDefault } from './LayoutPage.render'
 
 jest.mock('react-apollo', () => {
   return {

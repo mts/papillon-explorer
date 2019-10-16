@@ -1,6 +1,4 @@
 import React from 'react'
-import LayoutPage from './LayoutPage'
+import { LayoutPage } from './LayoutPage'
 
-const layoutPageDefault = <LayoutPage />
-
-export default layoutPageDefault
+export const layoutPageDefault = <LayoutPage />
