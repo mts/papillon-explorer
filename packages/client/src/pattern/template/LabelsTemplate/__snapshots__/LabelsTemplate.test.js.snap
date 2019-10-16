@@ -457,7 +457,7 @@ exports[`<LabelsTemplate /> Snaphot must match labelsTemplateDefault 1`] = `
           className="pl-6"
         >
           <span
-            className="State State--green State--small"
+            className="State State--small State--green"
           >
              
             papillon state label
