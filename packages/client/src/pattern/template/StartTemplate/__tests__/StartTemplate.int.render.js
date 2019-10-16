@@ -1,5 +1,5 @@
 import React from 'react'
-import { StartTemplate } from './StartTemplate'
+import { StartTemplate } from '../StartTemplate'
 
 const page = {
   page: {

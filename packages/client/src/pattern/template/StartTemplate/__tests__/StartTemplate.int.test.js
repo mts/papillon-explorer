@@ -1,5 +1,5 @@
 import React from 'react'
-import { startTemplateDefault } from './StartTemplate.render'
+import { startTemplateDefault } from './StartTemplate.int.render'
 
 jest.mock('react-router-dom', () => {
   return {
