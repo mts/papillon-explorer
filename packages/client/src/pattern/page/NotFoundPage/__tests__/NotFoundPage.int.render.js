@@ -1,6 +1,6 @@
 import React from 'react'
-import { AsyncNotFoundPage } from './AsyncNotFoundPage'
-import { NotFoundPage } from './NotFoundPage'
+import { AsyncNotFoundPage } from '../AsyncNotFoundPage'
+import { NotFoundPage } from '../NotFoundPage'
 
 const props = {
   location: {
