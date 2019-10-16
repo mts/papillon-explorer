@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm run install-packages",
     "deploy-client": "gh-pages -d packages/client/build",
     "deploy": "npm-run-all build deploy-client",
-    "bootstrap": "npm-run-all lint:format test build",
+    "bootstrap": "npm-run-all build lint:format test report-coverage",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js:jsx lint:scss",
     "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/src/**/*.{js,jsx} --fix",
