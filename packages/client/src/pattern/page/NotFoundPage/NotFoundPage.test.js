@@ -1,5 +1,5 @@
 import React from 'react'
-import notFoundPageDefault from './NotFoundPage.render'
+import { notFoundPageDefault } from './NotFoundPage.render'
 
 jest.mock('react-apollo', () => {
   return {

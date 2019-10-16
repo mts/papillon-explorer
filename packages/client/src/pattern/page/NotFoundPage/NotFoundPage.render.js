@@ -1,5 +1,5 @@
 import React from 'react'
-import NotFoundPage from './NotFoundPage'
+import { NotFoundPage } from './NotFoundPage'
 
 const props = {
   location: {
@@ -7,6 +7,4 @@ const props = {
   },
 }
 
-const notFoundPageDefault = <NotFoundPage {...props} />
-
-export default notFoundPageDefault
+export const notFoundPageDefault = <NotFoundPage {...props} />

@@ -4,7 +4,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import { NotFoundTemplate } from '../../template/NotFoundTemplate'
 
-const NotFoundPage = ({ location }) => {
+export const NotFoundPage = ({ location }) => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -19,5 +19,3 @@ const NotFoundPage = ({ location }) => {
 NotFoundPage.propTypes = {
   location: object.isRequired,
 }
-
-export default NotFoundPage
