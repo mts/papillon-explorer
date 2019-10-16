@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<LabelsPage /> Snaphot must match labelsPageAsync 1`] = `null`;
+
 exports[`<LabelsPage /> Snaphot must match labelsPageDefault 1`] = `
 <div>
   <h1
@@ -840,3 +842,5 @@ exports[`<LabelsPage /> Snaphot must match labelsPageDefault 1`] = `
   </div>
 </div>
 `;
+
+exports[`<LabelsPage /> Snaphot must match labelsPageNull 1`] = `null`;
