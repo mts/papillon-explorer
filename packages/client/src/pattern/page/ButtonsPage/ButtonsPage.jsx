@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import ButtonsTemplate from '../../template/ButtonsTemplate'
+import { ButtonsTemplate } from '../../template/ButtonsTemplate'
 
 export const ButtonsPage = () => {
   return (

@@ -3,7 +3,7 @@ import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { startPagePath } from '../../../route/path'
 
-const ButtonsTemplate = ({ page }) => (
+export const ButtonsTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -19,5 +19,3 @@ const ButtonsTemplate = ({ page }) => (
 ButtonsTemplate.propTypes = {
   page: object.isRequired,
 }
-
-export default ButtonsTemplate

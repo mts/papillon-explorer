@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonsTemplate from './ButtonsTemplate'
+import { ButtonsTemplate } from './ButtonsTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const buttonsTemplateDefault = <ButtonsTemplate page={page} />
-
-export default buttonsTemplateDefault
+export const buttonsTemplateDefault = <ButtonsTemplate page={page} />
