@@ -17,9 +17,9 @@ import {
   notFoundPageRoute,
 } from './route'
 import './index.scss'
-import client from './graphql/client'
+import { client } from './graphql/client'
 import { addDivWithIdToBody, checkAccessibilityIssues } from './utility/startup'
-import ErrorBoundary from './pattern/atom/error/ErrorBoundary'
+import { ErrorBoundary } from './pattern/atom/error/ErrorBoundary'
 
 const App = () => (
   <BrowserRouter>
