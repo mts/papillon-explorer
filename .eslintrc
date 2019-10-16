@@ -60,6 +60,7 @@
     "object-curly-spacing": 2,
     "comma-dangle": 2,
     "semi": ["error", "never"],
-    "react/forbid-prop-types": 0
+    "react/forbid-prop-types": 0,
+    "react/display-name": 0
   }
 }
