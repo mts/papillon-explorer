@@ -1,11 +1,21 @@
 import React from 'react'
 import { labelsPageDefault } from './LabelsPage.render'
 
-jest.mock('react-apollo', () => {
+jest.mock('@apollo/react-hooks', () => {
   return {
-    Query: () => <div />,
+    useQuery: () => {
+      return {
+        data: {
+          pages: {
+            pages: [{ id: 'labels', name: 'some-name' }],
+          },
+        },
+      }
+    },
   }
 })
+
+jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
 
 describe('<LabelsPage />', () => {
   describe('Snaphot', () => {
