@@ -1,5 +1,5 @@
 import React from 'react'
-import { BreadcrumbTemplate } from './BreadcrumbTemplate'
+import { BreadcrumbTemplate } from '../BreadcrumbTemplate'
 
 const page = {
   page: {
