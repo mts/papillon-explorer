@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import LayoutTemplate from '../../template/LayoutTemplate'
+import { LayoutTemplate } from '../../template/LayoutTemplate'
 
 export const LayoutPage = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import LayoutTemplate from './LayoutTemplate'
+import { LayoutTemplate } from './LayoutTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const LayoutTemplateDefault = <LayoutTemplate page={page} />
-
-export default LayoutTemplateDefault
+export const LayoutTemplateDefault = <LayoutTemplate page={page} />
