@@ -8,4 +8,4 @@ const page = {
   },
 }
 
-export const LayoutTemplateDefault = <LayoutTemplate page={page} />
+export const layoutTemplateDefault = <LayoutTemplate page={page} />
