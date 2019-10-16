@@ -1,5 +1,5 @@
 import React from 'react'
-import { AvatarsTemplate } from './AvatarsTemplate'
+import { AvatarsTemplate } from '../AvatarsTemplate'
 
 const page = {
   page: {

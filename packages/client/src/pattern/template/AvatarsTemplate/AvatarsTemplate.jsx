@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './AvatarsTemplate.props'
 import { startPagePath } from '../../../route/path'
 
 export const AvatarsTemplate = ({ page }) => (
@@ -16,6 +16,4 @@ export const AvatarsTemplate = ({ page }) => (
   </div>
 )
 
-AvatarsTemplate.propTypes = {
-  page: object.isRequired,
-}
+AvatarsTemplate.propTypes = propTypes
