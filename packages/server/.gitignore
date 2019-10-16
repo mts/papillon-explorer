@@ -1,7 +1,0 @@
-package-lock.json
-/build
-/node_modules
-npm-debug.log
-.DS_Store
-/*.env
-.npmrc
