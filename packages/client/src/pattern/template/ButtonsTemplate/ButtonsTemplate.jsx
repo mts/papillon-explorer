@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './ButtonsTemplate.props'
 import { startPagePath } from '../../../route/path'
 
 export const ButtonsTemplate = ({ page }) => (
@@ -16,6 +16,4 @@ export const ButtonsTemplate = ({ page }) => (
   </div>
 )
 
-ButtonsTemplate.propTypes = {
-  page: object.isRequired,
-}
+ButtonsTemplate.propTypes = propTypes

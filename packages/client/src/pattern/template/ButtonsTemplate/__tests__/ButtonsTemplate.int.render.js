@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonsTemplate } from './ButtonsTemplate'
+import { ButtonsTemplate } from '../ButtonsTemplate'
 
 const page = {
   page: {
