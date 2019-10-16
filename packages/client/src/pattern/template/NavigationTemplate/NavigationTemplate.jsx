@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './NavigationTemplate.props'
 import { startPagePath } from '../../../route/path'
 
 export const NavigationTemplate = ({ page }) => (
@@ -16,6 +16,4 @@ export const NavigationTemplate = ({ page }) => (
   </div>
 )
 
-NavigationTemplate.propTypes = {
-  page: object.isRequired,
-}
+NavigationTemplate.propTypes = propTypes

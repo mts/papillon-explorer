@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigationTemplateDefault } from './NavigationTemplate.render'
+import { navigationTemplateDefault } from './NavigationTemplate.int.render'
 
 jest.mock('react-router-dom', () => {
   return {

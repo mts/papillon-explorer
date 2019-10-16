@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavigationTemplate } from './NavigationTemplate'
+import { NavigationTemplate } from '../NavigationTemplate'
 
 const page = {
   page: {
