@@ -1,11 +1,21 @@
 import React from 'react'
 import { layoutPageDefault } from './LayoutPage.render'
 
-jest.mock('react-apollo', () => {
+jest.mock('@apollo/react-hooks', () => {
   return {
-    Query: () => <div />,
+    useQuery: () => {
+      return {
+        data: {
+          pages: {
+            pages: [{ id: 'layout', name: 'some-name' }],
+          },
+        },
+      }
+    },
   }
 })
+
+jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
 
 describe('<LayoutPage />', () => {
   describe('Snaphot', () => {
