@@ -12,3 +12,5 @@ export const LayoutPage = () => {
     </Query>
   )
 }
+
+export default LayoutPage

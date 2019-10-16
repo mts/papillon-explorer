@@ -12,3 +12,5 @@ export const BlankslatePage = () => {
     </Query>
   )
 }
+
+export default BlankslatePage

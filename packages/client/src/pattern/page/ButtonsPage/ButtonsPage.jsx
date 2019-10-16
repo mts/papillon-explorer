@@ -12,3 +12,5 @@ export const ButtonsPage = () => {
     </Query>
   )
 }
+
+export default ButtonsPage

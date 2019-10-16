@@ -19,3 +19,5 @@ export const NotFoundPage = ({ location }) => {
 NotFoundPage.propTypes = {
   location: object.isRequired,
 }
+
+export default NotFoundPage

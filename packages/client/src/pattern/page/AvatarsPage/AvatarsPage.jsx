@@ -12,3 +12,5 @@ export const AvatarsPage = () => {
     </Query>
   )
 }
+
+export default AvatarsPage

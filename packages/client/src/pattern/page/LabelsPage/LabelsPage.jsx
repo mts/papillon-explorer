@@ -12,3 +12,5 @@ export const LabelsPage = () => {
     </Query>
   )
 }
+
+export default LabelsPage

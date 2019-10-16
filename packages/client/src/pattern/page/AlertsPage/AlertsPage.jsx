@@ -12,3 +12,5 @@ export const AlertsPage = () => {
     </Query>
   )
 }
+
+export default AlertsPage

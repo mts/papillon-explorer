@@ -12,3 +12,5 @@ export const BreadcrumbPage = () => {
     </Query>
   )
 }
+
+export default BreadcrumbPage

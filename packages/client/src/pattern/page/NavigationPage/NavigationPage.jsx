@@ -12,3 +12,5 @@ export const NavigationPage = () => {
     </Query>
   )
 }
+
+export default NavigationPage

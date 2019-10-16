@@ -10,3 +10,5 @@ export const StartPage = () => {
     </Query>
   )
 }
+
+export default StartPage
