@@ -7,4 +7,4 @@ const props = {
   },
 }
 
-export const notFoundPageDefault = <NotFoundPage {...props} />
+export const notFoundPageDefault = <NotFoundPage location={props.location} />

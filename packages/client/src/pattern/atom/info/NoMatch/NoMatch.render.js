@@ -7,4 +7,4 @@ const props = {
   },
 }
 
-export const noMatchDefault = <NoMatch {...props} />
+export const noMatchDefault = <NoMatch location={props.location} />
