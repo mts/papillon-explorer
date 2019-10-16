@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm run install-packages",
     "deploy-client": "gh-pages -d packages/client/build",
     "deploy": "npm-run-all build deploy-client",
-    "ci": "npm-run-all lint:format test build",
+    "bootstrap": "npm-run-all lint:format test build",
     "lint:format": "npm-run-all lint format",
     "lint": "npm-run-all lint:js:jsx lint:scss",
     "lint:js:jsx": "eslint --ext .js --ext .jsx packages/**/src/**/*.{js,jsx} --fix",
@@ -22,8 +22,9 @@
     "format": "npm-run-all format:js:jsx format:scss",
     "format:js:jsx": "prettier --write \"packages/**/src/**/*.{js,jsx}\"",
     "format:scss": "prettier --write \"packages/**/src/**/*.{css,scss}\"",
-    "test": "jest -u --no-cache --silent --runInBand",
+    "test": "jest -u --no-cache --silent --runInBand --coverage",
     "test:coverage": "jest --coverage --silent",
+    "report-coverage": "codecov",
     "build": "lerna run build --stream"
   },
   "dependencies": {
