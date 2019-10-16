@@ -1,16 +1,16 @@
 import React from 'react'
-import { Query } from 'react-apollo'
+import { useQuery } from '@apollo/react-hooks'
 import { PAGES } from '../../../graphql/query'
 import { AlertsTemplate } from '../../template/AlertsTemplate'
 
 export const AlertsPage = () => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? <AlertsTemplate page={data.pages.pages.find(page => page.id === 'alerts')} /> : null
-      }
-    </Query>
-  )
+  const { data } = useQuery(PAGES)
+
+  if (data && data.pages && data.pages.pages) {
+    return <AlertsTemplate page={data.pages.pages.find(page => page.id === 'alerts')} />
+  }
+
+  return null
 }
 
 export default AlertsPage
