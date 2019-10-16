@@ -1,4 +1,4 @@
-import introDefault from './Intro.render'
+import { introDefault } from './Intro.render'
 
 describe('<Intro />', () => {
   describe('Snaphot', () => {

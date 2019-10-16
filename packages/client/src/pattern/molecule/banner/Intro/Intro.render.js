@@ -1,12 +1,10 @@
 import React from 'react'
-import Intro from './Intro'
+import { Intro } from './Intro'
 
 const SomeComponent = () => <div />
 
-const IntroDefault = (
+export const introDefault = (
   <Intro>
     <SomeComponent />
   </Intro>
 )
-
-export default IntroDefault
