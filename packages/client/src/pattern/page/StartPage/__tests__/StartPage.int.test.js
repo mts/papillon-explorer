@@ -1,5 +1,5 @@
 import React from 'react'
-import { startPageAsync, startPageDefault } from './StartPage.render'
+import { startPageAsync, startPageDefault } from './StartPage.int.render'
 
 jest.mock('@apollo/react-hooks', () => ({ useQuery: () => {} }))
 jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
