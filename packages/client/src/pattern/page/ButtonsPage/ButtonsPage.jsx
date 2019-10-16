@@ -1,16 +1,16 @@
 import React from 'react'
-import { Query } from 'react-apollo'
+import { useQuery } from '@apollo/react-hooks'
 import { PAGES } from '../../../graphql/query'
-import ButtonsTemplate from '../../template/ButtonsTemplate'
+import { ButtonsTemplate } from '../../template/ButtonsTemplate'
 
-const ButtonsPage = () => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? <ButtonsTemplate page={data.pages.pages.find(page => page.id === 'buttons')} /> : null
-      }
-    </Query>
-  )
+export const ButtonsPage = () => {
+  const { data } = useQuery(PAGES)
+
+  if (data?.pages?.pages) {
+    return <ButtonsTemplate page={data.pages.pages.find(page => page.id === 'buttons')} />
+  }
+
+  return null
 }
 
 export default ButtonsPage

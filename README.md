@@ -16,6 +16,10 @@
     <img alt="" src="https://img.shields.io/travis/mts/papillon-explorer.svg?logo=travis">
   </a>
 
+  <a aria-label="codecov coverage" href="https://codecov.io/gh/mts/papillon-explorer">
+    <img src="https://codecov.io/gh/mts/papillon-explorer/branch/master/graph/badge.svg" />
+  </a>
+
   <a aria-label="downloads" href="http://npm-stat.com/charts.html?package=papillon-explorer-client&from=2018-10-13">
     <img alt="" src="https://img.shields.io/npm/dm/papillon-explorer-client.svg">
   </a>
@@ -38,9 +42,11 @@
 **⚠️ This project is a work in progress and is not ready for production use yet!**
 
 ## Client
+
 - Apollo GraphQL Client running at https://mts.github.io/papillon-explorer/
 
 ## Server
+
 - Apollo GraphQL Server running at https://papillon-explorer-server.herokuapp.com/
 
 ## License

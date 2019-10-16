@@ -1,3 +1,1 @@
-import SupportLinks from './SupportLinks'
-
-export default SupportLinks
+export { SupportLinks } from './SupportLinks'

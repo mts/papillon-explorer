@@ -1,5 +1,5 @@
 import React from 'react'
-import { node } from 'prop-types'
+import { propTypes, defaultProps } from './Header.props'
 
 const style = {
   position: 'sticky',
@@ -9,7 +9,7 @@ const style = {
   zIndex: 101,
 }
 
-const Header = ({ children }) => (
+export const Header = ({ children }) => (
   <div className="bg-gray-dark" style={style}>
     <div className="main-nav d-flex flex-justify-between px-3 pl-md-4 pr-md-4 py-3 box-shadow bg-gray-dark Details js-details-container">
       <div className="d-flex flex-self-center flex-lg-auto mr-lg-2">
@@ -52,12 +52,6 @@ const Header = ({ children }) => (
   </div>
 )
 
-Header.defaultProps = {
-  children: null,
-}
+Header.propTypes = propTypes
 
-Header.propTypes = {
-  children: node,
-}
-
-export default Header
+Header.defaultProps = defaultProps

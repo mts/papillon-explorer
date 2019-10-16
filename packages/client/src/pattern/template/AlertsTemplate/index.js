@@ -1,3 +1,1 @@
-import AlertsTemplate from './AlertsTemplate'
-
-export default AlertsTemplate
+export { AlertsTemplate } from './AlertsTemplate'

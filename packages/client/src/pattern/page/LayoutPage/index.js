@@ -1,3 +1,1 @@
-import AsyncLayoutPage from './AsyncLayoutPage'
-
-export default AsyncLayoutPage
+export { AsyncLayoutPage } from './AsyncLayoutPage'

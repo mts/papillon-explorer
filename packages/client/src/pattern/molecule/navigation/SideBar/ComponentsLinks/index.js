@@ -1,3 +1,1 @@
-import ComponentsLinks from './ComponentsLinks'
-
-export default ComponentsLinks
+export { ComponentsLinks } from './ComponentsLinks'

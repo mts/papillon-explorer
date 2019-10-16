@@ -5,12 +5,10 @@ import { typeDefs } from './resolvers'
 
 const cache = new InMemoryCache()
 
-const client = new ApolloClient({
+export const client = new ApolloClient({
   cache,
   link: new HttpLink({
     uri: process.env.SERVER_URL,
   }),
   typeDefs,
 })
-
-export default client

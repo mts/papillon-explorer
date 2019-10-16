@@ -1,3 +1,1 @@
-import ButtonsTemplate from './ButtonsTemplate'
-
-export default ButtonsTemplate
+export { ButtonsTemplate } from './ButtonsTemplate'

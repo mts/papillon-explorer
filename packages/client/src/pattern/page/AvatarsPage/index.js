@@ -1,3 +1,1 @@
-import AsyncAvatarsPage from './AsyncAvatarsPage'
-
-export default AsyncAvatarsPage
+export { AsyncAvatarsPage } from './AsyncAvatarsPage'

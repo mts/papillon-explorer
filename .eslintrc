@@ -1,0 +1,66 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y", "jest", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "mocha": true,
+    "jasmine": true,
+    "jest": true,
+    "amd": true
+  },
+  "globals": {
+    "jsdom": true,
+    "document": false,
+    "expect": false,
+    "jest": false,
+    "renderShallow": false,
+    "renderMount": false
+  },
+   "settings": {
+    "react": {
+      "version": "16.10.2"
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      0,
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.story.js"
+        ]
+      }
+    ],
+    "import/named": 2,
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "object-curly-spacing": 2,
+    "comma-dangle": 2,
+    "semi": ["error", "never"],
+    "react/forbid-prop-types": 0,
+    "react/display-name": 0
+  }
+}

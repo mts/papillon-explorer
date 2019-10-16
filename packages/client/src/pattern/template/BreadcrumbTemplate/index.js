@@ -1,3 +1,1 @@
-import BreadcrumbTemplate from './BreadcrumbTemplate'
-
-export default BreadcrumbTemplate
+export { BreadcrumbTemplate } from './BreadcrumbTemplate'

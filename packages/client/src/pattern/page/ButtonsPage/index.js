@@ -1,3 +1,1 @@
-import AsyncButtonsPage from './AsyncButtonsPage'
-
-export default AsyncButtonsPage
+export { AsyncButtonsPage } from './AsyncButtonsPage'

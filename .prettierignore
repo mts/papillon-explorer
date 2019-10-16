@@ -1,7 +1,28 @@
+# MacOS
+.DS_Store
+
+# Sublime Text
+app.sublime-project
+app.sublime-workspace
+
+# Test
+coverage
+
+# NPM Papillon
+.npmrc
+npm-debug.log
+lerna-debug.log
 package-lock.json
 node_modules
+
+# NPM Papillon Explorer Package
+packages/client/package-lock.json
 packages/client/build
 packages/client/node_modules
+.env.develop
+.env.release
+
+packages/server/package-lock.json
 packages/server/build
 packages/server/node_modules
-coverage
+.env

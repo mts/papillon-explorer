@@ -1,16 +1,16 @@
 import React from 'react'
-import { Query } from 'react-apollo'
+import { useQuery } from '@apollo/react-hooks'
 import { PAGES } from '../../../graphql/query'
-import LayoutTemplate from '../../template/LayoutTemplate'
+import { LayoutTemplate } from '../../template/LayoutTemplate'
 
-const LayoutPage = () => {
-  return (
-    <Query query={PAGES}>
-      {({ data }) =>
-        data.pages && data.pages.pages ? <LayoutTemplate page={data.pages.pages.find(page => page.id === 'layout')} /> : null
-      }
-    </Query>
-  )
+export const LayoutPage = () => {
+  const { data } = useQuery(PAGES)
+
+  if (data?.pages?.pages) {
+    return <LayoutTemplate page={data.pages.pages.find(page => page.id === 'layout')} />
+  }
+
+  return null
 }
 
 export default LayoutPage
