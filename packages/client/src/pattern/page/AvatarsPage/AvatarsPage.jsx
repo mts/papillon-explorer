@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import AvatarsTemplate from '../../template/AvatarsTemplate'
+import { AvatarsTemplate } from '../../template/AvatarsTemplate'
 
 export const AvatarsPage = () => {
   return (

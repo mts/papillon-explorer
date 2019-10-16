@@ -1,5 +1,5 @@
 import React from 'react'
-import AvatarsTemplate from './AvatarsTemplate'
+import { AvatarsTemplate } from './AvatarsTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const avatarsTemplateDefault = <AvatarsTemplate page={page} />
-
-export default avatarsTemplateDefault
+export const avatarsTemplateDefault = <AvatarsTemplate page={page} />

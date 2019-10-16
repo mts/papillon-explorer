@@ -1,5 +1,5 @@
 import React from 'react'
-import avatarsTemplateDefault from './AvatarsTemplate.render'
+import { avatarsTemplateDefault } from './AvatarsTemplate.render'
 
 jest.mock('react-router-dom', () => {
   return {

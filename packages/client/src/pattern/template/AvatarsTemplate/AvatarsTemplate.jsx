@@ -3,7 +3,7 @@ import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
 import { startPagePath } from '../../../route/path'
 
-const AvatarsTemplate = ({ page }) => (
+export const AvatarsTemplate = ({ page }) => (
   <div>
     <h2>{page.name}</h2>
     <div>
@@ -19,5 +19,3 @@ const AvatarsTemplate = ({ page }) => (
 AvatarsTemplate.propTypes = {
   page: object.isRequired,
 }
-
-export default AvatarsTemplate

@@ -1,3 +1,1 @@
-import AvatarsTemplate from './AvatarsTemplate'
-
-export default AvatarsTemplate
+export { AvatarsTemplate } from './AvatarsTemplate'
