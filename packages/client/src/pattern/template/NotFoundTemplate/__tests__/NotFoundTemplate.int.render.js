@@ -1,5 +1,5 @@
 import React from 'react'
-import { NotFoundTemplate } from './NotFoundTemplate'
+import { NotFoundTemplate } from '../NotFoundTemplate'
 
 const props = {
   page: {

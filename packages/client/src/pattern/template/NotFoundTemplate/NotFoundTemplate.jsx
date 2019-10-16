@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './NotFoundTemplate.props'
 import { startPagePath } from '../../../route/path'
 import { NoMatch } from '../../atom/info/NoMatch'
 
@@ -12,7 +12,4 @@ export const NotFoundTemplate = ({ page, location }) => (
   </div>
 )
 
-NotFoundTemplate.propTypes = {
-  page: object.isRequired,
-  location: object.isRequired,
-}
+NotFoundTemplate.propTypes = propTypes
