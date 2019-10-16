@@ -1,7 +1,7 @@
 import React from 'react'
 import { version } from '../../../../../../lerna.json'
 import { Intro } from '../../molecule/banner/Intro'
-import Header from '../../molecule/navigation/Header'
+import { Header } from '../../molecule/navigation/Header'
 import SideBar from '../../molecule/navigation/SideBar'
 
 export const StartTemplate = () => (

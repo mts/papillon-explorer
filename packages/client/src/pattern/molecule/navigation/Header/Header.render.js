@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from './Header'
+import { Header } from './Header'
 
-const headerDefault = <Header>some text</Header>
-
-export default headerDefault
+export const headerDefault = <Header>some text</Header>
