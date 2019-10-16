@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import LabelsTemplate from '../../template/LabelsTemplate'
 
-const LabelsPage = () => {
+export const LabelsPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const LabelsPage = () => {
     </Query>
   )
 }
-
-export default LabelsPage

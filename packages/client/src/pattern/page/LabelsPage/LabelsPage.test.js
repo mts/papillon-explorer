@@ -1,5 +1,5 @@
 import React from 'react'
-import labelsPageDefault from './LabelsPage.render'
+import { labelsPageDefault } from './LabelsPage.render'
 
 jest.mock('react-apollo', () => {
   return {
