@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import AlertsTemplate from '../../template/AlertsTemplate'
 
-const AlertsPage = () => {
+export const AlertsPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const AlertsPage = () => {
     </Query>
   )
 }
-
-export default AlertsPage
