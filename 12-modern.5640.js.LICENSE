@@ -1,0 +1,32 @@
+/*!
+ * @project        Papillon Explorer
+ * @name           12-modern.5640.js
+ * @author         MTS
+ * @build          Wed, Oct 16, 2019 6:53 PM ET
+ * @release        dd7eac04a5d7a050126932e7bb6bc1472008b879 [master]
+ * @copyright      Copyright (c) 2019 MTS
+ *
+ */
+
+/*! v1.0.50-28-g356416a */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/** @license React v16.10.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/

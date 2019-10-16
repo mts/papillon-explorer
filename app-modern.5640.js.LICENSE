@@ -1,0 +1,45 @@
+/*!
+ * @project        Papillon Explorer
+ * @name           app-modern.5640.js
+ * @author         MTS
+ * @build          Wed, Oct 16, 2019 6:53 PM ET
+ * @release        dd7eac04a5d7a050126932e7bb6bc1472008b879 [master]
+ * @copyright      Copyright (c) 2019 MTS
+ *
+ */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+
+/*! axe v3.3.2
+ * Copyright (c) 2019 Deque Systems, Inc.
+ *
+ * Your use of this Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * This entire copyright notice must appear in every copy of this file you
+ * distribute or in any file that contains substantial portions of this source
+ * code.
+ */
+
+/** @license React v16.10.2
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
