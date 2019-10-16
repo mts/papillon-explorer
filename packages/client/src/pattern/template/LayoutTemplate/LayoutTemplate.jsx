@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './LayoutTemplate.props'
 import { startPagePath } from '../../../route/path'
 
 export const LayoutTemplate = ({ page }) => (
@@ -16,6 +16,4 @@ export const LayoutTemplate = ({ page }) => (
   </div>
 )
 
-LayoutTemplate.propTypes = {
-  page: object.isRequired,
-}
+LayoutTemplate.propTypes = propTypes

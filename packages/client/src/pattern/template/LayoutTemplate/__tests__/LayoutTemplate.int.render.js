@@ -1,5 +1,5 @@
 import React from 'react'
-import { LayoutTemplate } from './LayoutTemplate'
+import { LayoutTemplate } from '../LayoutTemplate'
 
 const page = {
   page: {
