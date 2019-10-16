@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import NavigationTemplate from '../../template/NavigationTemplate'
+import { NavigationTemplate } from '../../template/NavigationTemplate'
 
 export const NavigationPage = () => {
   return (

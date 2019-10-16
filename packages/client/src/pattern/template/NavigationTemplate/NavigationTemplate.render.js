@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationTemplate from './NavigationTemplate'
+import { NavigationTemplate } from './NavigationTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const navigationTemplateDefault = <NavigationTemplate page={page} />
-
-export default navigationTemplateDefault
+export const navigationTemplateDefault = <NavigationTemplate page={page} />

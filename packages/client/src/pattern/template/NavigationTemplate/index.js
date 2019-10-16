@@ -1,3 +1,1 @@
-import NavigationTemplate from './NavigationTemplate'
-
-export default NavigationTemplate
+export { NavigationTemplate } from './NavigationTemplate'
