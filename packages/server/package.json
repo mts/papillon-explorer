@@ -8,7 +8,7 @@
     "url": "https://github.com/mts/papillon-explorer.git",
     "directory": "packages/server"
   },
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "index.js",
   "files": [
     "build"
