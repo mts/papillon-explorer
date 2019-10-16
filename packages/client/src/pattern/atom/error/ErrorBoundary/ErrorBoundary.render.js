@@ -1,12 +1,10 @@
 import React from 'react'
-import ErrorBoundary from './ErrorBoundary'
+import { ErrorBoundary } from './ErrorBoundary'
 
 const SomeComponent = () => <div />
 
-const errorBoundaryDefault = (
+export const errorBoundaryDefault = (
   <ErrorBoundary>
     <SomeComponent />
   </ErrorBoundary>
 )
-
-export default errorBoundaryDefault

@@ -1,4 +1,4 @@
-import errorBoundaryDefault from './ErrorBoundary.render'
+import { errorBoundaryDefault } from './ErrorBoundary.render'
 
 describe('<ErrorBoundary />', () => {
   describe('Snaphot', () => {
