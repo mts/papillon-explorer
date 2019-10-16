@@ -1,6 +1,4 @@
 import React from 'react'
-import ButtonsPage from './ButtonsPage'
+import { ButtonsPage } from './ButtonsPage'
 
-const buttonsPageDefault = <ButtonsPage />
-
-export default buttonsPageDefault
+export const buttonsPageDefault = <ButtonsPage />

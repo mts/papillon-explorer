@@ -1,5 +1,5 @@
 import React from 'react'
-import buttonsPageDefault from './ButtonsPage.render'
+import { buttonsPageDefault } from './ButtonsPage.render'
 
 jest.mock('react-apollo', () => {
   return {

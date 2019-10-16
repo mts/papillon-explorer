@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import ButtonsTemplate from '../../template/ButtonsTemplate'
 
-const ButtonsPage = () => {
+export const ButtonsPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const ButtonsPage = () => {
     </Query>
   )
 }
-
-export default ButtonsPage
