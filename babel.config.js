@@ -7,6 +7,8 @@ module.exports = {
     '@babel/plugin-proposal-optional-chaining',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-transform-classes',
+    '@babel/plugin-transform-runtime',
     '@babel/plugin-transform-spread',
+    'syntax-async-functions',
   ],
 }
