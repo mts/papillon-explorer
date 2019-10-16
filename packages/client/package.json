@@ -1,9 +1,15 @@
 {
   "name": "papillon-explorer-client",
-  "version": "0.0.12",
   "description": "Papillon Explorer Client",
-  "main": "index.js",
+  "homepage": "https://github.com/mts/papillon-explorer/#readme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mts/papillon-explorer.git",
+    "directory": "packages/client"
+  },
+  "version": "0.0.12",
+  "main": "index.js",
   "files": [
     "build"
   ],
@@ -13,16 +19,6 @@
   "author": {
     "name": "MTS",
     "url": "https://github.com/mts"
-  },
-  "scripts": {
-    "start": "nodemon --watch webpack.settings.js --watch webpack.common.js --watch webpack.dev.js --exec \"webpack-dev-server --config webpack.dev.js\"",
-    "serve": "echo \"No serve specified\" && exit 0",
-    "build": "webpack --config webpack.prod.js --progress --hide-modules",
-    "release": "npm publish",
-    "uninstall-packages": "rm -rf node_modules package-lock.json",
-    "install-packages": "npm install",
-    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
-    "npm-update": "npm update"
   },
   "browserslist": {
     "production": [
@@ -47,6 +43,16 @@
       "last 2 Edge versions",
       "not Edge < 15"
     ]
+  },
+  "scripts": {
+    "start": "nodemon --watch webpack.settings.js --watch webpack.common.js --watch webpack.dev.js --exec \"webpack-dev-server --config webpack.dev.js\"",
+    "serve": "echo \"No serve specified\" && exit 0",
+    "build": "webpack --config webpack.prod.js --progress --hide-modules",
+    "release": "npm publish",
+    "uninstall-packages": "rm -rf node_modules package-lock.json",
+    "install-packages": "npm install",
+    "reinstall-packages": "npm-run-all uninstall-packages install-packages",
+    "npm-update": "npm update"
   },
   "dependencies": {
     "@babel/runtime": "^7.6.3",
