@@ -1,5 +1,5 @@
 import React from 'react'
-import Label from 'papillon-labels'
+import { Label } from 'papillon-labels'
 
 const ThemeLabels = () => (
   <div>
