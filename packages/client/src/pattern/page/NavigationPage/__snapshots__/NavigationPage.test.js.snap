@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<NavigationPage /> Snaphot must match navigationPageAsync 1`] = `null`;
+
 exports[`<NavigationPage /> Snaphot must match navigationPageDefault 1`] = `
 <div>
   <h2>
@@ -20,3 +22,5 @@ exports[`<NavigationPage /> Snaphot must match navigationPageDefault 1`] = `
   </div>
 </div>
 `;
+
+exports[`<NavigationPage /> Snaphot must match navigationPageNull 1`] = `null`;
