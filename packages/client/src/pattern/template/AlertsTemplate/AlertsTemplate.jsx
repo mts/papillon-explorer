@@ -1,6 +1,6 @@
 import React from 'react'
-import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
+import { propTypes } from './AlertsTemplate.props'
 import { startPagePath } from '../../../route/path'
 import { UnderConstruction } from '../../atom/info/UnderConstruction'
 
@@ -12,6 +12,4 @@ export const AlertsTemplate = ({ page }) => (
   </div>
 )
 
-AlertsTemplate.propTypes = {
-  page: object.isRequired,
-}
+AlertsTemplate.propTypes = propTypes

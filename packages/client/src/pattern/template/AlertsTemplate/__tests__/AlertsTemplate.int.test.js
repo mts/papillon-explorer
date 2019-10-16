@@ -1,5 +1,5 @@
 import React from 'react'
-import { alertsTemplateDefault } from './AlertsTemplate.render'
+import { alertsTemplateDefault } from './AlertsTemplate.int.render'
 
 jest.mock('react-router-dom', () => {
   return {
