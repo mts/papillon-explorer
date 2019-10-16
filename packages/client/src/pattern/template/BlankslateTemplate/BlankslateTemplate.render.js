@@ -1,5 +1,5 @@
 import React from 'react'
-import BlankslateTemplate from './BlankslateTemplate'
+import { BlankslateTemplate } from './BlankslateTemplate'
 
 const page = {
   page: {
@@ -8,6 +8,4 @@ const page = {
   },
 }
 
-const blankslateTemplateDefault = <BlankslateTemplate page={page} />
-
-export default blankslateTemplateDefault
+export const blankslateTemplateDefault = <BlankslateTemplate page={page} />

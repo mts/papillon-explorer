@@ -1,7 +1,7 @@
 import React from 'react'
 import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
-import BlankslateTemplate from '../../template/BlankslateTemplate'
+import { BlankslateTemplate } from '../../template/BlankslateTemplate'
 
 export const BlankslatePage = () => {
   return (

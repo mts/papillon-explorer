@@ -1,3 +1,1 @@
-import BlankslateTemplate from './BlankslateTemplate'
-
-export default BlankslateTemplate
+export { BlankslateTemplate } from './BlankslateTemplate'
