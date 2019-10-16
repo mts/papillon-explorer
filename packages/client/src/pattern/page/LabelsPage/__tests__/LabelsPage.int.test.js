@@ -1,5 +1,5 @@
 import React from 'react'
-import { labelsPageAsync, labelsPageDefault } from './LabelsPage.render'
+import { labelsPageAsync, labelsPageDefault } from './LabelsPage.int.render'
 
 jest.mock('@apollo/react-hooks', () => ({ useQuery: () => {} }))
 jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
