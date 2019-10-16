@@ -1,3 +1,1 @@
-import AsyncStartPage from './AsyncStartPage'
-
-export default AsyncStartPage
+export { AsyncStartPage } from './AsyncStartPage'
