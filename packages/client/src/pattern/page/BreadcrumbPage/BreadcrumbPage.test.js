@@ -1,5 +1,5 @@
 import React from 'react'
-import breadcrumbPageDefault from './BreadcrumbPage.render'
+import { breadcrumbPageDefault } from './BreadcrumbPage.render'
 
 jest.mock('react-apollo', () => {
   return {

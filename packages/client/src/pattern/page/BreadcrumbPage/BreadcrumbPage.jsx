@@ -3,7 +3,7 @@ import { Query } from 'react-apollo'
 import { PAGES } from '../../../graphql/query'
 import BreadcrumbTemplate from '../../template/BreadcrumbTemplate'
 
-const BreadcrumbPage = () => {
+export const BreadcrumbPage = () => {
   return (
     <Query query={PAGES}>
       {({ data }) =>
@@ -12,5 +12,3 @@ const BreadcrumbPage = () => {
     </Query>
   )
 }
-
-export default BreadcrumbPage
