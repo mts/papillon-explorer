@@ -1,6 +1,4 @@
 import React from 'react'
-import SideBar from './SideBar'
+import { SideBar } from './SideBar'
 
-const sideBarDefault = <SideBar />
-
-export default sideBarDefault
+export const sideBarDefault = <SideBar />

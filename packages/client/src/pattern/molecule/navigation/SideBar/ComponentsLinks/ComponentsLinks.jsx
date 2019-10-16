@@ -10,7 +10,7 @@ import {
   navigationPageRoute,
 } from '../../../../../route'
 
-const ComponentsLinks = () => {
+export const ComponentsLinks = () => {
   return (
     <React.Fragment>
       <a href="/" className="position-relative f4 d-block text-gray-dark">
@@ -343,5 +343,3 @@ const ComponentsLinks = () => {
     </React.Fragment>
   )
 }
-
-export default ComponentsLinks

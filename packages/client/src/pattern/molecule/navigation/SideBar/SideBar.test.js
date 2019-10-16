@@ -1,5 +1,5 @@
 import React from 'react'
-import sideBarDefault from './SideBar.render'
+import { sideBarDefault } from './SideBar.render'
 
 jest.mock('react-router-dom', () => {
   return {

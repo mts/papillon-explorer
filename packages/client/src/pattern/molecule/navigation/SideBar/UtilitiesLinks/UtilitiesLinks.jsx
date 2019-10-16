@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { layoutPageRoute } from '../../../../../route'
 
-const UtilitiesLinks = () => {
+export const UtilitiesLinks = () => {
   return (
     <React.Fragment>
       <a href="/papillon/utilities/" className="position-relative f4 d-block text-gray-dark">
@@ -247,5 +247,3 @@ const UtilitiesLinks = () => {
     </React.Fragment>
   )
 }
-
-export default UtilitiesLinks

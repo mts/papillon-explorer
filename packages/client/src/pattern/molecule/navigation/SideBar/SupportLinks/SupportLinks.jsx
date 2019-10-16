@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SupportLinks = () => {
+export const SupportLinks = () => {
   return (
     <React.Fragment>
       <a href="/papillon/support/" className="position-relative f4 d-block text-gray-dark">
@@ -78,5 +78,3 @@ const SupportLinks = () => {
     </React.Fragment>
   )
 }
-
-export default SupportLinks
