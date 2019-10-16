@@ -32,10 +32,10 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx'],
   coverageThreshold: {
     global: {
-      statements: 82,
-      branches: 50,
-      functions: 67,
-      lines: 86,
+      statements: 98,
+      branches: 95,
+      functions: 98,
+      lines: 98,
     },
   },
 }
