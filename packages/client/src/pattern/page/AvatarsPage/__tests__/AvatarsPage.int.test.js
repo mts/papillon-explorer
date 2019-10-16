@@ -1,5 +1,5 @@
 import React from 'react'
-import { avatarsPageAsync, avatarsPageDefault } from './AvatarsPage.render'
+import { avatarsPageAsync, avatarsPageDefault } from './AvatarsPage.int.render'
 
 jest.mock('@apollo/react-hooks', () => ({ useQuery: () => {} }))
 jest.mock('react-router-dom', () => ({ Link: () => <div>some link</div> }))
