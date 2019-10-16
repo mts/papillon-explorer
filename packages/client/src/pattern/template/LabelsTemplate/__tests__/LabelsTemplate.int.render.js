@@ -1,5 +1,5 @@
 import React from 'react'
-import { LabelsTemplate } from './LabelsTemplate'
+import { LabelsTemplate } from '../LabelsTemplate'
 
 const page = {
   page: {
